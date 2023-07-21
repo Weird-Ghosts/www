@@ -1,0 +1,174 @@
+@import url("markdown.css");
+@import "_fonts.css";
+@tailwind base;
+@tailwind components;
+
+h1,
+h2,
+h3,
+h4 {
+  @apply font-display;
+}
+p,
+li {
+  strong,
+  b {
+    @apply font-bold font-display;
+  }
+}
+
+p a,
+li a {
+  @apply underline font-display;
+  font-weight: 500;
+}
+
+.text-prose {
+  @screen md {
+    @apply mt-5 text-xl;
+  }
+
+  p {
+    @apply mt-3 mx-auto text-base max-w-4xl;
+
+    @screen sm {
+      @apply text-lg;
+    }
+  }
+}
+
+section {
+  @apply mb-6 p-4;
+
+  @screen md {
+    @apply mb-24 px-12;
+  }
+  &:last-child {
+    @apply mb-0;
+  }
+  p {
+    @apply text-xl;
+  }
+
+  h2 {
+    @apply flex-1 text-3xl font-black mb-2;
+
+    @screen md {
+      @apply text-6xl;
+    }
+
+    @screen sm {
+      @apply text-5xl;
+    }
+  }
+}
+
+#onpage-nav {
+  @apply flex items-center mx-auto p-0 sticky z-50 w-full;
+
+  > div {
+    @apply flex-1;
+
+    > a {
+      @apply bg-primary bg-opacity-75 py-4;
+
+      @screen md {
+        @apply py-2;
+      }
+
+      svg {
+        @apply hidden;
+
+        @screen md {
+          @apply block;
+        }
+      }
+    }
+  }
+
+  @screen md {
+    @apply flex flex-wrap items-center;
+  }
+
+  a {
+    @apply text-base flex items-center mx-auto font-sans font-bold text-center underline justify-center cursor-pointer;
+
+    @screen lg {
+      @apply text-2xl;
+    }
+
+    span {
+      @apply mr-2;
+    }
+  }
+}
+
+body {
+  /* background: url("/img/gradient-04-1920x1300.jpeg"); */
+  background-repeat: no-repeat;
+  @apply min-h-screen relative bg-primary;
+}
+
+ol {
+  list-style-type: none;
+  counter-reset: item;
+}
+
+ol > li {
+  position: relative;
+  padding-left: 2.5rem;
+}
+
+ol > li:before {
+  @apply absolute top-0 left-0 mt-1 flex items-center bg-body text-primary text-base
+  w-8 h-8 rounded-full justify-center font-black;
+  content: counter(item);
+  counter-increment: item;
+}
+.test {
+  color: blue;
+}
+nav {
+  @apply flex mx-auto mb-4 justify-around mt-8;
+
+  @screen md {
+    @apply mb-0 flex-1;
+  }
+
+  a {
+    @apply font-display text-center font-bold uppercase border-2 border-body text-body bg-white leading-relaxed no-underline outline-none relative cursor-pointer w-52 px-2 py-2;
+
+    &:after {
+      @apply absolute h-full w-full;
+      border: 2px solid #e33f3e;
+      background-color: #e33f3e;
+      left: 8px;
+      top: 8px;
+      z-index: -1;
+      content: "";
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -o-transition: all 0.5s;
+    }
+
+    &:hover {
+      top: 4px;
+      left: 4px;
+
+      &:after {
+        top: -2px;
+        left: -2px;
+      }
+    }
+    &.active {
+      @apply bg-body text-primary;
+      top: 4px;
+      left: 4px;
+      &:after {
+        top: -2px;
+        left: -2px;
+      }
+    }
+  }
+}
+@tailwind utilities;
