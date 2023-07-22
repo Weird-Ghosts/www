@@ -4,7 +4,7 @@ members: Lindsay Rollins, Sloane Smith, Titus McNally
 press: Canadian cyberpunk horror game tackles Toronto’s housing crisis and marginalization
 events: Steam Next Fest, XP Summit
 primary_contact: Lindsay Rollins
-logo: /assets/img/studios/rocket-adrift.png
+logo: /img/studios/rocket-adrift.png
 twitter: https://twitter.com/@RocketAdrift
 website: https://rocketadrift.com/
 tiktok: null

@@ -2,7 +2,7 @@
 name: Something Magic
 members: Jesse Thomas (Stong), Burcu Emeç, Amir Sám Nakhjavani
 primary_contact: Jesse Thomas (Stong)
-logo: /assets/img/studios/something-magic.png
+logo: /img/studios/something-magic.png
 twitter: null
 website: https://www.somethingmagic.ca/
 tiktok: null

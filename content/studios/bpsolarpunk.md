@@ -2,7 +2,7 @@
 name: B.P. Solarpunk Media
 members: Kai Little-White, Jared Lorenz, Tandra Jhagroo
 primary_contact: Kai Little-White
-logo: /assets/img/studios/bpsolarpunk.png
+logo: /img/studios/bpsolarpunk.png
 twitter: https://twitter.com/@DamaliKaiBP
 website: https://www.bpmedia.me/
 tiktok: null

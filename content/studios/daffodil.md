@@ -2,7 +2,7 @@
 name: daffodil & friends
 members: daffodil jenx
 primary_contact: daffodil jenx
-logo: /assets/img/studios/daffodil.png
+logo: /img/studios/daffodil.png
 twitter: https://twitter.com/@streetunix
 website: https://daffodil.itch.io/
 tiktok: https://www.tiktok.com/@daffffffodil

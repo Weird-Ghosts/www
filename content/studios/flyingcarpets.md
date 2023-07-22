@@ -2,7 +2,7 @@
 name: Flying Carpets Games
 members: Salim Larochelle, Allison Reid
 primary_contact: Salim Larochelle
-logo: /assets/img/studios/flyingcarpets.png
+logo: /img/studios/flyingcarpets.png
 twitter: https://twitter.com/@FlyingCarpetsG
 website: https://flyingcarpetsgames.com/
 tiktok: null
