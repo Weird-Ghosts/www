@@ -2,7 +2,7 @@
 name: Digital Cauldron Collective
 members: Merlin Simard, Raven John, Rinchen Dolma
 primary_contact: Raven John(she/he/they/that bitch)
-logo: /assets/img/studios/digitalcauldron.png
+logo: /img/studios/digitalcauldron.png
 twitter: null
 website: null
 tiktok: null

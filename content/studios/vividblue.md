@@ -4,7 +4,7 @@ members: Nate Tannis
 press: Game Devs of Color 2022
 events: null
 primary_contact: Nate Tannis
-logo: /assets/img/studios/vividblue.png
+logo: /img/studios/vividblue.png
 twitter: https://twitter.com/@vividblueltd
 website: https://twitter.com/vividblueltd
 tiktok: null

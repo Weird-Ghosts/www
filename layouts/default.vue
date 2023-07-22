@@ -1,98 +1,30 @@
 <template>
   <div>
-    <aside class="bg-body text-white text-center py-1 px-2">
-      <!-- <NuxtLink v-if="latestPost[0]" :to="latestPost[0]._path" class="underline font-bold">
-    {{ latestPost[0].title }}
-  </NuxtLink> -->
-    </aside>
+    <Banner />
     <main class="layout" role="main">
-      <div
-        class="flex flex-wrap md:flex-no-wrap p-6 justify-center align-middle items-center">
-        <NuxtLink to="/" aria-label="Home" class="flex items-center">
-          <Logo class="w-32" />
-        </NuxtLink>
-
-        <nav class="md:w-1/2 w-full">
-          <NuxtLink to="/studios"> Studios </NuxtLink>
-          <NuxtLink to="/blog"> Blog </NuxtLink>
-          <NuxtLink to="/faq"> FAQ </NuxtLink>
-          <NuxtLink to="/apply"> Apply </NuxtLink>
-        </nav>
-      </div>
-      <div
-        class="social align-middle justify-center items-center md:w-56 mx-auto">
-        <div class="mt-8 flex items-center w-full justify-around flex-end">
-          <a href="https://www.tiktok.com/@weird__ghosts" class="social">
-            <span class="sr-only">TikTok</span>
-            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 512 512">
-              <path
-                d="M412.19,118.66a109.27,109.27,0,0,1-9.45-5.5,132.87,132.87,0,0,1-24.27-20.62c-18.1-20.71-24.86-41.72-27.35-56.43h.1C349.14,23.9,350,16,350.13,16H267.69V334.78c0,4.28,0,8.51-.18,12.69,0,.52-.05,1-.08,1.56,0,.23,0,.47-.05.71,0,.06,0,.12,0,.18a70,70,0,0,1-35.22,55.56,68.8,68.8,0,0,1-34.11,9c-38.41,0-69.54-31.32-69.54-70s31.13-70,69.54-70a68.9,68.9,0,0,1,21.41,3.39l.1-83.94a153.14,153.14,0,0,0-118,34.52,161.79,161.79,0,0,0-35.3,43.53c-3.48,6-16.61,30.11-18.2,69.24-1,22.21,5.67,45.22,8.85,54.73v.2c2,5.6,9.75,24.71,22.38,40.82A167.53,167.53,0,0,0,115,470.66v-.2l.2.2C155.11,497.78,199.36,496,199.36,496c7.66-.31,33.32,0,62.46-13.81,32.32-15.31,50.72-38.12,50.72-38.12a158.46,158.46,0,0,0,27.64-45.93c7.46-19.61,9.95-43.13,9.95-52.53V176.49c1,.6,14.32,9.41,14.32,9.41s19.19,12.3,49.13,20.31c21.48,5.7,50.42,6.9,50.42,6.9V131.27C453.86,132.37,433.27,129.17,412.19,118.66Z" />
-            </svg>
-          </a>
-          <a href="https://twitter.com/weird_ghosts" class="social">
-            <span class="sr-only">Twitter</span>
-            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-              <path
-                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
-            </svg>
-          </a>
-
-          <a
-            href="https://www.linkedin.com/company/weird-ghosts"
-            class="social">
-            <span class="sr-only">LinkedIn</span>
-
-            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-              <path
-                d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
-            </svg>
-          </a>
-          <a href="mailto:hello@weirdghosts.ca" class="social">
-            <span class="sr-only">Email</span>
-            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-              <path
-                d="M12.042 23.648c-7.813 0-12.042-4.876-12.042-11.171 0-6.727 4.762-12.125 13.276-12.125 6.214 0 10.724 4.038 10.724 9.601 0 8.712-10.33 11.012-9.812 6.042-.71 1.108-1.854 2.354-4.053 2.354-2.516 0-4.08-1.842-4.08-4.807 0-4.444 2.921-8.199 6.379-8.199 1.659 0 2.8.876 3.277 2.221l.464-1.632h2.338c-.244.832-2.321 8.527-2.321 8.527-.648 2.666 1.35 2.713 3.122 1.297 3.329-2.58 3.501-9.327-.998-12.141-4.821-2.891-15.795-1.102-15.795 8.693 0 5.611 3.95 9.381 9.829 9.381 3.436 0 5.542-.93 7.295-1.948l1.177 1.698c-1.711.966-4.461 2.209-8.78 2.209zm-2.344-14.305c-.715 1.34-1.177 3.076-1.177 4.424 0 3.61 3.522 3.633 5.252.239.712-1.394 1.171-3.171 1.171-4.529 0-2.917-3.495-3.434-5.246-.134z" />
-            </svg>
-          </a>
-        </div>
-      </div>
+      <Navigation />
+      <SocialMediaLinks />
       <slot />
     </main>
     <Footer />
   </div>
 </template>
 
-<script>
+<!-- <script>
 export default {
-  setup() {
-    const latestPost = ref([]);
-
-    useAsyncData("latestPost", async () => {
-      const data = await queryContent("blog")
-        .only(["title", "date", "_path"])
-        .sort({ date: -1 })
-        .limit(1)
-        .find();
-      latestPost.value = data;
-    });
-    return {
-      latestPost,
-    };
-  },
-  // afterEach(to, from) {
-  //   if (this.$route.hash) {
-  //     this.scrollToHash();
-  //   }
-  //   }
-  // },
-
-  // methods: {
-  //   scrollToHash() {
-  //     var hash = this.$route.hash;
-  //     this.$nextTick(() => {
-  //       this.$scrollTo(hash, 400, { offset: 0 });
-  //     });
-  //   },
-  // },
-};
-</script>
+// // afterEach(to, from) {
+// //   if (this.$route.hash) {
+// //     this.scrollToHash();
+// //   }
+// //   }
+// // },
+// // methods: {
+// //   scrollToHash() {
+// //     var hash = this.$route.hash;
+// //     this.$nextTick(() => {
+// //       this.$scrollTo(hash, 400, { offset: 0 });
+// //     });
+// //   },
+// // },
+// };
+</script> -->

@@ -2,7 +2,7 @@
 name: Apocablyss
 members: Paloma Dawkins, Ashley Opheim, Camille Verreault, Cody Walker, Stephan Dubreuil
 primary_contact: Paloma Dawkins
-logo: /assets/img/studios/apocablyss.png
+logo: /img/studios/apocablyss.png
 twitter: https://twitter.com/@apocablyss
 website: https://apocablyss.com/
 tiktok: null

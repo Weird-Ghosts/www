@@ -2,7 +2,7 @@
 name: Cheekynauts Entertainment
 members: Samantha Ramsay
 primary_contact: Samantha Ramsay
-logo: /assets/img/studios/cheekynauts.png
+logo: /img/studios/cheekynauts.png
 twitter: https://twitter.com/@Cheekynauts
 website: https://www.cheekynauts.com/
 tiktok: https://www.tiktok.com/@goawayimcrabby

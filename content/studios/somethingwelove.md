@@ -2,7 +2,7 @@
 name: Something We Love
 members: Brendan Campbell, Ibrahim Shahin
 primary_contact: Brendan Campbell
-logo: /assets/img/studios/something-we-love.svg
+logo: /img/studios/something-we-love.svg
 twitter: https://twitter.com/@somethingwelove
 website: https://somethingwe.love/
 tiktok: null
