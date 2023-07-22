@@ -9,7 +9,7 @@
         action="https://weirdghosts.us5.list-manage.com/subscribe/post?u=400f118c2dee2a8da8090c928&amp;id=fafb3f76f3"
         method="post"
         id="mc-embedded-subscribe-form"
-        name="mc-embedded-subscribe-form"
+        name="mc-embedded-subscribe-form" 
         class="validate flex"
         target="_blank"
         novalidate
@@ -81,7 +81,7 @@
                     >Founder seeking funding</option
                   >
                   <option value="Funder/LP interested in supporting the fund"
-                    >Funder/LP interested in supporting the fund</option
+                    >Donating to or sponsoring the fund</option
                   >
                   <option value="General interest in the fund"
                     >General interest in the fund</option

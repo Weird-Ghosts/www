@@ -59,7 +59,7 @@
       <div><img :src="studio.logo" class="h-32  mt-4 mb-2" /></div>
     </div>
     <div class="w-1/2">
-      <span :id="studio.id" class="mb-4 lg:mb-0 text-xl mt-4 " v-html="studio.content" />
+      <span :id="studio.id" class="mb-4 lg:mb-0 text-xl mt-4 " v-html="studio.description" />
     </div>
   </div>
 </template>

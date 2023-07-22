@@ -1,10 +1,9 @@
 <template>
   <div class="space-y-8">
-    {{ studios.edges.node }}
     <Studio
-      v-for="studio in studios.edges"
-      :key="studio.node.id"
-      :studio="studio.node"
+      v-for="studio in studios"
+      :key="studio.id"
+      :studio="studio"
     />
   </div>
 </template>

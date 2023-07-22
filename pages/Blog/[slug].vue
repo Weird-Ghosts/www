@@ -7,15 +7,14 @@
         <div class="heading md:py-16 flex flex-wrap mx-auto">
           <div class="w-full flex flex-wrap h-full text-lg">
             <div class="article max-w-5xl mx-auto">
-              <h1
-                class="article-title text-4xl md:text-6xl font-bold text-center">
+              <h1 class="article-title text-4xl md:text-6xl font-bold text-center">
                 {{ doc.title }}
               </h1>
-              <p class="article-date text-center">$dayjs({{ doc.date }})</p>
+              <p class="article-date text-center">{{ doc.date }}</p>
               <article class="" v-html="doc.content" />
-              <!-- <div class="w-12 mx-auto">
+              <div class="w-12 mx-auto">
                 <OGhost />
-              </div> -->
+              </div>
             </div>
           </div>
         </div>
