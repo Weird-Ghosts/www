@@ -11,41 +11,18 @@
       </div>
       <main class="mt-10 mx-auto max-w-screen-xl">
         <section class="relative">
-          <StudioList :studios="studios" class="mt-6" />
+          <ContentList path="/studios" v-slot="{ list }">
+            <div class="space-y-8 mt-6">
+              <div v-for="studio in list" :key="studio._path">
+                <Studio :studio="studio" />
+              </div>
+            </div>
+          </ContentList>
         </section>
       </main>
     </div>
   </div>
 </template>
-<script>
-export default {
-  setup() {
-    const studios = ref([]);
-
-    useAsyncData("studios", async () => {
-      const data = await queryContent("studios")
-        .only([
-          "name",
-          "description",
-          "steam_page",
-          "id",
-          "twitter",
-          "tiktok",
-          "website",
-          "logo",
-        ]) // fields to retrieve
-        .sort({ name: 1 }) // sort by 'name' in ascending order
-        .find();
-
-      studios.value = data;
-    });
-
-    return {
-      studios,
-    };
-  },
-};
-</script>
 
 <style lang="postcss" scoped>
 #donate-button {

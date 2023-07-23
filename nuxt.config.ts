@@ -3,15 +3,12 @@ export default defineNuxtConfig({
   css: [
     '@/assets/css/main.css',
   ],
-  build: {
-    postcss: {
-      postcssOptions: {
-        plugins: {
-          tailwindcss: {},
-          nested: {},
-          autoprefixer: {},
-        },
-      },
+
+  postcss: {
+    plugins: {
+      'tailwindcss/nesting': {},
+      tailwindcss: {},
+      autoprefixer: {},
     },
   },
   modules: [
@@ -19,6 +16,15 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "dayjs-nuxt",
   ],
+  tailwindcss: {
+    cssPath: '~/assets/css/main.css',
+    configPath: 'tailwind.config',
+    exposeConfig: false,
+    exposeLevel: 2,
+    config: {},
+    injectPosition: 'first',
+    viewer: true,
+  },
   dayjs: {
     locales: ["en", "fr"],
     plugins: ["relativeTime", "utc", "timezone"],
@@ -27,6 +33,15 @@ export default defineNuxtConfig({
   },
   content: {
     documentDriven: true,
+    markdown: {
+      remarkPlugins: [
+        "remark-smartypants",
+      ],
+      toc: {
+        depth: 4,
+        searchDepth: 4
+      }
+    },
   },
   router: {
     options: {

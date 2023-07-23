@@ -1,8 +1,14 @@
 ---
-title: FAQs
+title: Questions Asked and Answered (md)
 description:
-layout: faq
 ---
+
+::hero
+Default slot text
+
+#description
+This will be rendered inside the `description` slot.
+::
 
 #### What is the size of your grants and investments?
 

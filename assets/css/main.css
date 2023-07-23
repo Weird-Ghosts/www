@@ -1,13 +1,13 @@
-@import url("markdown.css");
+@import "markdown.css";
 @import "_fonts.css";
 @tailwind base;
 @tailwind components;
-
+@tailwind utilities;
 h1,
 h2,
 h3,
 h4 {
-  @apply font-display;
+  @apply font-display text-body;
 }
 p,
 li {
@@ -160,7 +160,7 @@ nav {
         left: -2px;
       }
     }
-    &.active {
+    &.router-link-active {
       @apply bg-body text-primary;
       top: 4px;
       left: 4px;
@@ -171,4 +171,3 @@ nav {
     }
   }
 }
-@tailwind utilities;
