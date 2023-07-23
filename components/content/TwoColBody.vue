@@ -8,3 +8,16 @@
     </section>
   </div>
 </template>
+
+<style lang="postcss">
+ul {
+  @apply list-outside list-disc pl-5;
+}
+ul,
+p {
+  @apply text-xl mt-4;
+}
+h3 {
+  @apply text-2xl mt-8 leading-10 font-extrabold;
+}
+</style>

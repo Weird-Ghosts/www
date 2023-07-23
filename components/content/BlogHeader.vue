@@ -5,11 +5,6 @@
         class="text-3xl leading-10 font-extrabold sm:text-5xl sm:leading-none md:text-6xl">
         <ContentSlot :use="$slots.default" unwrap="p" />
       </h1>
-      <div v-if="$slots.intro">
-        <p class="text-2xl mt-8">
-          <ContentSlot :use="$slots.intro" unwrap="p" />
-        </p>
-      </div>
     </section>
   </div>
 </template>

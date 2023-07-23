@@ -12,6 +12,7 @@ export default defineNuxtConfig({
     },
   },
   modules: [
+    'nuxt-content-assets', // make sure to add before content!
     "@nuxt/content",
     "@nuxtjs/tailwindcss",
     "dayjs-nuxt",
@@ -26,7 +27,7 @@ export default defineNuxtConfig({
     viewer: true,
   },
   dayjs: {
-    locales: ["en", "fr"],
+    locales: ["en"],
     plugins: ["relativeTime", "utc", "timezone"],
     defaultLocale: "en",
     defaultTimezone: "America/New_York",
