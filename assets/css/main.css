@@ -36,7 +36,13 @@ li a {
     }
   }
 }
-
+#donate-button {
+  font-weight: bold;
+  font-style: italic;
+  @apply uppercase font-bold italic tracking-wide;
+}
+section {
+}
 section {
   @apply mb-6 p-4;
 

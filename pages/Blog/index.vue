@@ -9,7 +9,6 @@
           </h1>
         </section>
       </div>
-
       <main class="mt-10 mx-auto max-w-screen-xl">
         <section class="relative">
           <div class="order-1 w-full lg:grid lg:grid-cols-2 gap-8">
@@ -18,9 +17,8 @@
                 ><h2 v-html="post.title" class="underline"
               /></NuxtLink>
               <div class="date font-mono mt-2">
-                {{ $dayjs(post.date).format("YYYY-MM-DD") }}
+                {{ $dayjs(post.date).format("MMMM D, YYYY") }}
               </div>
-
               <div
                 class="excerpt text-xl md:text-2xl"
                 v-html="post.description" />
@@ -32,10 +30,8 @@
             </div>
           </div>
         </section>
-
         <section class="text-center max-w-screen-lg mx-auto flex-col">
           <div class="text-3xl">Interested in partnering with us?</div>
-
           <a
             href="mailto:hello@weirdghosts.ca"
             class="text-2xl font-bold underline"

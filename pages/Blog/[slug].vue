@@ -1,17 +1,21 @@
 <template>
   <ContentDoc v-slot="{ doc }">
-    <h1>{{ doc.title }}</h1>
-    <ContentRenderer :value="doc" />
     <div class="relative overflow-hidden px-4 sm:px-6">
       <div class="relative py-6 sm:pb-16 md:pb-20 lg:pb-28">
         <div class="heading md:py-16 flex flex-wrap mx-auto">
           <div class="w-full flex flex-wrap h-full text-lg">
             <div class="article max-w-5xl mx-auto">
-              <h1 class="article-title text-4xl md:text-6xl font-bold text-center">
+              <h1
+                class="article-title text-4xl md:text-6xl font-bold text-center">
                 {{ doc.title }}
               </h1>
-              <p class="article-date text-center">{{ doc.date }}</p>
-              <article class="" v-html="doc.content" />
+              <p class="article-date text-center">
+                {{ $dayjs(doc.date).format("MMMM D, YYYY") }}
+              </p>
+
+              <article>
+                <ContentRenderer :value="doc" />
+              </article>
               <div class="w-12 mx-auto">
                 <OGhost />
               </div>
@@ -23,39 +27,31 @@
   </ContentDoc>
 </template>
 
-<!-- <style lang="postcss">
+<style>
 .article {
   @apply bg-white text-black p-4;
-
   @screen md {
     @apply p-12;
   }
-
   h1 {
     @apply leading-none;
   }
-
   h2 {
     @apply text-3xl font-bold mb-4 mt-2;
   }
-
   h3 {
     @apply text-xl uppercase tracking-wide font-bold text-body mb-2;
   }
-
   p {
     @apply mb-6 text-xl text-black;
   }
-
   blockquote {
     p {
       @apply mb-0;
     }
   }
-
   ul {
     @apply list-disc list-outside ml-8 mt-4 mb-6;
-
     li {
       @apply text-xl;
     }
@@ -106,4 +102,5 @@
   width: 80%;
   display: block;
   margin: 10px auto;
-}</style> -->
+}
+</style>
