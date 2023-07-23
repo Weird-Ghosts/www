@@ -1,20 +1,19 @@
 ---
-title: Questions Asked and Answered (md)
+title: Weird Ghosts FAQ
 description:
 ---
 
-::hero
-Default slot text
-
-#description
-This will be rendered inside the `description` slot.
+::page-header
+Questions Asked and Answered
 ::
+
+::faq-with-toc
 
 #### What is the size of your grants and investments?
 
 [](https://weirdghosts.ca/#size-of-investments)
 
-Our Baby Ghosts fund provides a $20,000 grant and 4 months of community mentorship to develop your studio. Our Early fund provides up to $150,000 for studio development (funds may be used in part for project/game development, but should mainly fund studio development roles and activities).
+Our Baby Ghosts fund provides a $25,000 grant and 6 months of community mentorship to develop your studio. Our Early fund provides up to $150,000 for studio development (funds may be used in part for project/game development, but should mainly fund studio development roles and activities).
 
 #### What is the eligibility criteria for studios applying for funding from Weird Ghosts?
 
@@ -143,3 +142,4 @@ Yes, this is actually critical to what defines Weird Ghosts. We know that financ
 [](https://weirdghosts.ca/#qualification-application)
 
 If you have read our FAQ and [How to Apply](https://weirdghosts.ca/blog/how-to-apply-to-weird-ghosts/) blog post and are still confused, don’t hesitate to reach out by [email](mailto:hello@weirdghosts.ca).
+::
