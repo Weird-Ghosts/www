@@ -1,36 +1,32 @@
 <template>
   <div>
-    <Banner />
-    <main class="layout" role="main">
-      <Navigation />
-      <SocialMediaLinks />
-
+    <ContentDoc v-slot="{ doc }">
       <div class="relative px-4 sm:px-6">
         <div class="relative py-6 sm:pb-16 md:pb-20 lg:pb-28">
           <div class="heading md:py-16 flex flex-wrap mx-auto max-w-screen-xl">
             <section class="w-full lg:w-2/3 h-full text-lg max-w-4xl">
               <h1
                 class="text-3xl leading-10 font-extrabold sm:text-5xl sm:leading-none md:text-6xl">
-                Questions asked and answered.
+                {{ doc.title }}
               </h1>
             </section>
           </div>
+          <aside>
+            <PageToc />
+          </aside>
           <main
             class="mt-10 mx-auto max-w-screen-xl sm:mt-12 md:mt-16 lg:mt-12 xl:mt-16">
             <section id="faq" class="relative">
               <div class="flex flex-wrap">
                 <div class="w-full lg:w-2/3">
-                  <ContentDoc />
+                  <ContentRenderer :value="doc" />
                 </div>
               </div>
             </section>
           </main>
         </div>
       </div>
-
-      <slot />
-    </main>
-    <Footer />
+    </ContentDoc>
   </div>
 </template>
 

@@ -19,17 +19,15 @@ export default {
     const latestPost = ref([]);
 
     useAsyncData("latestPost", async () => {
-      console.log("latestPost: before queryContent");
+      
       const data = await queryContent("blog")
         .only(["title", "date", "_path"])
         .sort({ date: -1 })
         .limit(1)
         .find();
-      console.log(
-        "latestPost: after queryContent and before setting the value"
-      );
+      
       latestPost.value = data;
-      console.log("latestPost: after setting the value");
+      
     });
     return {
       latestPost,

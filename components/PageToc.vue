@@ -1,5 +1,6 @@
-<script setup>
-const { toc } = useContent()
+<script setup lang="ts">
+const { toc } = useContent();
+console.log(toc.links);
 </script>
 
 <template>
