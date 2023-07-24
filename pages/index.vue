@@ -51,7 +51,7 @@
     </section>
     <section id="features" class="mx-auto bg-body text-primary py-12">
       <div class="text-center mx-auto max-w-2xl mb-12">
-        <h2 class="mb-3">Stages We Fund</h2>
+        <h2 class="mb-3 text-primary">Stages We Fund</h2>
         <p class="md:text-2xl font-display">
           We believe in creators retaining ownership of their companies and IP.
           Our investments are structured around
@@ -61,9 +61,9 @@
           so that we recoup only after your team is paid.
         </p>
       </div>
-      <div class="max-w-6xl mx-auto">
-        <div class="flex flex-col">
-          <h4 class="text-lg md:text-2xl font-bold faxGray mb-4">
+      <div class="max-w-6xl mx-auto grid grid-cols-2 gap-2">
+        <div>
+          <h4 class="text-lg md:text-2xl font-bold text-primary mb-4">
             Baby Ghosts Peer Accelerator and Grant
           </h4>
           <p class="mb-4 lg:m-0 lg:mb-0 text-xl">
@@ -77,8 +77,8 @@
           <p class="mt-auto lg:mb-0 text-lg font-mono">$25,000 / 6 months</p>
         </div>
 
-        <div class="flex flex-col">
-          <h4 class="text-lg md:text-2xl font-bold faxGray mb-4">
+        <div>
+          <h4 class="text-lg md:text-2xl font-bold text-primary mb-4">
             Shared Earnings Investment
           </h4>
           <p class="mb-4 lg:m-0 lg:mb-0 text-xl">
@@ -87,7 +87,9 @@
             on studio development.
           </p>
           <p class="my-4 lg:mb-0 text-lg">
-            <NuxtLink to="/baby-ghosts">Learn more about Baby Ghosts</NuxtLink>
+            <NuxtLink to="/blog/shared-earnings-agreement"
+              >Learn more SEAL</NuxtLink
+            >
           </p>
           <p class="mt-auto lg:mb-0 text-lg font-mono">Up to $150,000</p>
         </div>

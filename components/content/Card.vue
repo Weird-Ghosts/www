@@ -1,8 +1,23 @@
 <template>
-  <div class="flex mt-8">
-    <div class="w-1/3 mr-4"><slot name="headshot" /></div>
-    <p class="w-2/3 text-sm">
+  <div class="flex items-start align-items-start mt-8 card">
+    <div class="w-1/3 mr-4 headshot"><slot name="headshot" /></div>
+    <p class="w-2/3 text-sm bio">
       <slot name="bio" />
     </p>
   </div>
 </template>
+
+<style lang="postcss">
+.card {
+  @apply bg-white overflow-hidden p-6;
+  &:first-child {
+    @apply mt-0;
+  }
+}
+.headshot + .bio p:first-child {
+  @apply mt-0;
+}
+.bio p {
+  @apply text-sm;
+}
+</style>
