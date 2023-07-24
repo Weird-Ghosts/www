@@ -1,17 +1,43 @@
+1
+
 <template>
-  <ContentDoc v-slot="{ doc }">
-    <ContentRenderer :value="doc" />
-    <main class="mt-10 mx-auto max-w-screen-xl">
-      <section class="relative">
-        <ContentList path="/studios" v-slot="{ list }">
-          <div class="space-y-8 mt-6">
-            <div v-for="studio in list" :key="studio._path">
+  <div class="relative overflow-hidden px-4 sm:px-6">
+    <div class="relative py-6 sm:pb-16 md:pb-20 lg:pb-28">
+      <div class="heading md:py-16 flex flex-wrap mx-auto max-w-screen-xl">
+        <section class="w-full lg:w-2/3 h-full text-lg max-w-4xl">
+          <h1
+            class="text-3xl leading-10 font-extrabold sm:text-5xl sm:leading-none md:text-6xl">
+            <h1>Studios we&#8217;ve funded.</h1>
+          </h1>
+        </section>
+      </div>
+      <main class="mt-10 mx-auto max-w-screen-xl">
+        <section class="relative">
+          <div
+            class="mt-6 grid grid-cols-3 gap-4 items-start align-items-start">
+            <div v-for="studio in studios" :key="studio._path" class="h-full">
               <Studio :studio="studio" />
             </div>
           </div>
-        </ContentList>
-      </section>
-    </main>
-  </ContentDoc>
+        </section>
+      </main>
+    </div>
+  </div>
 </template>
-1
+
+<script>
+export default {
+  setup() {
+    const studios = ref([]);
+
+    useAsyncData("studios", async () => {
+      const data = await queryContent("studios").find();
+      studios.value = data;
+    });
+
+    return {
+      studios,
+    };
+  },
+};
+</script>

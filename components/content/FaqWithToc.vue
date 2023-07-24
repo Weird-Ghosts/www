@@ -43,7 +43,7 @@
       @apply text-lg leading-normal mb-4 block;
 
       &:before {
-        @apply bg-body text-white;
+        @apply bg-body text-primary;
         margin-top: 5px;
       }
 

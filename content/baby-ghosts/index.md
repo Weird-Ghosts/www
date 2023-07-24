@@ -176,7 +176,7 @@ we hope to expand this in the future.
 
 [Applications are now closed. Join our
 [mailing list](/mailing-list) to be
-notified when the program opens again across Canada.]{.text-center.mb-2.text-sm}
+notified when the program opens again across Canada.]{.text-center.mb-2.text-md.bg-body.text-primary.block.p-6}
 
 Gamma Space is a community of creatives, technologists and
 creative technologists who have been learning and
@@ -267,7 +267,7 @@ And Weird Ghosts: Eileen Mary Holowka and Jennie Robinson
 Faber
 
 With support from:
-[![Ontario Creates](/img/oc-logo.png)]{.w-32.mt-2.mb-1}
+![Ontario Creates](/img/oc-logo.png){.w-32.mt-2.mb-1}
 
 <!-- :apply-now-button -->
 

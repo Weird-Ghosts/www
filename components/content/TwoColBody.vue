@@ -19,5 +19,9 @@ p {
 }
 h3 {
   @apply text-2xl mt-8 leading-10 font-extrabold;
+  + p,
+  &:first-child {
+    @apply mt-0;
+  }
 }
 </style>
