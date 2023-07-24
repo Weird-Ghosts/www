@@ -1,14 +1,15 @@
 <template>
   <div
-    class="p-6 max-w-sm mx-auto bg-white text-body flex flex-col justify-between items-center space-y-4 h-full">
+    class="p-6 max-w-sm mx-auto bg-white text-body justify-between items-center text-center space-y-4 h-full">
     <div class="flex-shrink-0">
-      <img class="h-32" :src="studio.logo" alt="Logo" />
+      <img class="h-32 mx-auto" :src="studio.logo" alt="Logo" />
     </div>
     <div>
       <div class="text-2xl font-bold text-center">{{ studio.name }}</div>
-      <p class="text-body">{{ studio.description }}</p>
+      <div class="excerpt" v-html="md.render(studio.description)" />
     </div>
-    <div class="mt-4 flex items-center space-x-2">
+    <div
+      class="mt-4 flex text-center mx-auto items-center justify-center space-x-2">
       <a :href="studio.twitter" v-if="studio.twitter" class="mr-2">
         <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
           <path
@@ -60,7 +61,19 @@
 </template>
 
 <script>
+import MarkdownIt from "markdown-it";
 export default {
   props: ["studio"],
+
+  data() {
+    return {
+      md: new MarkdownIt({ typographer: true }),
+    };
+  },
 };
 </script>
+<style scoped>
+section .excerpt p {
+  @apply text-xl mt-4 text-center;
+}
+</style>

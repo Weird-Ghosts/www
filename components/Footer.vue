@@ -1,11 +1,17 @@
 <template>
   <footer>
+    <section class="text-center max-w-screen-lg mx-auto flex-col">
+      <div class="text-3xl">Interested in partnering with us?</div>
+      <a href="mailto:hello@weirdghosts.ca" class="text-2xl font-bold underline"
+        >Get in touch.</a
+      >
+    </section>
     <div class="max-w-screen-xl mx-auto pb-12 px-4 sm:px-6 lg:px-8">
       <a name="subscribe"></a>
       <div class="mx-auto max-w-2xl" id="subscribe">
         <MailingListSignupForm
           v-if="
-            $route.path !== '/thank-you' && $route.path !== '/mailing-list'
+            route.path !== '/thank-you' && route.path !== '/mailing-list'
           " />
       </div>
       <p class="text-center text-base leading-6 mt-12">
@@ -19,7 +25,12 @@
     </div>
   </footer>
 </template>
+<script setup lang="ts">
+const route = useRoute();
 
+// When accessing /posts/1, route.params.id will be 1
+console.log(route.params.id);
+</script>
 <style lang="postcss" scoped>
 footer {
 }
