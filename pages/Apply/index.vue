@@ -1,12 +1,8 @@
 <template>
   <ContentDoc v-slot="{ doc }">
     <ContentRenderer :value="doc" />
-    <div class="relative overflow-hidden px-4 sm:px-6">
-      <div class="relative py-6 sm:pb-16 md:pb-20 lg:pb-28">
-        <PageHeader />
-        <TwoColBody />
-      </div>
-    </div>
+    <PageHeader />
+    <TwoColBody />
   </ContentDoc>
 </template>
 
