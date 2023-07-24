@@ -113,3 +113,30 @@
   }
 }
 </style>
+<script setup lang="ts">
+const { page } = useContent();
+
+useContentHead(page);
+
+useSeoMeta({
+  ogTitle: () => page.value.title,
+  ogDescription: () => page.value.description,
+  ogImage: () =>
+    page.value.image
+      ? page.value.image.src
+      : "https://weirdghosts.ca/img/Twitter-Card---Blog.png", // Only fetch image.src if image exists
+  ogUrl: () => page.value._path,
+  twitterTitle: () => page.value.title,
+  twitterDescription: () => page.value.description,
+  twitterImage: () =>
+    page.value.image
+      ? page.value.image.src
+      : "https://weirdghosts.ca/img/Twitter-Card---Blog.png", // Only fetch image.src if image exists
+});
+
+useHead({
+  bodyAttrs: {
+    class: "page--blog",
+  },
+});
+</script>

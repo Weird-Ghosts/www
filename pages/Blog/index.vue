@@ -6,6 +6,15 @@ const query: QueryBuilderParams = {
   only: ["title", "date", "description", "_path"],
   sort: [{ date: -1 }],
 };
+useSeoMeta({
+  ogTitle: "Our Blog",
+  ogDescription: "Articles and updates from the Weird Ghosts team.",
+  ogImage: "https://weirdghosts.ca/img/Twitter-Card---Blog.png",
+  ogUrl: "https://weirdghosts.ca/blog",
+  twitterTitle: "Our Blog",
+  twitterDescription: "Articles and updates from the Weird Ghosts team.",
+  twitterImage: "https://weirdghosts.ca/img/Twitter-Card---Blog.png",
+});
 </script>
 
 <template>

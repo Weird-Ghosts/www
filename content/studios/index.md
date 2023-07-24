@@ -1,7 +1,7 @@
 ---
-title:
+title: Studios we've supported
 ---
 
 ::page-header
-Studios we've supported.
+Studios we've funded.
 ::

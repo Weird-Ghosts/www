@@ -1,13 +1,27 @@
 ---
-title: Baby Ghosts grant and community accelerator
+title: "Apply to Baby Ghosts grant and peer accelerator"
+description: "Get $25k and 6 months to focus on your studio"
+image:
+  src: "https://weirdghosts.ca/img/Twitter-Card---Baby-Ghosts.png"
+  alt: "Apply for the Baby Ghosts program"
+head:
+  meta:
+    - name: "keywords"
+      content: "indie studios, game dev funding, impact funding, social finance"
+    - name: "robots"
+      content: "index, follow"
+    - name: "author"
+      content: "Weird Ghosts"
+    - name: "copyright"
+      content: "© 2023 Weird Ghosts"
 ---
 
 ::page-header
-Baby Ghosts grant and community accelerator.
+Baby Ghosts grant and Peer Accelerator.
 
 #intro
-The Baby Ghosts community accelerator is a partnership between
-Weird Ghosts and Gamma Space providing a grant of $20,000 and four
+The Baby Ghosts Peer Accelerator is a partnership between
+Weird Ghosts and Gamma Space providing a grant of $25,000 and six
 months of tailored mentorship. The program emphasizes open
 communication, progress mapping, and interactive creative
 reflection.

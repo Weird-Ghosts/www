@@ -1,5 +1,9 @@
 ---
 title: Apply Now
+description: "Ready to submit your application for funding?"
+image:
+  src: "https://weirdghosts.ca/img/Twitter-Card---Apply.png"
+  alt: "Apply now for funding"
 ---
 
 ::page-header

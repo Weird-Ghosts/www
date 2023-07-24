@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /support/canceled/
+Disallow: /support/success/

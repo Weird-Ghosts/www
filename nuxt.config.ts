@@ -53,12 +53,6 @@ export default defineNuxtConfig({
     head: {
       htmlAttrs: { lang: "en" },
       bodyAttrs: { class: "antialiased font-body" },
-      link: [
-        {
-          rel: "me",
-          href: "https://mastodon.social/@jennie",
-        },
-      ],
     },
   },
 });
