@@ -90,8 +90,7 @@ you learn how to explain and share your needs, and the more
 effectively we can help you progress!
 
 When you practice narrating your process, saying everything
-out loud, you realize
-_no question is too small; no problem too overwhelming_.
+out loud, you realize _no question is too small; no problem too overwhelming_.
 
 We know that talking about yourself and your process can be
 hard, because many of us are trained from an early age to be
@@ -175,8 +174,9 @@ we hope to expand this in the future.
 #col2
 
 [Applications are now closed. Join our
-[mailing list](/mailing-list) to be
-notified when the program opens again across Canada.]{.text-center.mb-2.text-md.bg-body.text-primary.block.p-6}
+mailing list to be notified when the program opens again across Canada.]{.text-center.mb-2.text-md.bg-body.text-primary.block.p-6}
+
+<!-- :apply-now-button -->
 
 Gamma Space is a community of creatives, technologists and
 creative technologists who have been learning and
@@ -268,7 +268,5 @@ Faber
 
 With support from:
 ![Ontario Creates](/img/oc-logo.png){.w-32.mt-2.mb-1}
-
-<!-- :apply-now-button -->
 
 ::

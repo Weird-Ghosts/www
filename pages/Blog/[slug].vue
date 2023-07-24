@@ -1,25 +1,20 @@
 <template>
   <ContentDoc v-slot="{ doc }">
-    <div class="relative overflow-hidden px-4 sm:px-6">
-      <div class="relative py-6 sm:pb-16 md:pb-20 lg:pb-28">
-        <div class="heading md:py-16 flex flex-wrap mx-auto">
-          <div class="w-full flex flex-wrap h-full text-lg">
-            <div class="article max-w-5xl mx-auto">
-              <h1
-                class="article-title text-4xl md:text-6xl font-bold text-center">
-                {{ doc.title }}
-              </h1>
-              <p class="article-date text-center">
-                {{ $dayjs(doc.date).format("MMMM D, YYYY") }}
-              </p>
+    <div class="heading md:py-16 flex flex-wrap mx-auto">
+      <div class="w-full flex flex-wrap h-full text-lg">
+        <div class="article max-w-5xl mx-auto">
+          <h1 class="article-title text-4xl md:text-6xl font-bold text-center">
+            {{ doc.title }}
+          </h1>
+          <p class="article-date text-center">
+            {{ $dayjs(doc.date).format("MMMM D, YYYY") }}
+          </p>
 
-              <article>
-                <ContentRenderer :value="doc" />
-              </article>
-              <div class="w-12 mx-auto">
-                <OGhost />
-              </div>
-            </div>
+          <article>
+            <ContentRenderer :value="doc" />
+          </article>
+          <div class="w-12 mx-auto">
+            <OGhost />
           </div>
         </div>
       </div>

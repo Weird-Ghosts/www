@@ -3,6 +3,5 @@
     <ContentRenderer :value="doc" />
     <PageHeader />
     <ContentSlot name="default" />
-    <TwoColBody />
   </ContentDoc>
 </template>
