@@ -22,6 +22,7 @@ export default {
       const data = await queryContent("blog")
         .only(["title", "date", "_path"])
         .sort({ date: -1 })
+        .where({ _path: { $ne: "/blog" } })
         .limit(1)
         .find();
 

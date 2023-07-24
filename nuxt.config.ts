@@ -52,7 +52,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       htmlAttrs: { lang: "en" },
-      bodyAttrs: { class: "subpixel-antialiased font-body" },
+      bodyAttrs: { class: "antialiased font-body" },
       link: [
         {
           rel: "me",

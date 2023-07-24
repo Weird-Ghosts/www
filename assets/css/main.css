@@ -7,7 +7,7 @@ h1,
 h2,
 h3,
 h4 {
-  @apply font-display text-body;
+  @apply font-display;
 }
 p,
 li {
@@ -16,7 +16,7 @@ li {
     @apply font-bold font-display;
   }
 }
-
+a,
 p a,
 li a {
   @apply underline font-display;
@@ -41,8 +41,7 @@ li a {
   font-style: italic;
   @apply uppercase font-bold italic tracking-wide;
 }
-section {
-}
+
 section {
   @apply mb-6 p-4;
 

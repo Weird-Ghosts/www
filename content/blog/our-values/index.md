@@ -1,6 +1,6 @@
 ---
 title: "Our Values"
-description: "A deep dive into Weird Ghosts' values"
+description: "This post captures the values of Weird Ghosts' founders Jennie and Eileen, but also that of our extended community, including many of our investees as well as our collaborators Gamma Space."
 date: 2023-07-08
 ---
 

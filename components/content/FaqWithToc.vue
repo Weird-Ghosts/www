@@ -36,9 +36,15 @@
     @apply block;
   }
 }
+#body {
+  h4 a {
+    @apply font-bold no-underline;
+  }
+}
 #page-toc {
+  @apply p-6 bg-white sticky top-0;
   ul {
-    @apply list-inside;
+    @apply list-outside pl-0 mt-0;
     > li {
       @apply text-lg leading-normal mb-4 block;
 
