@@ -44,4 +44,27 @@ useHead({
     },
   ],
 });
+
+const defaultTitle = "Weird Ghosts";
+const defaultDescription =
+  "Weird Ghosts is an impact fund for studios led by underrepresented founders across Canada.";
+const defaultImage = "https://weirdghosts.ca/img/Twitter-Card---Home-Page.png";
+const defaultUrl = "https://weirdghosts.ca";
+const baseUrl = "https://weirdghosts.ca";
+
+useSeoMeta({
+  ogTitle: () => (page.value && page.value.title) || defaultTitle,
+  ogDescription: () =>
+    (page.value && page.value.description) || defaultDescription,
+  description: () =>
+    (page.value && page.value.description) || defaultDescription,
+  ogImage: () =>
+    page.value && page.value.image ? page.value.image.src : defaultImage,
+  ogUrl: () => (page.value && `${baseUrl}${page.value._path}`) || defaultUrl,
+  twitterTitle: () => (page.value && page.value.title) || defaultTitle,
+  twitterDescription: () =>
+    (page.value && page.value.description) || defaultDescription,
+  twitterImage: () =>
+    page.value && page.value.image ? page.value.image.src : defaultImage,
+});
 </script>

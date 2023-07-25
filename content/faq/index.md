@@ -1,6 +1,9 @@
 ---
 title: Weird Ghosts FAQ
-description:
+description: Questions and answers about our funding and programs.
+image:
+  src: "https://weirdghosts.ca/img/Twitter-Card---FAQ.png"
+  alt: "Apply for the Baby Ghosts program"
 ---
 
 ::page-header

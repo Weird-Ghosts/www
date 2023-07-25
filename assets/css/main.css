@@ -176,3 +176,31 @@ nav {
     }
   }
 }
+.page--resources {
+  table {
+    @apply w-full border-collapse;
+  }
+  thead {
+    th {
+      @apply bg-white uppercase;
+    }
+  }
+  th,
+  td {
+    @apply p-2 border border-body;
+  }
+
+  th {
+    @apply bg-primary;
+  }
+
+  tr:nth-child(even) {
+    @apply bg-gray-50;
+  }
+
+  tbody {
+    a {
+      @apply underline;
+    }
+  }
+}

@@ -1,5 +1,9 @@
 ---
 title: Other funding opportunities.
+description: "Find funding opportunities for indie games across Canada."
+image:
+  src: "https://weirdghosts.ca/img/Twitter-Card---Resources.png"
+  alt: "Resources"
 ---
 
 ::page-header
