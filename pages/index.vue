@@ -26,7 +26,8 @@
                 </a>
               </p>
               <p class="mt-2 text-lg leading-tight">
-                Applications are currently closed.
+                Applications are currently closed, but will open again late
+                summer 2023!
               </p>
             </div>
           </div>
@@ -67,9 +68,9 @@
             Baby Ghosts Peer Accelerator and Grant
           </h4>
           <p class="mb-4 lg:m-0 lg:mb-0 text-xl">
-            Grants for new teams that need to get studio operations up and
-            running, and support with impact strategy. Prepares teams for
-            further investment and game development.
+            Grants for teams that need to get studio operations up and running
+            and support with impact strategy. Prepares teams for further
+            investment and game development.
           </p>
           <p class="my-4 lg:mb-0 text-lg">
             <NuxtLink to="/baby-ghosts">Learn more about Baby Ghosts</NuxtLink>
@@ -120,10 +121,10 @@
       <div class="w-full">
         <h2>About us.</h2>
         <p class="mb-6">
-          Weird Ghosts was born out of a collective desire to empower
-          structurally excluded creatives working in games. Our ultimate goal is
-          a funding landscape in Canada that truly supports game studios at all
-          stages so that all can grow and thrive.
+          Weird Ghosts was born from a collective desire to empower structurally
+          excluded game devs. Our ultimate goal is a funding landscape in Canada
+          that truly supports game studios at all stages so that all can grow
+          and thrive.
         </p>
         <p class="mb-6">
           Cofounders and general partners Eileen and Jennie met in 2020 to make

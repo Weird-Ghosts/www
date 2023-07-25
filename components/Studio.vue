@@ -1,6 +1,6 @@
 <template>
   <div
-    class="p-6 max-w-sm mx-auto bg-white text-body justify-between items-center text-center space-y-4 h-full mx-auto">
+    class="p-6 max-w-sm bg-white text-body justify-between items-center text-center space-y-4 h-full mx-auto">
     <div class="flex-shrink-0">
       <img class="h-32 mx-auto" :src="studio.logo" alt="Logo" />
     </div>

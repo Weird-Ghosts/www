@@ -1,9 +1,10 @@
 ---
 title: "Apply to Baby Ghosts grant and peer accelerator"
-description: "Get $25k and 6 months to focus on your studio"
+description: "Get $25k and 6 months to focus on your studio."
 image:
   src: "https://weirdghosts.ca/img/Twitter-Card---Baby-Ghosts.png"
-  alt: "Apply for the Baby Ghosts program"
+  alt: "Apply for the Baby Ghosts program."
+bodyClass: page--baby-ghosts
 ---
 
 ::page-header
@@ -11,7 +12,7 @@ Baby Ghosts grant and Peer Accelerator.
 
 #intro
 The Baby Ghosts Peer Accelerator is a partnership between
-Weird Ghosts and Gamma Space providing a grant of $25,000 and six
+Weird Ghosts and Gamma Space. It provides a grant of $25,000 and six
 months of tailored mentorship. The program emphasizes open
 communication, progress mapping, and interactive creative
 reflection.
@@ -25,7 +26,7 @@ reflection.
 
 Baby Ghosts consult with Weird Ghosts and Gamma Space team
 members about the challenges, gaps, stresses and concerns
-going on inside their studio. We refer to these as
+inside their studio. We refer to these as
 _pain points_.
 
 No two studios are the same, but here are some common
@@ -34,14 +35,14 @@ questions they bring:
 - What's our studio structure?
 - How do we prioritize tasks?
 - What is our business model?
-- Who is our audience and how do we reach them?
+- Who is our audience, and how do we reach them?
 - How do we scope our demo within our resources?
 
 ### [Mentorship and hands-on support]{.text-2xl.mt-8.leading-10.font-extrabold}
 
 Program facilitators listen and engage with Baby Ghost
 participants to provide processes, information, tools and
-expertise, within the mentorship team and/or from the broader
+expertise within the mentorship team and/or from the broader
 Gamma Space community.
 
 Here are some examples of how facilitators and community
@@ -65,8 +66,8 @@ and campaigns
 integrating implicit solidarities, integrating supports for
 neurodifferences
 
-We’re invested in setting you up for success in every possible
-way. From experience, we’ve found that the more a studio
+We're invested in setting you up for success in every possible
+way. From experience, we've found that the more a studio
 engages with facilitators and the Gamma Space community, the
 better the outcome. The more we get to know and work with you,
 the more we can answer questions, provide high-level support,
@@ -74,18 +75,18 @@ and help fill production gaps.
 
 ### Expectations
 
-While a Baby Ghost, you’ll be posting activity updates in your
+While a Baby Ghost, you'll be posting activity updates in your
 Studio and Project Slack channels at least once a week. For
 example:
 
-> We're stressed out because we've had to crunch a lot recently. We need to figure out what steps to take to avoid this next time!
-> Here's our latest company pitch deck, revised in advance of next week’s funder meeting.
+> We're stressed out because we've had to crunch recently. We need to figure out what steps to take to avoid this next time!
+> Our latest company pitch deck will be revised before next week's funder meeting.
 > Feeling pretty good about this song I composed for our trailer! Check it out! Send your feedback!
 
 This is where Gamma Space mentors rally! We can meet or
 discuss in-channel strategies to better manage time,
 communication and deadlines. Or we can review materials ahead
-of an important meeting. Sometimes we’re just going to tell
+of an important meeting. Sometimes we will just tell
 you how much we like your jams.
 
 Remember: We need your support to support you. The more you
@@ -94,29 +95,29 @@ you learn how to explain and share your needs, and the more
 effectively we can help you progress!
 
 When you practice narrating your process, saying everything
-out loud, you realize _no question is too small; no problem too overwhelming_.
+out loud, you realize _no question is too small; no problem is too overwhelming_.
 
 We know that talking about yourself and your process can be
-hard, because many of us are trained from an early age to be
+hard because many of us are trained from an early age to be
 independent. It takes practice to (re)learn how to be in
 community and let yourself accept help. That's part of
 what this program aims to achieve.
 
 ### Timeline
 
-Here’s how your time as a Baby Ghost breaks down:
+Here's how your time as a Baby Ghost breaks down:
 
 ### Month 1
 
 - Onboarding with Gamma Space peer mentors
-  Monday Night Check-in presentation (10-15 min + Q&A during 1.5 hour meeting)
+  Monday Night Check-in presentation (10-15 min + Q&A during 1.5-hour meeting)
 - Detailed pain points discussion resulting in strategies to
   address them.
 
 ### Months 2-3
 
-- Workin’ hard on your studio’s development</li>
-- Weekly written check-ins in your studio Slack channel</li>
+- Workin' hard on your studio's development
+- Weekly written check-ins in your studio Slack channel
 - 1-4 meetings per month to provide supports you request
 
 Getting involved in the Gamma community (if you want!)
@@ -129,13 +130,13 @@ Getting involved in the Gamma community (if you want!)
 
 ### Outcomes
 
-It’s important that Baby Ghosts’ outcomes reflect their studio
-development, and not just the game they’re working on, so the
+It's crucial that Baby Ghosts' outcomes reflect their studio
+development, and not just the game they're working on, so the
 particulars of this will vary from team to team:
 
 - A relevant deliverable for your project and process, such as
   a prototype, pitch deck, business model or other plan
-- A clearer idea of your studio, your values, and next steps
+- A clearer idea of your studio, your values, and the next steps
   towards sustainable, regenerative success
 - New competencies and perspectives that make tackling pain
   points more effective and rewarding
@@ -147,7 +148,7 @@ particulars of this will vary from team to team:
 
 The Baby Ghosts program is a time to slow down and consider
 the future of your studio before you start chasing funding
-opportunities. That doesn’t mean we exclude people who are
+opportunities. That doesn't mean we exclude people who are
 working on pitches or involved in other programs, but we do
 require our investees to have the time available for weekly
 updates, regular meetings, and the willingness to focus on
@@ -162,18 +163,18 @@ your support network to turn to if something goes wrong with
 your studio during the program (such as a team member leaving
 or a change in your studio vision)? We do our best to practice
 trauma-informed, wellness-oriented care towards our investees;
-but it's important that you have strong emotional and social
+but it would be best if you had strong emotional and social
 resources beyond the program.
 
-We are able to accommodate many different learning styles,
-access needs, and forms of communicating. In order to best
-meet each studio where we’re at, we expect you to be as
+We can accommodate many learning styles,
+access needs, and communication forms. To best
+meet each studio where we're at, we expect you to be as
 upfront as possible about your needs so that we can prepare
 the space for you. (For example, do you prefer written
 communication to video meetings? Do you need visual
-interaction during meetings in order to focus?) Unfortunately
-we only operate in spoken and written English right now, but
-we hope to expand this in the future.
+interaction during meetings to focus?) Unfortunately,
+we only operate in spoken and written English, but
+we hope to expand this.
 
 #col2
 
@@ -188,11 +189,11 @@ developing anti-colonial, feminist, anti-capitalist,
 social justice principles and practices for the sector
 since 2012.
 
-We’re building new ways to equitably value, generate and
+We're building new ways to equitably value, generate and
 circulate time and resources. One aspect of this work is
 collaborating with Weird Ghosts to support Baby Ghosts and
 investees. Guided by our values, we can help identify and
-reduce your studio’s pain points.
+reduce your studio's pain points.
 
 ### Coordinators
 
@@ -219,12 +220,12 @@ and political accountability.
 **Henry Faber** (he/him) is a cis het white settler
 digital producer, community developer, and accessible
 arts space advocate based in Tkaronto/Toronto. He has
-been working for over 25 years to facilitate more
+worked for over 25 years to facilitate more
 equitable and inclusive relationships between artists,
 technology, and processes. Henry co-founded Gamma Space
 as a not-for-profit coworking space for indie game
 makers in 2012. The pandemic found him rethinking how
-communities care for and work together, and since 2020
+communities care for and work together. Since 2020
 he has been helping transform Gamma Space into a co-op
 that actively engages with its values.
 ::
@@ -238,11 +239,11 @@ that actively engages with its values.
 settler artist based in Tkaronto/Toronto. They earned
 their degree in radio and TV broadcasting but found
 their way into video game production with the goal of
-developing alongside other indie devs, while also
+developing alongside other indie devs while also
 redefining our relationship to value, capital and
 community in ways that can generate stability and
 sustainability. A lot of their time is dedicated to
-thinking about world building, story crafting, process
+thinking about world-building, story crafting, process
 and structure, world and art history and classism, but
 you'll typically find them creating 3D models that bring
 their worlds to life.
@@ -257,7 +258,7 @@ their worlds to life.
 Jamaican-Canadian woman based in Tkaronto/Toronto and
 Kingston, Jamaica. A journalist, audio engineer,
 collective organizer, teacher, independent scholar and
-lover of archives, datejie’s journey traverses
+lover of archives, datejie's journey traverses
 decolonial feminist witnessing, recovery and
 storytelling in five languages from Turtle Island to
 Africa to the Caribbean. Anticipating the digital
