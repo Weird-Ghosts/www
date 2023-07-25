@@ -4,16 +4,6 @@ description: "Get $25k and 6 months to focus on your studio"
 image:
   src: "https://weirdghosts.ca/img/Twitter-Card---Baby-Ghosts.png"
   alt: "Apply for the Baby Ghosts program"
-head:
-  meta:
-    - name: "keywords"
-      content: "indie studios, game dev funding, impact funding, social finance"
-    - name: "robots"
-      content: "index, follow"
-    - name: "author"
-      content: "Weird Ghosts"
-    - name: "copyright"
-      content: "© 2023 Weird Ghosts"
 ---
 
 ::page-header

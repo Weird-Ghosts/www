@@ -1,22 +1,3 @@
-<script setup lang="ts">
-import type { QueryBuilderParams } from "@nuxt/content/dist/runtime/types";
-const query: QueryBuilderParams = {
-  path: "/blog",
-  where: [{ _path: { $ne: "/blog" } }],
-  only: ["title", "date", "description", "_path"],
-  sort: [{ date: -1 }],
-};
-useSeoMeta({
-  ogTitle: "Our Blog",
-  ogDescription: "Articles and updates from the Weird Ghosts team.",
-  ogImage: "https://weirdghosts.ca/img/Twitter-Card---Blog.png",
-  ogUrl: "https://weirdghosts.ca/blog",
-  twitterTitle: "Our Blog",
-  twitterDescription: "Articles and updates from the Weird Ghosts team.",
-  twitterImage: "https://weirdghosts.ca/img/Twitter-Card---Blog.png",
-});
-</script>
-
 <template>
   <ContentDoc v-slot="{ doc }">
     <ContentRenderer :value="doc" />
@@ -38,3 +19,12 @@ useSeoMeta({
     </div>
   </ContentDoc>
 </template>
+<script setup lang="ts">
+import type { QueryBuilderParams } from "@nuxt/content/dist/runtime/types";
+const query: QueryBuilderParams = {
+  path: "/blog",
+  where: [{ _path: { $ne: "/blog" } }],
+  only: ["title", "date", "description", "_path"],
+  sort: [{ date: -1 }],
+};
+</script>

@@ -1,8 +1,6 @@
 <template>
   <ContentDoc v-slot="{ doc }">
     <ContentRenderer :value="doc" />
-    <PageHeader />
-    <ContentSlot name="default" />
   </ContentDoc>
 </template>
 
@@ -35,3 +33,10 @@ tbody {
   }
 }
 </style>
+<script setup lang="ts">
+useHead({
+  bodyAttrs: {
+    class: "page--resources",
+  },
+});
+</script>
