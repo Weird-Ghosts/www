@@ -4,6 +4,7 @@ description: "Ready to submit your application for funding?"
 image:
   src: "https://weirdghosts.ca/img/Twitter-Card---Apply.png"
   alt: "Apply now for funding"
+bodyClass: page--apply
 ---
 
 ::page-header
@@ -15,7 +16,7 @@ Apply to Weird Ghosts.
 #col1
 [Just two important things before you apply:]{.text-2xl.block.mb-6}
 
-1. **Make sure you&#8217;re eligible.** Your studio must be based in Canada, and a majority of founders from an underrepresented identity group.
+1. **Make sure you're eligible.** Your studio must be based in Canada, and a majority of founders from an underrepresented identity group.
 2. **Prep your pitch deck.** We're looking for an [overview of your studio](/faq#what-should-i-include-in-my-pitch-deck), not just a project.
 
 #col2

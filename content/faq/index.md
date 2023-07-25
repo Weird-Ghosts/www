@@ -12,27 +12,19 @@ Questions asked and answered.
 
 ::faq-with-toc
 
-#### What is the size of your grants and investments?
+#### What funding opportunities does Weird Ghosts offer and what's the application process like?
 
-Our Baby Ghosts fund provides a $25,000 grant and 6 months of community mentorship to develop your studio. Our Early fund provides up to $150,000 for studio development (funds may be used in part for project/game development, but should mainly fund studio development roles and activities).
+We offer two main funding opportunities: The Baby Ghosts fund provides a $25,000 grant along with a 6-month peer accelerator focused on studio development. Our Early fund offers up to $150,000 mainly for studio development. We aim to finalize funding deals within two months of application submission and respond to all submissions within two weeks.
 
-#### What is the eligibility criteria for studios applying for funding from Weird Ghosts?
+#### What's the eligibility criteria for funding?
 
-Your studio must be based in Canada, and a majority (half or more) of founders from an underrepresented identity group.
-
-#### Are there any specific requirements or restrictions on the stage of development or genre of the games being developed?
-
-No, we have no preference for the stage of development or genre when it comes to your project. Our focus is on the development of your studio, not your game(s).
+Your studio must be based in Canada, and a majority (half or more) of founders must be from an underrepresented identity group. We have no preference for the stage of development or genre of your games. Teams without a shipped game can apply, but we generally don’t fund solo developers unless you have a plan to grow beyond just yourself. Unfortunately, international studios or teams outside Canada cannot apply at this time.
 
 #### What is an “underrepresented identity group”?
 
 This is a broadly inclusive term meant to prioritize those who have been socially and structurally excluded from accessing capital, professional networks, studio employment or career progression; who have faced barriers to participating in entrepreneurship and government funding programs.
 
 It includes anyone who experiences marginalization or underrepresentation due to their gender (including people who are at any intersection of trans and nonbinary identities, however they are or are not expressed), race and/or skin colour (e.g., IBPoC individuals), queerness, disability, religion, housing status, economic status, immigration or citizenship status (including newcomers to Canada).
-
-#### How long does the application process typically take, and when can applicants expect to hear back about their submissions?
-
-We aim to finalize funding deals within two months of application submission. Typically, this process takes less time. We respond to all submissions within two weeks and follow up on our pitch calls within the same timeframe.
 
 #### What is “studio development”?
 
@@ -70,9 +62,9 @@ At a minimum, please provide:
 
 And read our blog post: [How to Apply to Weird Ghosts](https://weirdghosts.ca/blog/how-to-apply-to-weird-ghosts/)
 
-#### Is there a deadline for submitting applications, or is funding available on a rolling basis?
+#### Is funding available on a rolling basis?
 
-Funding is awarded on a rolling basis, although we close our application form a few times a year while our programs are underway. Typically, the application is open from June-November.
+Yes, funding is awarded on a rolling basis. We close our application form a few times a year while our programs are underway, typically from June-November.
 
 #### Where does the funding for Weird Ghosts come from?
 
@@ -86,23 +78,19 @@ First, ensure you are eligible. We are funding video game studios (no tabletop a
 
 If you have any questions, we’d be happy to answer them via [email](mailto:hello@weirdghosts.ca).
 
-#### Can international game studios or teams located outside of Canada apply for funding?
+#### What accountability is expected from funded studios?
 
-No, we are focused solely on Canada at this time.
-
-#### Are there any reporting or accountability requirements for studios that receive funding from Weird Ghosts?
-
-We require quarterly financial statements from our funded teams and encourage regular check-ins with our team.
+We require quarterly financial statements and encourage regular check-ins with our team.
 
 #### Are there any specific geographical areas within Canada that are prioritized for funding?
 
 No, but we would love to see more applications from the Prairies, Territories, and Atlantic Canada!
 
-#### Can the grant or investment be used for hiring external contractors or outsourcing game development?
+#### Can the funds be used for hiring external contractors?
 
-Investment funds are typically unrestricted and can be used however you need, as long as it supports the development of your studio.
+Yes, investment funds can be used as you see fit, as long as it supports the studio development.
 
-#### How does Weird Ghosts support studios beyond financial assistance? Are there any additional resources, mentorship programs, or networking opportunities provided?
+#### How does Weird Ghosts support studios beyond financial assistance?
 
 Yes, this is actually critical to what defines Weird Ghosts. We know that financial assistance has limitations without further resources such as community support, targeted business mentorship, and connections to resources. Applying to Weird Ghosts isn’t about applying to fund your dream game (although making our dream game is important to us!). It’s about receiving the opportunity to develop a sustainable studio, feeling connected and secure in a video game community, and work on your dream game project in a healthy and manageable way.
 
