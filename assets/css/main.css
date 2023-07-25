@@ -206,9 +206,9 @@ nav {
 }
 .page--apply {
   ol {
-    @apply list-none list-outside text-3xl;
+    @apply list-none list-outside;
     li {
-      @apply mb-8;
+      @apply mb-8 text-3xl;
     }
   }
 }
@@ -237,6 +237,14 @@ nav {
   tbody {
     a {
       @apply underline;
+    }
+  }
+}
+.page--baby-ghosts {
+  h3 {
+    @apply text-2xl leading-10 font-black;
+    a {
+      @apply no-underline text-2xl leading-10 font-black;
     }
   }
 }
