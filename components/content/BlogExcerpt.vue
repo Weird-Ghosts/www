@@ -1,6 +1,6 @@
 <template>
   <div
-    class="p-6 max-w-sm mx-auto bg-white text-body justify-between items-center space-y-4 h-full">
+    class="p-6 md:max-w-sm mx-auto bg-white text-body justify-between items-center space-y-4 h-full">
     <NuxtLink :to="post._path"
       ><h2 class="text-2xl font-bold" v-html="post.title"
     /></NuxtLink>

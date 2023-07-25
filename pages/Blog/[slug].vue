@@ -1,7 +1,7 @@
 <template>
   <ContentDoc v-slot="{ doc }">
     <div class="heading md:py-16 flex flex-wrap mx-auto">
-      <div class="w-full flex flex-wrap h-full text-lg">
+      <div class="w-full h-full text-lg">
         <div class="article max-w-5xl mx-auto">
           <h1 class="article-title">
             {{ doc.title }}
@@ -13,6 +13,7 @@
           <article class="prose lg:prose-xl">
             <ContentRenderer :value="doc" />
           </article>
+          <BlogNav />
           <div class="w-12 mx-auto">
             <OGhost />
           </div>
@@ -113,10 +114,3 @@
   }
 }
 </style>
-<script setup lang="ts">
-useHead({
-  bodyAttrs: {
-    class: "page--blog",
-  },
-});
-</script>

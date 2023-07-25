@@ -7,7 +7,7 @@
           class="mt-6 flex flex-wrap md:grid md:grid-cols-3 gap-4 items-start align-items-start">
           <ContentList :query="query">
             <template #default="{ list }">
-              <div v-for="studio in list" class="h-full">
+              <div v-for="studio in list" class="mx-auto h-full">
                 <Studio :studio="studio" />
               </div>
             </template>
@@ -23,10 +23,4 @@ const query: QueryBuilderParams = {
   path: "/studios",
   where: [{ _path: { $ne: "/studios" } }],
 };
-
-useHead({
-  bodyAttrs: {
-    class: "page--studios",
-  },
-});
 </script>

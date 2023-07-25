@@ -16,12 +16,32 @@
 
 <script setup lang="ts">
 const { page } = useContent();
+// onBeforeMount(() => {
+//   // When component is about to mount, add body class.
+//   if (page.value && page.value.bodyClass) {
+//     document.body.classList.add(page.value.bodyClass);
+//   }
+// });
+
+// onUnmounted(() => {
+//   // When component unmounts, remove body class.
+//   if (page.value && page.value.bodyClass) {
+//     document.body.classList.remove(page.value.bodyClass);
+//   }
+// });
+
 useContentHead(page);
 useHead({
   bodyAttrs: {
-    class:
-      "overflow-x-hidden text-base leading-normal flex flex-col min-h-screen text-body antialiased font-body",
+    class: (() => {
+      let baseClasses =
+        "overflow-x-hidden text-base leading-normal flex flex-col min-h-screen text-body antialiased font-body";
+      return page.value && page.value.bodyClass
+        ? `${baseClasses} ${page.value.bodyClass}`
+        : baseClasses;
+    })(),
   },
+
   meta: [
     { name: "twitter:card", content: "summary_large_image" },
     {
