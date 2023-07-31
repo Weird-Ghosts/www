@@ -46,13 +46,12 @@
             with a long-term vision and commitment to equitable worker-centric
             structures.
           </p>
-        
         </div>
       </div>
     </section>
     <section id="features" class="mx-auto bg-body text-primary py-12">
       <div class="text-center mx-auto max-w-2xl mb-12">
-        <h2 class="mb-3 text-primary">Stages We Fund</h2>
+        <h2 class="mb-3 text-primary">Stages we fund.</h2>
         <p class="md:text-2xl font-display font-light">
           We believe in creators retaining ownership of their companies and IP.
           Our investments are structured around
@@ -96,11 +95,20 @@
         </div>
       </div>
     </section>
+    <section id="sponsorships" class="w-full text-lg py-12">
+      <div class="relative lg:grid lg:grid-cols-2 lg:gap-8 max-w-6xl mx-auto">
+        <h2 class="lg:text-center">Proud to sponsor.</h2>
+        <div class="mt-3 lg:mt-0 text-center">
+          <a href="https://www.performanceandxr.com/" target="_blank"><nuxt-img class="mx-auto mb-8 w-1/2" src="/img/pxr.jpeg" alt="PXR" sizes="sm:100vw md:50vw lg:400px" /></a>
+          <a href="https://tag.hexagram.ca/gamerella/" target="_blank"><nuxt-img class="mx-auto w-1/2" src="/img/gamerella.png" alt="Gamerella" sizes="sm:100vw md:50vw lg:400px" /></a>
+        </div>
+      </div>
+    </section>
 
     <section>
       <div
         class="text-center text-2xl border-body border-2 max-w-5xl mx-auto p-10">
-        Is your company interested in supporting the fund and our mandate?<br />
+        Is your studio interested in supporting the fund and our mandate?<br />
         <a href="mailto:hello@weirdghosts.ca" class="underline"
           >Get in touch.</a
         >

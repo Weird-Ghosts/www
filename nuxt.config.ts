@@ -15,6 +15,7 @@ export default defineNuxtConfig({
     'nuxt-content-assets', // make sure to add before content!
     "@nuxt/content",
     "@nuxtjs/tailwindcss",
+    '@nuxt/image',
     "dayjs-nuxt",
   ],
   tailwindcss: {
