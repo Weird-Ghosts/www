@@ -46,7 +46,7 @@
             with a long-term vision and commitment to equitable worker-centric
             structures.
           </p>
-          <div></div>
+        
         </div>
       </div>
     </section>
@@ -151,8 +151,6 @@
             nonprofits DMG Toronto and Gamma Space Collaborative Studio.
           </p>
         </div>
-
-        <p class="mb-6"></p>
       </div>
     </section>
     <section>
