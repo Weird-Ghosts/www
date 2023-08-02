@@ -20,6 +20,17 @@
         </div>
       </div>
     </div>
+    <template #not-found>
+      <div class="heading md:py-16 flex flex-wrap mx-auto">
+        <div class="w-full h-full text-lg">
+          <div class="article max-w-5xl mx-auto">
+            <h1 class="article-title">
+              Sorry, no post here!
+            </h1>
+          </div>
+        </div>
+      </div>
+    </template>
   </ContentDoc>
 </template>
 
