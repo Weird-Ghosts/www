@@ -37,6 +37,7 @@
   }
 }
 #body {
+  @apply mt-12 lg:mt-0 lg:order-2 lg:col-span-1;
   h4 a {
     @apply font-bold no-underline;
   }
