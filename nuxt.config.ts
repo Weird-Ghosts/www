@@ -1,19 +1,8 @@
 export default defineNuxtConfig({
-  extends: [
-    'nuxt-seo-kit'
-  ],
   devtools: { enabled: true },
   css: [
     '@/assets/css/main.css',
   ],
-runtimeConfig: {
-    public: {
-      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://weirdghosts.ca',
-      siteName: 'Weird Ghosts',
-      siteDescription: 'An impact fund for underrepresented video game studio founders.',
-      language: 'en-CA',
-    }
-  },
   postcss: {
     plugins: {
       'tailwindcss/nesting': {},
