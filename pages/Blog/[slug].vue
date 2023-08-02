@@ -1,36 +1,36 @@
-<template>
-  <ContentDoc v-slot="{ doc }">
-    <div class="heading md:py-16 flex flex-wrap mx-auto">
-      <div class="w-full h-full text-lg">
-        <div class="article max-w-5xl mx-auto">
-          <h1 class="article-title">
-            {{ doc.title }}
-          </h1>
-          <p class="article-date text-center">
-            {{ $dayjs(doc.date).format("MMMM D, YYYY") }}
-          </p>
+<ContentDoc v-slot="{ doc }">
+    <template #default>
+      <div class="heading md:py-16 flex flex-wrap mx-auto">
+        <div class="w-full h-full text-lg">
+          <div class="article max-w-5xl mx-auto">
+            <h1 class="article-title">
+              {{ doc.title }}
+            </h1>
+            <p class="article-date text-center">
+              {{ $dayjs(doc.date).format("MMMM D, YYYY") }}
+            </p>
 
-          <article class="prose lg:prose-xl">
-            <ContentRenderer :value="doc" />
-          </article>
-          <BlogNav />
-          <div class="w-12 mx-auto">
-            <OGhost />
+            <article class="prose lg:prose-xl">
+              <ContentRenderer :value="doc" />
+            </article>
+            <BlogNav />
+            <div class="w-12 mx-auto">
+              <OGhost />
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </ContentDoc>
-</template>
-<template #not-found>
-  <div class="heading md:py-16 flex flex-wrap mx-auto">
-    <div class="w-full h-full text-lg">
-      <div class="article max-w-5xl mx-auto">
-        <h1 class="article-title">Sorry, no post here!</h1>
+    </template>
+    <template #not-found>
+      <div class="heading md:py-16 flex flex-wrap mx-auto">
+        <div class="w-full h-full text-lg">
+          <div class="article max-w-5xl mx-auto">
+            <h1 class="article-title">Sorry, no post here!</h1>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</template>
+    </template>
+  </ContentDoc>
 
 <style lang="postcss">
 .article {
