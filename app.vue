@@ -16,19 +16,6 @@
 
 <script setup lang="ts">
 const { page } = useContent();
-// onBeforeMount(() => {
-//   // When component is about to mount, add body class.
-//   if (page.value && page.value.bodyClass) {
-//     document.body.classList.add(page.value.bodyClass);
-//   }
-// });
-
-// onUnmounted(() => {
-//   // When component unmounts, remove body class.
-//   if (page.value && page.value.bodyClass) {
-//     document.body.classList.remove(page.value.bodyClass);
-//   }
-// });
 
 useContentHead(page);
 useHead({

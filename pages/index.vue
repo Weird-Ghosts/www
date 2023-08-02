@@ -2,7 +2,7 @@
   <div class="py-6 sm:pb-16 md:pb-20 lg:pb-28">
     <section class="lg:pt-20">
       <div class="lg:grid lg:grid-cols-2 lg:gap-8 mx-auto max-w-6xl">
-        <div class="mb-12 mx-auto w-96 lg:w-full lg:mx-0">
+        <div class="mb-12 mx-auto md:w-96 lg:w-full lg:mx-0">
           <Logo class="mx-auto w-full" />
         </div>
         <div class="bg-primary md:bg-transparent md:p-0">
@@ -61,12 +61,12 @@
           so that we recoup only after your team is paid.
         </p>
       </div>
-      <div class="max-w-6xl mx-auto grid grid-cols-2 gap-2">
+      <div class="max-w-6xl mx-auto md:grid md:grid-cols-2 md:gap-2">
         <div>
           <h4 class="text-lg md:text-2xl font-bold text-primary mb-4">
             Baby Ghosts Peer Accelerator and Grant
           </h4>
-          <p class="mb-4 lg:m-0 lg:mb-0 text-xl">
+          <p class="mb-4 lg:m-0 lg:mb-0 text-base md:text-xl">
             Grants for teams that need to get studio operations up and running
             and support with impact strategy. Prepares teams for further
             investment and game development.
@@ -77,11 +77,11 @@
           <p class="mt-auto lg:mb-0 text-lg font-mono">$25,000 / 6 months</p>
         </div>
 
-        <div>
+        <div class="mt-8 md:mt-0">
           <h4 class="text-lg md:text-2xl font-bold text-primary mb-4">
             Shared Earnings Investment
           </h4>
-          <p class="mb-4 lg:m-0 lg:mb-0 text-xl">
+          <p class="mb-4 lg:m-0 lg:mb-0 text-base md:text-xl">
             For more established teams (and Baby Ghosts alumni) with a project
             in any stage of development. Allows key personnel to focus full time
             on studio development.
@@ -95,13 +95,13 @@
         </div>
       </div>
     </section>
-    <section id="sponsorships" class="w-full text-lg py-12">
+    <section id="sponsorships" class="w-full text-lg py-4 lg:py-12">
       <div class="relative lg:grid lg:grid-cols-2 lg:gap-8 max-w-6xl mx-auto">
-        <h2 class="lg:text-center">Proud to sponsor.</h2>
+        <h2 class="text-center mb-8 lg:mb-0 lg:text-left">Proud to sponsor.</h2>
         <div class="mt-3 lg:mt-0 text-center">
           <a href="https://www.performanceandxr.com/" target="_blank"
             ><nuxt-img
-              class="mx-auto mb-8 w-1/2"
+              class="mx-auto mb-8"
               src="/img/pxr.jpeg"
               sizes="sm:100vw md:50vw lg:400px"
               alt="PXR"
@@ -109,7 +109,7 @@
           /></a>
           <a href="https://tag.hexagram.ca/gamerella/" target="_blank">
             <nuxt-img
-              class="mx-auto w-1/2"
+              class="mx-auto"
               src="/img/gamerella.png"
               alt="Gamerella"
               sizes="sm:100vw md:50vw lg:400px"
@@ -152,21 +152,29 @@
           Cofounders and general partners Eileen and Jennie met in 2020 to make
           this dream a reality.
         </p>
-        <div class="flex mt-6">
-          <div class="w-1/3 mr-4">
-            <nuxt-img format="webp" sizes="sm:100vw md:50vw lg:400px" src="/img/eileen.jpg" alt="Eileen" />
+        <div class="md:flex mt-6">
+          <div class="w-full md:w-1/3 mr-4">
+            <nuxt-img
+              format="webp"
+              sizes="sm:100vw md:50vw lg:400px"
+              src="/img/eileen.jpg"
+              alt="Eileen" />
           </div>
-          <p class="w-2/3 text-2xl">
+          <p class="w-full md:w-2/3 text-xl md:text-2xl mt-4 md:mt-0">
             <strong>Eileen Mary Holowka, PhD</strong> (they/she) is a writer and
             game dev living in Montreal. They have been involved in video game
             and digital media communities for over 10 years.
           </p>
         </div>
-        <div class="flex mt-6">
-          <div class="w-1/3 mr-4">
-            <nuxt-img format="webp" sizes="sm:100vw md:50vw lg:400px" src="/img/jennie.jpeg" alt="Jennie" />
+        <div class="md:flex mt-6">
+          <div class="w-full md:w-1/3 mr-4">
+            <nuxt-img
+              format="webp"
+              sizes="sm:100vw md:50vw lg:400px"
+              src="/img/jennie.jpeg"
+              alt="Jennie" />
           </div>
-          <p class="w-2/3 text-2xl">
+          <p class="w-full md:w-2/3 text-xl md:text-2xl mt-4 md:mt-0">
             <strong>Jennie Robinson Faber</strong> (she) is a community arts
             advocate and organizer, software developer and leader in the IDM
             industry for over 15 years. She co-founded the videogame arts
@@ -181,7 +189,7 @@
       </p>
     </section>
     <section class="mx-auto max-w-4xl">
-      <h2>Land Acknowledgement</h2>
+      <h2>Land acknowledgement.</h2>
       <p class="mb-6">
         Although we refer to ourselves as a Canada-wide fund, we acknowledge
         that what we now call Canada is built on unceded Indigneous territory.
