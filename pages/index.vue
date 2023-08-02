@@ -100,13 +100,20 @@
         <h2 class="lg:text-center">Proud to sponsor.</h2>
         <div class="mt-3 lg:mt-0 text-center">
           <a href="https://www.performanceandxr.com/" target="_blank"
-            ><img class="mx-auto mb-8 w-1/2" src="/img/pxr.jpeg" alt="PXR"
+            ><nuxt-img
+              class="mx-auto mb-8 w-1/2"
+              src="/img/pxr.jpeg"
+              sizes="sm:100vw md:50vw lg:400px"
+              alt="PXR"
+              format="webp"
           /></a>
           <a href="https://tag.hexagram.ca/gamerella/" target="_blank">
             <nuxt-img
               class="mx-auto w-1/2"
               src="/img/gamerella.png"
-              alt="Gamerella" />
+              alt="Gamerella"
+              sizes="sm:100vw md:50vw lg:400px"
+              format="webp" />
           </a>
         </div>
       </div>
@@ -147,7 +154,7 @@
         </p>
         <div class="flex mt-6">
           <div class="w-1/3 mr-4">
-            <img src="/img/eileen.jpg" alt="Eileen" />
+            <nuxt-img format="webp" sizes="sm:100vw md:50vw lg:400px" src="/img/eileen.jpg" alt="Eileen" />
           </div>
           <p class="w-2/3 text-2xl">
             <strong>Eileen Mary Holowka, PhD</strong> (they/she) is a writer and
@@ -157,7 +164,7 @@
         </div>
         <div class="flex mt-6">
           <div class="w-1/3 mr-4">
-            <img src="/img/jennie.jpeg" alt="Jennie" />
+            <nuxt-img format="webp" sizes="sm:100vw md:50vw lg:400px" src="/img/jennie.jpeg" alt="Jennie" />
           </div>
           <p class="w-2/3 text-2xl">
             <strong>Jennie Robinson Faber</strong> (she) is a community arts
