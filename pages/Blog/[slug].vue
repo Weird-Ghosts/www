@@ -1,5 +1,6 @@
-<ContentDoc v-slot="{ doc }">
-    <template #default>
+<template>
+  <ContentDoc>
+    <template #default="{ doc }">
       <div class="heading md:py-16 flex flex-wrap mx-auto">
         <div class="w-full h-full text-lg">
           <div class="article max-w-5xl mx-auto">
@@ -31,6 +32,7 @@
       </div>
     </template>
   </ContentDoc>
+</template>
 
 <style lang="postcss">
 .article {
