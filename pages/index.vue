@@ -99,8 +99,8 @@
       <div class="relative lg:grid lg:grid-cols-2 lg:gap-8 max-w-6xl mx-auto">
         <h2 class="lg:text-center">Proud to sponsor.</h2>
         <div class="mt-3 lg:mt-0 text-center">
-          <a href="https://www.performanceandxr.com/" target="_blank"><nuxt-img class="mx-auto mb-8 w-1/2" src="/img/pxr.jpeg" alt="PXR" sizes="sm:100vw md:50vw lg:400px" /></a>
-          <a href="https://tag.hexagram.ca/gamerella/" target="_blank"><nuxt-img class="mx-auto w-1/2" src="/img/gamerella.png" alt="Gamerella" sizes="sm:100vw md:50vw lg:400px" /></a>
+          <a href="https://www.performanceandxr.com/" target="_blank"><img class="mx-auto mb-8 w-1/2" src="/img/pxr.jpeg" alt="PXR" /></a>
+          <a href="https://tag.hexagram.ca/gamerella/" target="_blank"><img class="mx-auto w-1/2" src="/img/gamerella.png" alt="Gamerella" /></a>
         </div>
       </div>
     </section>
