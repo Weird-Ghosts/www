@@ -154,7 +154,7 @@
         </p>
         <div class="flex mt-6">
           <div class="w-1/3 mr-4">
-            <img src="/img/eileen.jpg" alt="Eileen" />
+            <nuxt-img format="webp" sizes="sm:100vw md:50vw lg:400px" src="/img/eileen.jpg" alt="Eileen" />
           </div>
           <p class="w-2/3 text-2xl">
             <strong>Eileen Mary Holowka, PhD</strong> (they/she) is a writer and
@@ -164,7 +164,7 @@
         </div>
         <div class="flex mt-6">
           <div class="w-1/3 mr-4">
-            <img src="/img/jennie.jpeg" alt="Jennie" />
+            <nuxt-img format="webp" sizes="sm:100vw md:50vw lg:400px" src="/img/jennie.jpeg" alt="Jennie" />
           </div>
           <p class="w-2/3 text-2xl">
             <strong>Jennie Robinson Faber</strong> (she) is a community arts
