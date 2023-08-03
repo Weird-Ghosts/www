@@ -152,7 +152,7 @@
         </p>
         <div class="md:flex mt-6">
           <div class="w-full md:w-1/3 mr-4">
-            <nuxt-img width="200" src="/img/eileen.jpg" alt="Eileen" />
+            <nuxt-img width="300" src="/img/eileen.jpg" alt="Eileen" />
           </div>
           <p class="w-full md:w-2/3 text-xl md:text-2xl mt-4 md:mt-0">
             <strong>Eileen Mary Holowka, PhD</strong> (they/she) is a writer and
@@ -162,7 +162,7 @@
         </div>
         <div class="md:flex mt-6">
           <div class="w-full md:w-1/3 mr-4">
-            <nuxt-img width="200" src="/img/jennie.jpeg" alt="Jennie" />
+            <nuxt-img width="300" src="/img/jennie.jpeg" alt="Jennie" />
           </div>
           <p class="w-full md:w-2/3 text-xl md:text-2xl mt-4 md:mt-0">
             <strong>Jennie Robinson Faber</strong> (she) is a community arts
