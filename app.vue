@@ -1,5 +1,6 @@
 <template>
   <div>
+    <GhostFloat />
     <Banner />
     <main class="layout" role="main">
       <Navigation />
