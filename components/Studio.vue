@@ -4,7 +4,6 @@
     <div class="flex-shrink-0">
       <nuxt-img
         loading="lazy"
-        format="png"
         height="128"
         class="mx-auto"
         fit="contain"

@@ -105,15 +105,13 @@
               src="/img/pxr.jpeg"
               width="300"
               alt="PXR"
-              format="webp"
           /></a>
           <a href="https://tag.hexagram.ca/gamerella/" target="_blank">
             <nuxt-img
               class="mx-auto"
               width="300"
               src="/img/gamerella.png"
-              alt="Gamerella"
-              format="webp" />
+              alt="Gamerella" />
           </a>
         </div>
       </div>
@@ -155,7 +153,6 @@
         <div class="md:flex mt-6">
           <div class="w-full md:w-1/3 mr-4">
             <nuxt-picture
-              format="webp"
               sizes="sm:100vw md:50vw lg:400px"
               src="/img/eileen.jpg"
               alt="Eileen" />
@@ -169,7 +166,6 @@
         <div class="md:flex mt-6">
           <div class="w-full md:w-1/3 mr-4">
             <nuxt-picture
-              format="webp"
               sizes="sm:100vw md:50vw lg:400px"
               src="/img/jennie.jpeg"
               alt="Jennie" />
