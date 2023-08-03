@@ -1,4 +1,14 @@
+import { showGhost } from './composables/state'
+
 export default defineNuxtConfig({
+  hooks: {
+    'app:beforeMount': () => {
+      showGhost.value = true
+    },
+    'app:mounted': () => {
+      showGhost.value = false
+    }
+  },
   devtools: { enabled: true },
   css: [
     '@/assets/css/main.css',
