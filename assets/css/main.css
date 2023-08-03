@@ -141,7 +141,10 @@ nav {
   }
 
   a {
-    @apply font-display text-center font-bold uppercase border-2 border-body text-body bg-white leading-relaxed no-underline outline-none relative cursor-pointer w-52 px-2 py-2;
+    @apply font-display text-center font-bold
+    uppercase border-2 border-body text-body
+     bg-white leading-relaxed no-underline outline-none
+     relative cursor-pointer w-52 px-2 py-2;
 
     &:after {
       @apply absolute h-full w-full;
@@ -208,7 +211,7 @@ nav {
   ol {
     @apply list-none list-outside;
     li {
-      @apply mb-8 text-3xl;
+      @apply mb-8 md:text-3xl text-base;
     }
   }
 }
