@@ -1,13 +1,8 @@
 import { showGhost } from './composables/state'
 
 export default defineNuxtConfig({
-  hooks: {
-    'app:beforeMount': () => {
-      showGhost.value = true
-    },
-    'app:mounted': () => {
-      showGhost.value = false
-    }
+  image: {
+    provider: 'netlify',
   },
   devtools: { enabled: true },
   css: [

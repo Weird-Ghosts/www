@@ -2,13 +2,13 @@
   <div
     class="p-6 max-w-sm bg-white text-body justify-between items-center text-center space-y-4 h-full mx-auto">
     <div class="flex-shrink-0">
-      <nuxt-picture
+      <nuxt-img
         loading="lazy"
-        provider="netlify"
-        quality="80"
         format="webp"
+        quality="80"
         height="128"
-        class="h-32 mx-auto"
+        class="mx-auto"
+        fit="contain"
         :src="studio.logo"
         alt="Logo" />
     </div>
