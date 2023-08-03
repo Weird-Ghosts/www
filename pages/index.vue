@@ -100,16 +100,17 @@
         <h2 class="text-center mb-8 lg:mb-0 lg:text-left">Proud to sponsor.</h2>
         <div class="mt-3 lg:mt-0 text-center">
           <a href="https://www.performanceandxr.com/" target="_blank"
-            ><nuxt-img
-              class="mx-auto mb-8"
+            ><nuxt-picture
+              class="mx-auto mb-8 w-1/2"
               src="/img/pxr.jpeg"
               sizes="sm:100vw md:50vw lg:400px"
               alt="PXR"
               format="webp"
           /></a>
           <a href="https://tag.hexagram.ca/gamerella/" target="_blank">
-            <nuxt-img
-              class="mx-auto"
+
+            <nuxt-picture
+              class="mx-auto w-1/2"
               src="/img/gamerella.png"
               alt="Gamerella"
               sizes="sm:100vw md:50vw lg:400px"
@@ -154,7 +155,7 @@
         </p>
         <div class="md:flex mt-6">
           <div class="w-full md:w-1/3 mr-4">
-            <nuxt-img
+            <nuxt-picture
               format="webp"
               sizes="sm:100vw md:50vw lg:400px"
               src="/img/eileen.jpg"
@@ -168,7 +169,7 @@
         </div>
         <div class="md:flex mt-6">
           <div class="w-full md:w-1/3 mr-4">
-            <nuxt-img
+            <nuxt-picture
               format="webp"
               sizes="sm:100vw md:50vw lg:400px"
               src="/img/jennie.jpeg"

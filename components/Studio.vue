@@ -2,7 +2,7 @@
   <div
     class="p-6 max-w-sm bg-white text-body justify-between items-center text-center space-y-4 h-full mx-auto">
     <div class="flex-shrink-0">
-      <img class="h-32 mx-auto" :src="studio.logo" alt="Logo" />
+      <nuxt-picture format="webp" height="128" class="h-32 mx-auto" :src="studio.logo" alt="Logo" />
     </div>
     <div>
       <div class="text-2xl font-bold text-center">{{ studio.name }}</div>
