@@ -4,8 +4,7 @@
     <div class="flex-shrink-0">
       <nuxt-img
         loading="lazy"
-        format="webp"
-        quality="80"
+        format="png"
         height="128"
         class="mx-auto"
         fit="contain"
