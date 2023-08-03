@@ -4,7 +4,7 @@
     <div class="mt-10 mx-auto max-w-screen-xl">
       <section class="relative">
         <div
-          class="mt-6 md:grid md:grid-cols-3 md:gap-4 items-start align-items-start">
+          class="mt-6 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-4 items-start align-items-start">
           <ContentList :query="query">
             <template #default="{ list }">
               <div
