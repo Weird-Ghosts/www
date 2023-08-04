@@ -63,9 +63,9 @@
       </div>
       <div class="max-w-6xl mx-auto md:grid md:grid-cols-2 md:gap-2">
         <div>
-          <h4 class="text-lg md:text-2xl font-bold text-primary mb-4">
+          <h3 class="text-lg md:text-2xl font-bold text-primary mb-4">
             Baby Ghosts Peer Accelerator and Grant
-          </h4>
+          </h3>
           <p class="mb-4 lg:m-0 lg:mb-0 text-base md:text-xl">
             Grants for teams that need to get studio operations up and running
             and support with impact strategy. Prepares teams for further
@@ -78,9 +78,9 @@
         </div>
 
         <div class="mt-8 md:mt-0">
-          <h4 class="text-lg md:text-2xl font-bold text-primary mb-4">
+          <h3 class="text-lg md:text-2xl font-bold text-primary mb-4">
             Shared Earnings Investment
-          </h4>
+          </h3>
           <p class="mb-4 lg:m-0 lg:mb-0 text-base md:text-xl">
             For more established teams (and Baby Ghosts alumni) with a project
             in any stage of development. Allows key personnel to focus full time

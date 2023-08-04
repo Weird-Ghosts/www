@@ -16,17 +16,14 @@
 
 <script setup lang="ts">
 const { page } = useContent();
-
+import { ref, watch } from "vue";
+let baseClasses =
+  "overflow-x-hidden text-base leading-normal flex flex-col min-h-screen text-body antialiased font-body";
+let bodyClass = ref(baseClasses);
 useContentHead(page);
 useHead({
   bodyAttrs: {
-    class: (() => {
-      let baseClasses =
-        "overflow-x-hidden text-base leading-normal flex flex-col min-h-screen text-body antialiased font-body";
-      return page.value && page.value.bodyClass
-        ? `${baseClasses} ${page.value.bodyClass}`
-        : baseClasses;
-    })(),
+    class: bodyClass,
   },
 
   meta: [
@@ -51,6 +48,17 @@ useHead({
     },
   ],
 });
+
+watch(
+  () => (page && page.value ? page.value.bodyClass : null),
+  (newVal) => {
+    if (newVal) {
+      bodyClass.value = `${baseClasses} ${newVal}`;
+    } else {
+      bodyClass.value = baseClasses;
+    }
+  }
+);
 
 const defaultTitle = "Weird Ghosts";
 const defaultDescription =
