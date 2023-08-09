@@ -1,4 +1,4 @@
-import { showGhost } from './composables/state'
+import { showGhost } from "./composables/state";
 
 export default defineNuxtConfig({
   image: {
@@ -18,10 +18,11 @@ export default defineNuxtConfig({
     "@nuxt/content",
     "@nuxtjs/tailwindcss",
     "@nuxt/image",
-    "@nuxtjs/plausible", "@nuxt/devtools"
+    "@nuxtjs/plausible",
+    "@nuxt/devtools",
     "dayjs-nuxt",
   ],
-  
+
   plausible: {
     domain: "weirdghosts.ca",
     autoOutboundTracking: true,
