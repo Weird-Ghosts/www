@@ -2,33 +2,37 @@ import { showGhost } from './composables/state'
 
 export default defineNuxtConfig({
   image: {
-    provider: 'netlify',
+    provider: "netlify",
   },
   devtools: { enabled: true },
-  css: [
-    '@/assets/css/main.css',
-  ],
+  css: ["@/assets/css/main.css"],
   postcss: {
     plugins: {
-      'tailwindcss/nesting': {},
+      "tailwindcss/nesting": {},
       tailwindcss: {},
       autoprefixer: {},
     },
   },
   modules: [
-    'nuxt-content-assets', // make sure to add before content!
+    "nuxt-content-assets", // make sure to add before content!
     "@nuxt/content",
     "@nuxtjs/tailwindcss",
-    '@nuxt/image',
+    "@nuxt/image",
+    "@nuxtjs/plausible", "@nuxt/devtools"
     "dayjs-nuxt",
   ],
+  
+  plausible: {
+    domain: "weirdghosts.ca",
+    autoOutboundTracking: true,
+  },
   tailwindcss: {
-    cssPath: '~/assets/css/main.css',
-    configPath: 'tailwind.config',
+    cssPath: "~/assets/css/main.css",
+    configPath: "tailwind.config",
     exposeConfig: false,
     exposeLevel: 2,
     config: {},
-    injectPosition: 'first',
+    injectPosition: "first",
     viewer: true,
   },
   dayjs: {
@@ -40,13 +44,11 @@ export default defineNuxtConfig({
   content: {
     documentDriven: true,
     markdown: {
-      remarkPlugins: [
-        "remark-smartypants",
-      ],
+      remarkPlugins: ["remark-smartypants"],
       toc: {
         depth: 4,
-        searchDepth: 4
-      }
+        searchDepth: 4,
+      },
     },
   },
   router: {
