@@ -20,6 +20,7 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxtjs/plausible",
     "@nuxt/devtools",
+    "@formkit/nuxt",
     "dayjs-nuxt",
   ],
 

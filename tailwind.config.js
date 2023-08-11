@@ -6,6 +6,7 @@ module.exports = {
     "./plugins/**/*.{js,ts}",
     "./nuxt.config.{js,ts}",
     "./**/*.vue",
+    "./tailwind-theme.js",
   ],
   future: {
     removeDeprecatedGapUtilities: true,
@@ -26,5 +27,8 @@ module.exports = {
       },
     },
   },
-  plugins: [require("@tailwindcss/forms", "@tailwindcss/typography")],
+  plugins: [
+    require("@tailwindcss/forms", "@tailwindcss/typography"),
+    FormKitVariants,
+  ],
 };
