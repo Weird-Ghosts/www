@@ -395,7 +395,7 @@
                 >, and our
                 <nuxt-link to="https://learn.weirdghosts.ca"
                   >Learn site</nuxt-link
-                >.
+                >!
               </p>
             </label>
             <div class="mt-1 sm:mt-0 sm:col-span-2">
