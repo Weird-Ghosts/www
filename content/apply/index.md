@@ -25,3 +25,9 @@ Applications for Early funding are currently closed. Please [get in touch](mailt
 <!-- :apply-now-button -->
 
 ::
+
+::application-form
+
+#title
+Apply for funding
+::
