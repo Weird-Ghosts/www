@@ -694,6 +694,21 @@
     p-limit "^3.1.0"
     readable-stream "^4.0.0"
 
+"@formkit/addons@^0.18.0":
+  version "0.18.0"
+  resolved "https://registry.yarnpkg.com/@formkit/addons/-/addons-0.18.0.tgz#fbdb9accaebc64fe25c23cf715de20d254938ba2"
+  integrity sha512-v5OcQVNvZvfqUMpD5eScc9YP0753fpASeW9LT+lc98QMp5SsCettseXPK/H3YKAqvSC86YP66S8mJX5STfrIJg==
+  dependencies:
+    "@formkit/auto-animate" latest
+    "@formkit/core" "0.18.0"
+    "@formkit/inputs" "0.18.0"
+    "@formkit/utils" "0.18.0"
+
+"@formkit/auto-animate@latest":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@formkit/auto-animate/-/auto-animate-0.7.0.tgz#7a68df578e972d63d999378571ce6e012d9059ae"
+  integrity sha512-RczHUr0AhRPssREoNdRjLfk2b/id9/DFnbIq18QM8L7E4zNV3XH+WO480EZ46BQHDEsv76YPJ0JbG2Y2i3GfXw==
+
 "@formkit/core@0.18.0":
   version "0.18.0"
   resolved "https://registry.yarnpkg.com/@formkit/core/-/core-0.18.0.tgz#ccfbf7741b1ea335db6e868178af992643b3fc96"
