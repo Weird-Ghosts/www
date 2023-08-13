@@ -21,6 +21,7 @@
   </ContentDoc>
 </template>
 <script setup lang="ts">
+definePageMeta({ documentDriven: { page: false } });
 import type { QueryBuilderParams } from "@nuxt/content/dist/runtime/types";
 const query: QueryBuilderParams = {
   path: "/blog",

@@ -28,12 +28,18 @@
         name="yourName"
         id="yourName"
         label="Name"
+        value="Alex Ramirez"
         help="Your full name"
         placeholder="Alex Ramirez"
         validation="required"
         validation-visibility="live" />
-      <FormKit type="email" name="email" id="email" label="Email address" />
       <FormKit
+        type="email"
+        value="jennie@jenniefaber.com"
+        name="email"
+        id="email"
+        label="Email address" />
+      <!-- <FormKit
         type="text"
         name="coapplicantName"
         id="coapplicantName"
@@ -53,16 +59,16 @@
         label="Collaboration experience"
         rows="6"
         placeholder="Tell us about your experience (if any) founding or participating in a startup, student group, co-op, ad hoc collective, or any other organization with multiple collaborators."
-        help="Tell us about your experience collaborating with others." />
+        help="Tell us about your experience collaborating with others." /> -->
     </FormKit>
-    <FormKit
+    <!-- <FormKit
       type="file"
       label="Creative assets"
       name="creative"
       help="Please upload a portfolio of your work."
-      accept=".jpg,.png,.pdf" />
+      accept=".jpg,.png,.pdf" /> -->
 
-    <FormKit
+    <!-- <FormKit
       type="text"
       label="Studio name"
       placeholder="What is the name of your studio, if you have one?"
@@ -145,7 +151,7 @@
       name="eligibility"
       :value="true"
       validation="accepted"
-      validation-visibility="dirty" />
+      validation-visibility="dirty" /> -->
   </FormKit>
 </template>
 
@@ -167,15 +173,16 @@ export default {
         .join("&");
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (event) => {
+      const myForm = event.target;
+      console.log(myForm.value);
       fetch("/index.html", {
         method: "POST",
         headers: new Headers({
           "Content-Type": "multipart/form-data",
         }),
         body: encode({
-          "form-name": e.target.getAttribute("name"),
-          ...formData.value,
+          ...myForm.value,
         }),
       })
         .then((response) => {

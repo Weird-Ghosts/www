@@ -55,7 +55,7 @@
         <p class="md:text-2xl font-display font-light">
           We believe in creators retaining ownership of their companies and IP.
           Our investments are structured around
-          <NuxtLink to="/blog/how-we-make-investments/"
+          <NuxtLink to="/blog/how-we-make-investments"
             >shared earnings</NuxtLink
           >
           so that we recoup only after your team is paid.

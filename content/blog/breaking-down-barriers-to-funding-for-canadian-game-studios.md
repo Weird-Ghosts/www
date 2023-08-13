@@ -72,7 +72,7 @@ In terms of time and commitment, we **made our application as short as possible*
 
 ### Risks, Repayment, and Autonomy
 
-As mentioned above, we offer no-strings-attached grants and mentorship for early studios to build their first demo and prepare for future funding applications. We also offer investments with recoup, using a Shared Earnings Agreement. [Read our blog post](https://weirdghosts.ca/blog/how-we-make-investments/) for more details, but **the shared earnings model allows us to recoup enough to support other studios, while also allowing studios to pay themselves first.**
+As mentioned above, we offer no-strings-attached grants and mentorship for early studios to build their first demo and prepare for future funding applications. We also offer investments with recoup, using a Shared Earnings Agreement. [Read our blog post](https://weirdghosts.ca/blog/how-we-make-investments) for more details, but **the shared earnings model allows us to recoup enough to support other studios, while also allowing studios to pay themselves first.**
 
 The Shared Earnings Agreement puts more risk on Weird Ghosts than early studios and allows for slower, more affordable payback. This is the first time this kind of model has been used in games, but we’re hopeful that it can offer more sustainable futures for studios.
 
