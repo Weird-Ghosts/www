@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application Form</title>
+</head>
+
+<body>
+  <form action="/" method="post" id="apply-form" enctype="multipart/form-data">
+    <input type="hidden" id="form-name" name="form-name" value="TEST-baby-ghosts-2023">
+    <label>
+      Save my progress as I type
+      <input type="checkbox" name="save" value="true">
+    </label>
+    <div id="aboutYou">
+      <label for="yourName">
+        Name
+        <input type="text" name="yourName" id="yourName" value="Alex Ramirez" placeholder="Alex Ramirez" required>
+        <small>Your full name</small>
+      </label>
+      <label for="email">
+        Email address
+        <input type="email" value="jennie@jenniefaber.com" name="email" id="email">
+      </label>
+    </div>
+    <label for="creative">
+      Creative assets
+      <input type="file" name="creative" id="creative" accept=".jpg,.png,.pdf">
+      <small>Please upload a portfolio of your work.</small>
+    </label>
+    <input type="submit" value="Submit Application">
+  </form>
+</body>
+
+</html>
