@@ -65,12 +65,12 @@
         placeholder="Tell us about your experience (if any) founding or participating in a startup, student group, co-op, ad hoc collective, or any other organization with multiple collaborators."
         help="Tell us about your experience collaborating with others." /> -->
     </FormKit>
-    <FormKit
+    <!-- <FormKit
       type="file"
       label="Creative assets"
       name="creative"
       help="Please upload a portfolio of your work."
-      accept=".jpg,.png,.pdf" />
+      accept=".jpg,.png,.pdf" /> -->
 
     <!-- <FormKit
       type="text"
@@ -177,39 +177,30 @@ export default {
         .join("&");
     };
 
-    const handleSubmit = (e) => {
-      const myForm = document.getElementById("apply-form");
-      const formDataObj = new FormData(myForm);
+    const handleSubmit = async (values, helpers) => {
+      // Your handling code here
+      // 'values' will contain the form data
+      // 'helpers' can be used to control the form state, like setting errors
 
-      // Converting FormData to an object
-      const formData = {};
-      for (const [key, value] of formDataObj.entries()) {
-        formData[key] = value;
-      }
-
-      // Using your encode function
-      const encodedData = encode(formData);
-
-      fetch("/thanks", {
-        method: "POST",
-        body: encodedData,
-      })
-        .then(async (response) => {
-          console.log(response.status);
-          const text = await response.text();
-          console.log("Response body:", text); // Log the response body
-          if (response.status == 200) {
-            formSubmitted.value = true;
-            alert("Form submitted successfully!");
-          } else {
-            alert("There was an error submitting the form.");
-          }
-        })
-        .catch((error) => {
-          console.log("====================================");
-          console.log(`error in submitting the form data:${error}`);
-          console.log("====================================");
+      try {
+        const response = await fetch("/thanks.html", {
+          method: "POST",
+          body: JSON.stringify(values),
+          headers: {
+            "Content-Type": "application/json",
+          },
         });
+
+        if (response.status === 200) {
+          formSubmitted.value = true;
+          console.log(response.body);
+          alert("Form submitted successfully!");
+        } else {
+          alert("There was an error submitting the form.");
+        }
+      } catch (error) {
+        console.log(`error in submitting the form data: ${error}`);
+      }
     };
 
     return {
