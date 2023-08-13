@@ -1,7 +1,6 @@
 <template>
   <FormKit
     type="form"
-    action="/thanks.html"
     method="POST"
     @submit="handleSubmit"
     :plugins="[
@@ -14,6 +13,7 @@
     name="TEST-baby-ghosts-2023"
     id="apply-form"
     data-netlify="true"
+    data-netlify-honeypot="true"
     netlify
     v-if="!formSubmitted">
     <FormKit
@@ -194,18 +194,16 @@ export default {
         method: "POST",
         body: encodedData,
       })
-        .then((response) => {
+        .then(async (response) => {
           console.log(response.status);
-          return response.text().then((text) => {
-            console.log("Response body:", text); // Log the response body
-
-            if (response.status == 200) {
-              formSubmitted.value = true;
-              alert("Form submitted successfully!");
-            } else {
-              alert("There was an error submitting the form.");
-            }
-          });
+          const text = await response.text();
+          console.log("Response body:", text); // Log the response body
+          if (response.status == 200) {
+            formSubmitted.value = true;
+            alert("Form submitted successfully!");
+          } else {
+            alert("There was an error submitting the form.");
+          }
         })
         .catch((error) => {
           console.log("====================================");

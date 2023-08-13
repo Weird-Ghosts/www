@@ -33,7 +33,9 @@
     </template>
   </ContentDoc>
 </template>
-
+<script setup lang="ts">
+definePageMeta({ documentDriven: { page: false, surround: false } });
+</script>
 <style lang="postcss">
 .article {
   @apply bg-white text-black p-4;

@@ -218,3 +218,6 @@
     </section>
   </div>
 </template>
+<script setup lang="ts">
+definePageMeta({ documentDriven: { page: false, surround: false } });
+</script>
