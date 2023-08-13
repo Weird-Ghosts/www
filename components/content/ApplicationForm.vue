@@ -173,9 +173,10 @@ export default {
         .join("&");
     };
 
-    const handleSubmit = (event) => {
-      const myForm = event.target;
-      console.log(myForm.value);
+    const handleSubmit = (e) => {
+      console.log("event", e);
+      const myForm = e;
+      console.log(myForm);
       fetch("/index.html", {
         method: "POST",
         headers: new Headers({
