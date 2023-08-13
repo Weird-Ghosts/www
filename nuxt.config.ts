@@ -29,9 +29,6 @@ export default defineNuxtConfig({
     "dayjs-nuxt",
   ],
 
-  app: {
-    pageTransition: { name: "page", mode: "out-in" },
-  },
   plausible: {
     domain: "weirdghosts.ca",
     autoOutboundTracking: true,
@@ -67,6 +64,8 @@ export default defineNuxtConfig({
     },
   },
   app: {
+    pageTransition: { name: "page", mode: "out-in" },
+
     head: {
       htmlAttrs: { lang: "en" },
       bodyAttrs: { class: "antialiased font-body" },

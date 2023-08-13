@@ -1,6 +1,8 @@
 <template>
   <FormKit
     type="form"
+    action="/thanks.html"
+    method="POST"
     @submit="handleSubmit"
     :plugins="[
       createLocalStoragePlugin({
@@ -63,12 +65,12 @@
         placeholder="Tell us about your experience (if any) founding or participating in a startup, student group, co-op, ad hoc collective, or any other organization with multiple collaborators."
         help="Tell us about your experience collaborating with others." /> -->
     </FormKit>
-    <!-- <FormKit
+    <FormKit
       type="file"
       label="Creative assets"
       name="creative"
       help="Please upload a portfolio of your work."
-      accept=".jpg,.png,.pdf" /> -->
+      accept=".jpg,.png,.pdf" />
 
     <!-- <FormKit
       type="text"
@@ -177,12 +179,23 @@ export default {
 
     const handleSubmit = (e) => {
       const myForm = document.getElementById("apply-form");
-      const formData = new FormData(myForm);
-      fetch("/", {
+      const formDataObj = new FormData(myForm);
+
+      // Converting FormData to an object
+      const formData = {};
+      for (const [key, value] of formDataObj.entries()) {
+        formData[key] = value;
+      }
+
+      // Using your encode function
+      const encodedData = encode(formData);
+
+      fetch("/thanks.html", {
         method: "POST",
-        body: new URLSearchParams(formData).toString(),
+        body: encodedData,
       })
         .then((response) => {
+          console.log(response.status);
           return response.text().then((text) => {
             console.log("Response body:", text); // Log the response body
 
