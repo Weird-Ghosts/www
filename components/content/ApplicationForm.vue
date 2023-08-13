@@ -180,15 +180,7 @@ export default {
       console.log(formData);
       fetch("/", {
         method: "POST",
-        // headers: new Headers({
-        //   "Content-Type": "multipart/form-data",
-        // }),
-        // body: new URLSearchParams(formData).toString(),
-
-        body: encode({
-          "form-name": myForm.getAttribute("name"),
-          ...formData,
-        }),
+        body: new URLSearchParams(formData).toString(),
       })
         .then((response) => {
           if (response.status == 200) {
