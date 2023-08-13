@@ -3,7 +3,7 @@ import { showGhost } from "./composables/state";
 export default defineNuxtConfig({
   nitro: {
     prerender: {
-      routes: ["/apply"],
+      routes: ["/apply", "/thanks"],
     },
   },
   image: {

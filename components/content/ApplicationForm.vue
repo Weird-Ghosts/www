@@ -13,7 +13,7 @@
     name="TEST-baby-ghosts-2023"
     id="apply-form"
     data-netlify="true"
-    data-netlify-honeypot="true"
+    data-netlify-honeypot="bot-field"
     netlify
     v-if="!formSubmitted">
     <FormKit
@@ -190,7 +190,7 @@ export default {
       // Using your encode function
       const encodedData = encode(formData);
 
-      fetch("/thanks.html", {
+      fetch("/thanks", {
         method: "POST",
         body: encodedData,
       })
@@ -202,6 +202,7 @@ export default {
             formSubmitted.value = true;
             alert("Form submitted successfully!");
           } else {
+            e.preventDefault();
             alert("There was an error submitting the form.");
           }
         })
