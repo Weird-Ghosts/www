@@ -186,6 +186,7 @@ export default {
         // body: new URLSearchParams(formData).toString(),
 
         body: encode({
+          "form-name": myForm.getAttribute("name"),
           ...formData,
         }),
       })
