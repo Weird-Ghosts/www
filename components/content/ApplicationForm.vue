@@ -183,11 +183,11 @@ export default {
         headers: new Headers({
           "Content-Type": "multipart/form-data",
         }),
-        body: new URLSearchParams(formData).toString(),
+        // body: new URLSearchParams(formData).toString(),
 
-        // body: encode({
-        //   ...e.value,
-        // }),
+        body: encode({
+          ...formData,
+        }),
       })
         .then((response) => {
           if (response.status == 200) {
