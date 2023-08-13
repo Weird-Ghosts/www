@@ -1,6 +1,11 @@
 import { showGhost } from "./composables/state";
 
 export default defineNuxtConfig({
+  nitro: {
+    prerender: {
+      routes: ["/apply"],
+    },
+  },
   image: {
     provider: "netlify",
   },

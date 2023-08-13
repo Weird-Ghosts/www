@@ -13,6 +13,11 @@
     data-netlify="true"
     v-if="!formSubmitted">
     <FormKit
+      type="hidden"
+      id="form-name"
+      name="form-name"
+      value="TEST-baby-ghosts-2023" />
+    <FormKit
       type="checkbox"
       name="save"
       :value="true"
