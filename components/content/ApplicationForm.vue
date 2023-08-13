@@ -174,16 +174,13 @@ export default {
     };
 
     const handleSubmit = (e) => {
-      console.log("event", e);
-      const myForm = e;
-      console.log(myForm);
-      fetch("/index.html", {
+      fetch("/", {
         method: "POST",
         headers: new Headers({
           "Content-Type": "multipart/form-data",
         }),
         body: encode({
-          ...myForm.value,
+          ...e.value,
         }),
       })
         .then((response) => {
