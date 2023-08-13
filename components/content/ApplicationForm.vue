@@ -180,9 +180,9 @@ export default {
       console.log(formData);
       fetch("/", {
         method: "POST",
-        headers: new Headers({
-          "Content-Type": "multipart/form-data",
-        }),
+        // headers: new Headers({
+        //   "Content-Type": "multipart/form-data",
+        // }),
         // body: new URLSearchParams(formData).toString(),
 
         body: encode({
