@@ -12,6 +12,7 @@
     name="TEST-baby-ghosts-2023"
     id="apply-form"
     data-netlify="true"
+    netlify
     v-if="!formSubmitted">
     <FormKit
       type="hidden"
@@ -177,19 +178,21 @@ export default {
     const handleSubmit = (e) => {
       const myForm = document.getElementById("apply-form");
       const formData = new FormData(myForm);
-      console.log(formData);
       fetch("/", {
         method: "POST",
         body: new URLSearchParams(formData).toString(),
       })
         .then((response) => {
-          if (response.status == 200) {
-            formSubmitted.value = true;
-            alert("Form submitted successfully!");
-          } else {
-            alert("There was an error submitting the form.");
-            console.log("there was an error: " + response.status);
-          }
+          return response.text().then((text) => {
+            console.log("Response body:", text); // Log the response body
+
+            if (response.status == 200) {
+              formSubmitted.value = true;
+              alert("Form submitted successfully!");
+            } else {
+              alert("There was an error submitting the form.");
+            }
+          });
         })
         .catch((error) => {
           console.log("====================================");

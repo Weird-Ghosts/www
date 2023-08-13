@@ -29,6 +29,9 @@ export default defineNuxtConfig({
     "dayjs-nuxt",
   ],
 
+  app: {
+    pageTransition: { name: "page", mode: "out-in" },
+  },
   plausible: {
     domain: "weirdghosts.ca",
     autoOutboundTracking: true,
