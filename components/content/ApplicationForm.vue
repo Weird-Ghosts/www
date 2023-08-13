@@ -188,21 +188,21 @@ export default {
         // body: encode({
         //   ...e.value,
         // }),
-      });
-      .then((response) => {
-        if (response.status == 200) {
-          formSubmitted.value = true;
-          alert("Form submitted successfully!");
-        } else {
-          alert("There was an error submitting the form.");
-          console.log("there was an error: " + response.status);
-        }
       })
-      .catch((error) => {
-        console.log("====================================");
-        console.log(`error in submitting the form data:${error}`);
-        console.log("====================================");
-      });
+        .then((response) => {
+          if (response.status == 200) {
+            formSubmitted.value = true;
+            alert("Form submitted successfully!");
+          } else {
+            alert("There was an error submitting the form.");
+            console.log("there was an error: " + response.status);
+          }
+        })
+        .catch((error) => {
+          console.log("====================================");
+          console.log(`error in submitting the form data:${error}`);
+          console.log("====================================");
+        });
     };
 
     return {
