@@ -1,7 +1,7 @@
 <template>
   <FormKit
     type="form"
-    @submit="submitForm"
+    @submit="handleSubmit"
     :plugins="[
       createLocalStoragePlugin({
         control: 'save',
@@ -32,6 +32,28 @@
         placeholder="Alex Ramirez"
         validation="required"
         validation-visibility="live" />
+      <FormKit type="email" name="email" id="email" label="Email address" />
+      <FormKit
+        type="text"
+        name="coapplicantName"
+        id="coapplicantName"
+        label="Co-applicants names (if any)" />
+
+      <FormKit
+        type="text"
+        name="locations"
+        id="locations"
+        label="Location(s)"
+        placeholder="Vancouver, BC and Winnipeg, MB"
+        help="City/province where you live now or plan to be based" />
+      <FormKit
+        type="textarea"
+        name="founderExperience"
+        id="founderExperience"
+        label="Collaboration experience"
+        rows="6"
+        placeholder="Tell us about your experience (if any) founding or participating in a startup, student group, co-op, ad hoc collective, or any other organization with multiple collaborators."
+        help="Tell us about your experience collaborating with others." />
     </FormKit>
     <FormKit
       type="file"
@@ -39,36 +61,6 @@
       name="creative"
       help="Please upload a portfolio of your work."
       accept=".jpg,.png,.pdf" />
-
-    <FormKit type="text" name="yourName" id="yourName" label="Your name" />
-    <FormKit
-      type="text"
-      name="coapplicantName"
-      id="coapplicantName"
-      label="Co-applicants names (if any)" />
-    <FormKit
-      type="email"
-      name="email"
-      id="email"
-      label="Email address"
-      class="block w-full rounded-md transition duration-150 ease-in-out sm:text-lg sm:leading-5" />
-
-    <FormKit
-      type="text"
-      name="locations"
-      id="locations"
-      label="Location(s)"
-      placeholder="Vancouver, BC and Winnipeg, MB"
-      help="City/province where you live now or plan to be based" />
-    <FormKit
-      type="textarea"
-      name="founderExperience"
-      id="founderExperience"
-      label="Collaboration experience"
-      rows="6"
-      placeholder="Tell us about your experience (if any) founding or participating in a startup, student group, co-op, ad hoc collective, or any other organization with multiple collaborators."
-      help="Tell us about your experience collaborating with others."
-      class="form-textarea block w-full transition duration-150 ease-in-out sm:text-lg sm:leading-5" />
 
     <FormKit
       type="text"
@@ -158,10 +150,6 @@
 </template>
 
 <script>
-const submitForm = async (fields) => {
-  await new Promise((r) => setTimeout(r, 1000));
-  alert(JSON.stringify(fields));
-};
 import { createLocalStoragePlugin } from "@formkit/addons";
 
 import { ref } from "vue";
@@ -183,7 +171,7 @@ export default {
       fetch("/index.html", {
         method: "POST",
         headers: new Headers({
-          "Content-Type": "application/x-www-form-urlencoded",
+          "Content-Type": "multipart/form-data",
         }),
         body: encode({
           "form-name": e.target.getAttribute("name"),
@@ -193,8 +181,9 @@ export default {
         .then((response) => {
           if (response.status == 200) {
             formSubmitted.value = true;
-            // root.$scrollTo("body", 400);
+            alert("Form submitted successfully!");
           } else {
+            alert("There was an error submitting the form.");
             console.log("there was an error: " + response.status);
           }
         })
