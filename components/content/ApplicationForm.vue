@@ -190,7 +190,7 @@ export default {
       // Using your encode function
       const encodedData = encode(formData);
 
-      fetch("/thanks", {
+      fetch("/thanks.html", {
         method: "POST",
         body: encodedData,
       })
@@ -202,7 +202,6 @@ export default {
             formSubmitted.value = true;
             alert("Form submitted successfully!");
           } else {
-            e.preventDefault();
             alert("There was an error submitting the form.");
           }
         })
