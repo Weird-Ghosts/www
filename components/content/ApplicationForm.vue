@@ -10,6 +10,7 @@
     use-local-storage
     submit-label="Submit Application"
     name="TEST-baby-ghosts-2023"
+    id="apply-form"
     data-netlify="true"
     v-if="!formSubmitted">
     <FormKit
@@ -174,29 +175,34 @@ export default {
     };
 
     const handleSubmit = (e) => {
+      const myForm = document.getElementById("apply-form");
+      const formData = new FormData(myForm);
+      console.log(formData);
       fetch("/", {
         method: "POST",
         headers: new Headers({
           "Content-Type": "multipart/form-data",
         }),
-        body: encode({
-          ...e.value,
-        }),
+        body: new URLSearchParams(formData).toString(),
+
+        // body: encode({
+        //   ...e.value,
+        // }),
+      });
+      .then((response) => {
+        if (response.status == 200) {
+          formSubmitted.value = true;
+          alert("Form submitted successfully!");
+        } else {
+          alert("There was an error submitting the form.");
+          console.log("there was an error: " + response.status);
+        }
       })
-        .then((response) => {
-          if (response.status == 200) {
-            formSubmitted.value = true;
-            alert("Form submitted successfully!");
-          } else {
-            alert("There was an error submitting the form.");
-            console.log("there was an error: " + response.status);
-          }
-        })
-        .catch((error) => {
-          console.log("====================================");
-          console.log(`error in submitting the form data:${error}`);
-          console.log("====================================");
-        });
+      .catch((error) => {
+        console.log("====================================");
+        console.log(`error in submitting the form data:${error}`);
+        console.log("====================================");
+      });
     };
 
     return {
