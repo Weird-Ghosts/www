@@ -72,7 +72,7 @@ export default {
     ]"
     use-local-storage
     submit-label="Submit Application"
-    name="TEST-baby-ghosts-2023"
+    name="formkit-test-baby-ghosts-2023"
     id="apply-form"
     data-netlify="true"
     data-netlify-honeypot="bot-field"
@@ -82,7 +82,7 @@ export default {
       type="hidden"
       id="form-name"
       name="form-name"
-      value="TEST-baby-ghosts-2023" />
+      value="formkit-test-baby-ghosts-2023" />
     <FormKit
       type="checkbox"
       name="save"
