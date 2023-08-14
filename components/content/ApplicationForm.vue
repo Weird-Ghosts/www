@@ -29,7 +29,7 @@ export default {
       // Using your encode function
       const encodedData = encode(formData);
 
-      fetch("/thanks.html", {
+      fetch("/.netlify/functions/thanks", {
         method: "POST",
         body: encodedData,
       })
