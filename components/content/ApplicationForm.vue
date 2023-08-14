@@ -4,12 +4,20 @@ import { ref, onMounted } from "vue";
 
 // Reactive value to track whether the form has been submitted successfully
 const formSubmitted = ref(false);
+
+onMounted(() => {
+  // Check the URL for the 'success' query parameter when the component is mounted
+  if (window.location.search.includes("success")) {
+    formSubmitted.value = true;
+  }
+});
 </script>
 
 <template>
   <FormKit
     type="form"
     method="POST"
+    action="/apply?success"
     :plugins="[
       createLocalStoragePlugin({
         control: 'save',
