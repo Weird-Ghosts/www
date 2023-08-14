@@ -29,7 +29,7 @@ export default {
       // Using your encode function
       const encodedData = encode(formData);
 
-      fetch("/thanks.html", {
+      fetch("/thanks/", {
         method: "POST",
         body: encodedData,
       })
