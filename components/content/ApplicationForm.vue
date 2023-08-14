@@ -112,6 +112,7 @@ onMounted(() => {
           type="email"
           name="email"
           id="email"
+          validation="required|email"
           placeholder="alex@weirdghosts.ca"
           label="Email address" />
 
@@ -137,6 +138,7 @@ onMounted(() => {
           name="miroLink"
           id="miroLink"
           label="Miro board link"
+          validation="required|url"
           placeholder="https://miro.com/app/board/abcde=/?share_link_id=123456789"
           help="Share the link to the Miro board with your completed Goal Alignment and Pain Point exercises." />
       </FormKit>
@@ -197,7 +199,7 @@ onMounted(() => {
           type="textarea"
           label="Social impact"
           rows="6"
-          help="What is your interest in social impact, and how does that relate to your studio? If you're unsure, please read our blog post, A brief intro to making your indie game studio impactful, and review our Learn site."
+          help="What is your interest in social impact, and how does that relate to your studio?"
           validation="required"
           :validation-messages="{
             required: 'This field is required.',
@@ -212,7 +214,7 @@ onMounted(() => {
       <FormKit
         type="checkbox"
         label="Our studio meets all eligibility requirements"
-        help="Please refer to our FAQ for more information."
+        help="Your studio must be based in Canada, and a majority of founders from an underrepresented identity group."
         name="eligibility"
         :value="true"
         validation="accepted"
