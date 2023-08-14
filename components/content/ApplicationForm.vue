@@ -63,7 +63,7 @@ export default {
   <FormKit
     type="form"
     method="POST"
-    action="/"
+    action="/thanks.html"
     :plugins="[
       createLocalStoragePlugin({
         control: 'save',
