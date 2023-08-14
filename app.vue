@@ -48,7 +48,11 @@ useHead({
     },
   ],
 });
-
+onMounted(() => {
+  if (page.value && page.value.bodyClass) {
+    bodyClass.value = `${baseClasses} ${page.value.bodyClass}`;
+  }
+});
 watch(
   () => (page && page.value ? page.value.bodyClass : null),
   (newVal) => {
