@@ -6,7 +6,6 @@ import { ref, onMounted } from "vue";
 const formSubmitted = ref(false);
 
 onMounted(() => {
-  // Check the URL for the 'success' query parameter when the component is mounted
   if (window.location.search.includes("success")) {
     formSubmitted.value = true;
   }
@@ -15,7 +14,7 @@ onMounted(() => {
 
 <template>
   <div
-    class="text-xl sm:text-xl bg-white z-30 relative p-4 lg:p-12 mt-10 mx-auto max-w-screen-xl">
+    class="text-xl sm:text-xl bg-white z-30 relative p-4 lg:p-12 mx-auto max-w-6xl">
     <div class="flex flex-wrap">
       <div class="mb-12 w-full lg:w-2/3 lg:pr-10">
         <h2 class="text-2xl block mb-6">
