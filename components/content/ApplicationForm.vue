@@ -1,10 +1,8 @@
 <script setup>
 import { createLocalStoragePlugin } from "@formkit/addons";
-
-// Replace this with your actual API endpoint or Netlify serverless function
 const axios = {
   post: (data) =>
-    fetch("/.netlify/functions/thanks", {
+    fetch("/thanks", {
       method: "POST",
       body: new URLSearchParams(data).toString(),
     }),
