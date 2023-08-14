@@ -35,16 +35,15 @@ onMounted(() => {
             detail here, and link to template]
           </li>
         </ol>
-        <p class="bg-fog p-2 mt-2">
-          Questions?
-          <a href="mailto:hello@weirdghosts.ca">Email us</a>!
-        </p>
       </div>
       <div
         class="resources text-fog bg-faxGray text-xl mb-12 max-w-lg lg:w-1/3">
         <div class="p-6">
           Resources to review before applying:
-          <ul>
+          <ul class="list-outside list-disc pl-6">
+            <li>
+              <nuxt-link to="/baby-ghosts">Program details</nuxt-link>
+            </li>
             <li>
               <nuxt-link to="/faq#whats-the-eligibility-criteria-for-funding"
                 >Eligibility criteria</nuxt-link
@@ -57,6 +56,10 @@ onMounted(() => {
               <a href="">Info session video</a>
             </li>
           </ul>
+          <p class="bg-fog p-2 mt-2">
+            Questions?
+            <a href="mailto:hello@weirdghosts.ca">Email us</a>!
+          </p>
         </div>
       </div>
     </div>
