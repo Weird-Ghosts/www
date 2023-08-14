@@ -1,3 +1,65 @@
+<script>
+import { createLocalStoragePlugin } from "@formkit/addons";
+
+import { ref } from "vue";
+
+export default {
+  setup(_, { root }) {
+    const formSubmitted = ref(false);
+    const formData = ref();
+
+    const encode = (data) => {
+      return Object.keys(data)
+        .map(
+          (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+        )
+        .join("&");
+    };
+
+    const handleSubmit = (e) => {
+      const myForm = document.getElementById("apply-form");
+      const formDataObj = new FormData(myForm);
+
+      // Converting FormData to an object
+      const formData = {};
+      for (const [key, value] of formDataObj.entries()) {
+        formData[key] = value;
+      }
+
+      // Using your encode function
+      const encodedData = encode(formData);
+
+      fetch("/thanks.html", {
+        method: "POST",
+        body: encodedData,
+      })
+        .then(async (response) => {
+          console.log(response.status);
+          const text = await response.text();
+          console.log("Response body:", text); // Log the response body
+          if (response.status == 200) {
+            formSubmitted.value = true;
+            alert("Form submitted successfully!");
+          } else {
+            alert("There was an error submitting the form.");
+          }
+        })
+        .catch((error) => {
+          console.log("====================================");
+          console.log(`error in submitting the form data:${error}`);
+          console.log("====================================");
+        });
+    };
+
+    return {
+      createLocalStoragePlugin,
+      formSubmitted,
+      formData,
+      handleSubmit,
+    };
+  },
+};
+</script>
 <template>
   <FormKit
     type="form"
@@ -158,70 +220,6 @@
       validation-visibility="dirty" /> -->
   </FormKit>
 </template>
-
-<script>
-import { createLocalStoragePlugin } from "@formkit/addons";
-
-import { ref } from "vue";
-
-export default {
-  setup(_, { root }) {
-    const formSubmitted = ref(false);
-    const formData = ref();
-
-    const encode = (data) => {
-      return Object.keys(data)
-        .map(
-          (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-        )
-        .join("&");
-    };
-
-    const handleSubmit = (e) => {
-      const myForm = document.getElementById("apply-form");
-      const formDataObj = new FormData(myForm);
-
-      // Converting FormData to an object
-      const formData = {};
-      for (const [key, value] of formDataObj.entries()) {
-        formData[key] = value;
-      }
-
-      // Using your encode function
-      const encodedData = encode(formData);
-
-      fetch("/thanks", {
-        method: "POST",
-        body: encodedData,
-      })
-        .then(async (response) => {
-          console.log(response.status);
-          const text = await response.text();
-          console.log("Response body:", text); // Log the response body
-          if (response.status == 200) {
-            formSubmitted.value = true;
-            alert("Form submitted successfully!");
-          } else {
-            e.preventDefault();
-            alert("There was an error submitting the form.");
-          }
-        })
-        .catch((error) => {
-          console.log("====================================");
-          console.log(`error in submitting the form data:${error}`);
-          console.log("====================================");
-        });
-    };
-
-    return {
-      createLocalStoragePlugin,
-      formSubmitted,
-      formData,
-      handleSubmit,
-    };
-  },
-};
-</script>
 
 <style lang="postcss">
 .resources a {
