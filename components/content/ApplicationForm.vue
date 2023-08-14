@@ -1,28 +1,15 @@
 <script setup>
 import { createLocalStoragePlugin } from "@formkit/addons";
-const axios = {
-  post: (data) =>
-    fetch("/thanks", {
-      method: "POST",
-      body: new URLSearchParams(data).toString(),
-    }),
-};
+import { ref, onMounted } from "vue";
 
-async function handleSubmit(formData) {
-  const res = await axios.post(formData);
-  if (res.status == 200) {
-    alert("Form submitted successfully!");
-  } else {
-    alert("There was an error submitting the form.");
-  }
-}
+// Reactive value to track whether the form has been submitted successfully
+const formSubmitted = ref(false);
 </script>
 
 <template>
   <FormKit
     type="form"
     method="POST"
-    @submit="handleSubmit"
     :plugins="[
       createLocalStoragePlugin({
         control: 'save',
