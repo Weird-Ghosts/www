@@ -139,7 +139,9 @@
                   Tell us about your experience (if any) founding or
                   participating in a startup, student group, co-op, ad hoc
                   collective, or any other organization with multiple
-                  collaborators.
+                  collaborators. How are you interested in incorporating these
+                  values in your studio? If you have no experience, why are you
+                  interested in doing this now?
                 </p>
               </label>
               <div class="mt-1 sm:mt-0 sm:col-span-2">

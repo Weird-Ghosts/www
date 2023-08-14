@@ -122,10 +122,11 @@ ol {
 ol > li {
   position: relative;
   padding-left: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 ol > li:before {
-  @apply absolute top-0 left-0 mt-1 flex items-center bg-body text-primary text-base
+  @apply absolute top-0 left-0 mt-0 flex items-center bg-body text-primary text-base
   w-8 h-8 rounded-full justify-center font-black;
   content: counter(item);
   counter-increment: item;
