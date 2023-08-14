@@ -16,46 +16,45 @@ export default {
         .join("&");
     };
 
-    const handleSubmit = (e) => {
-      const myForm = document.getElementById("apply-form");
-      const formDataObj = new FormData(myForm);
+    // const handleSubmit = (e) => {
+    //   const myForm = document.getElementById("apply-form");
+    //   const formDataObj = new FormData(myForm);
 
-      // Converting FormData to an object
-      const formData = {};
-      for (const [key, value] of formDataObj.entries()) {
-        formData[key] = value;
-      }
+    //   // Converting FormData to an object
+    //   const formData = {};
+    //   for (const [key, value] of formDataObj.entries()) {
+    //     formData[key] = value;
+    //   }
 
-      // Using your encode function
-      const encodedData = encode(formData);
+    //   // Using your encode function
+    //   const encodedData = encode(formData);
 
-      fetch("/.netlify/functions/thanks", {
-        method: "POST",
-        body: encodedData,
-      })
-        .then(async (response) => {
-          console.log(response.status);
-          const text = await response.text();
-          console.log("Response body:", text); // Log the response body
-          if (response.status == 200) {
-            formSubmitted.value = true;
-            alert("Form submitted successfully!");
-          } else {
-            alert("There was an error submitting the form.");
-          }
-        })
-        .catch((error) => {
-          console.log("====================================");
-          console.log(`error in submitting the form data:${error}`);
-          console.log("====================================");
-        });
-    };
+    //   fetch("/.netlify/functions/thanks", {
+    //     method: "POST",
+    //     body: encodedData,
+    //   })
+    //     .then(async (response) => {
+    //       console.log(response.status);
+    //       const text = await response.text();
+    //       console.log("Response body:", text); // Log the response body
+    //       if (response.status == 200) {
+    //         formSubmitted.value = true;
+    //         alert("Form submitted successfully!");
+    //       } else {
+    //         alert("There was an error submitting the form.");
+    //       }
+    //     })
+    //     .catch((error) => {
+    //       console.log("====================================");
+    //       console.log(`error in submitting the form data:${error}`);
+    //       console.log("====================================");
+    //     });
+    // };
 
     return {
       createLocalStoragePlugin,
       formSubmitted,
       formData,
-      handleSubmit,
     };
   },
 };
@@ -64,7 +63,7 @@ export default {
   <FormKit
     type="form"
     method="POST"
-    @submit="handleSubmit"
+    action="/"
     :plugins="[
       createLocalStoragePlugin({
         control: 'save',
