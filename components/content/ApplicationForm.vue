@@ -1,14 +1,18 @@
-<script setup>
-import { createLocalStoragePlugin } from "@formkit/addons";
-import { ref, onMounted } from "vue";
+<script>
+import { defineComponent, ref, onMounted } from 'vue';
+import { useRouter } from 'vue-router';
 
-// Reactive value to track whether the form has been submitted successfully
-const formSubmitted = ref(false);
-
-onMounted(() => {
-  if (window.location.search.includes("success")) {
-    formSubmitted.value = true;
-  }
+export default defineComponent({
+  setup() {
+    const formSubmitted = ref(false);
+    const router = useRouter();
+    onMounted(() => {
+      if (router.currentRoute.value.query.success) {
+        formSubmitted.value = true;
+      }
+    });
+    return { formSubmitted };
+  },
 });
 </script>
 
