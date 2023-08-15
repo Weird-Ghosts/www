@@ -123,15 +123,28 @@ onMounted(() => {
           name="locations"
           id="locations"
           label="Location(s)"
+          validation="required"
+          :validation-messages="{
+            required: 'This field is required.',
+          }"
           placeholder="Vancouver, BC and Winnipeg, MB"
-          help="City/province where you live now or plan to be based" />
+          help="City and province where you live now or plan to be based. Include all locations for team members." />
         <FormKit
           type="textarea"
           name="founderExperience"
           id="founderExperience"
           label="Collaboration experience"
           rows="6"
-          help="Tell us about your experience (if any) founding or participating in a startup, student group, co-op, ad hoc collective, or any other organization with multiple collaborators." />
+          validation="required"
+          :validation-messages="{
+            required: 'This field is required.',
+          }"
+          help="Have you founded or
+          participated in a startup, student group, co-op,
+          ad hoc collective, or any other organization with
+          multiple collaborators? If yes, how do you plan on
+          incorporating your experiences? If no, why are you
+          interested in exploring these concepts now?" />
       </FormKit>
       <FormKit type="group" name="aboutYourStudio" id="aboutYourStudio">
         <h3>Alignment Exercises</h3>
@@ -169,7 +182,14 @@ onMounted(() => {
           type="textarea"
           label="Team"
           rows="6"
-          help="Provide names, pronouns, and short bios for each of your team members, if any. What will you be looking for in collaborators or co-op members if you intend to grow your team?" />
+          validation="required"
+          :validation-messages="{
+            required: 'This field is required.',
+          }"
+          help="Provide names, pronouns, and short bios for
+          each of your team members. What will you be looking
+          for in collaborators or co-op members if you intend
+          to grow your team?" />
 
         <FormKit
           type="textarea"
@@ -185,7 +205,8 @@ onMounted(() => {
           type="textarea"
           label="Game"
           rows="6"
-          help="Tell us about the game you are working on now, if applicable." />
+          help="Tell us about the game you are working on now,
+          if applicable." />
 
         <FormKit
           type="textarea"
@@ -229,7 +250,7 @@ onMounted(() => {
   </div>
 </template>
 
-<style lang="postcss">
+<style lang="postcss" scoped>
 h3 {
   @apply font-black text-3xl uppercase leading-6 text-gray-900 mt-12;
   &:first-child {
