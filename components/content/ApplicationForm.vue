@@ -1,6 +1,6 @@
 <script setup>
 import { createLocalStoragePlugin } from "@formkit/addons";
-import { defineComponent, ref, onMounted } from "vue";
+import { ref, onMounted } from "vue";
 import { useRouter } from "vue-router";
 
 const formSubmitted = ref(false);
@@ -11,34 +11,6 @@ onMounted(() => {
     formSubmitted.value = true;
   }
 });
-
-// const handleSubmit = (e) => {
-//   const applicationForm = document.getElementById("apply-form");
-//   let formData = new FormData(applicationForm);
-//   formData.append("form-name", "formkit-test-baby-ghosts-2023"); // Add the form name here
-
-//   $fetch("/.netlify/functions/thanks", {
-//     method: "POST",
-//     body: new URLSearchParams(formData).toString(),
-//   })
-//     .then(async (response) => {
-//       console.log(response.status);
-//       const text = await response.text();
-//       console.log("Response body:", text); // Log the response body
-//       if (response.status == 200) {
-//         formSubmitted.value = true;
-//         alert("Form submitted successfully!");
-//       } else {
-//         alert("There was an error submitting the form.");
-//       }
-//     })
-//     .catch((error) => {
-//       console.log("====================================");
-//       console.log(`error in submitting the form data:${error}`);
-//       console.log("====================================");
-//     });
-//   return { formSubmitted };
-// };
 </script>
 
 <template>
@@ -189,6 +161,7 @@ onMounted(() => {
           <FormKit
             type="text"
             label="Studio name"
+            name="studioName"
             help="What is the name of your studio?"
             validation="required"
             :validation-messages="{
@@ -198,6 +171,7 @@ onMounted(() => {
           <FormKit
             type="textarea"
             label="Concept"
+            name="concept"
             rows="6"
             help="Describe your dream studio, including business structures you’re interested in, size, and values."
             validation="required"
@@ -207,6 +181,7 @@ onMounted(() => {
 
           <FormKit
             type="textarea"
+            name="team"
             label="Team"
             rows="6"
             help="Provide names, pronouns, and short bios for each of your team members, if any. What will you be looking for in collaborators or co-op members if you intend to grow your team?" />
@@ -224,11 +199,13 @@ onMounted(() => {
           <FormKit
             type="textarea"
             label="Game"
+            name="game"
             rows="6"
             help="Tell us about the game you are working on now, if applicable." />
 
           <FormKit
             type="textarea"
+            name="financialSustainability"
             label="Financial sustainability"
             rows="6"
             help="Briefly, what are your initial ideas about how your studio will approach financial sustainability? Where will your revenue come from and how will you distribute it?"
@@ -240,6 +217,7 @@ onMounted(() => {
           <FormKit
             type="textarea"
             label="Social impact"
+            name="socialImpact"
             rows="6"
             help="What is your interest in social impact, and how does that relate to your studio?"
             validation="required"
