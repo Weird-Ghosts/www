@@ -1,15 +1,43 @@
 <script setup>
 import { createLocalStoragePlugin } from "@formkit/addons";
-import { ref, onMounted } from "vue";
+import { defineComponent, ref, onMounted } from "vue";
+import { useRouter } from "vue-router";
 
-// Reactive value to track whether the form has been submitted successfully
 const formSubmitted = ref(false);
 
+const router = useRouter();
 onMounted(() => {
-  if (window.location.search.includes("success")) {
+  if (router.currentRoute.value.query.success) {
     formSubmitted.value = true;
   }
 });
+
+const handleSubmit = (e) => {
+  const applicationForm = document.getElementById("apply-form");
+  let formData = new FormData(applicationForm);
+
+  fetch("/apply?success", {
+    method: "POST",
+    body: new URLSearchParams(formData).toString(),
+  })
+    .then(async (response) => {
+      console.log(response.status);
+      const text = await response.text();
+      console.log("Response body:", text); // Log the response body
+      if (response.status == 200) {
+        formSubmitted.value = true;
+        alert("Form submitted successfully!");
+      } else {
+        alert("There was an error submitting the form.");
+      }
+    })
+    .catch((error) => {
+      console.log("====================================");
+      console.log(`error in submitting the form data:${error}`);
+      console.log("====================================");
+    });
+  return { formSubmitted };
+};
 </script>
 
 <template>
@@ -86,6 +114,7 @@ onMounted(() => {
           }),
         ]"
         use-local-storage
+        @submit="handleSubmit"
         submit-label="Submit Application"
         name="formkit-test-baby-ghosts-2023"
         id="apply-form"
@@ -146,14 +175,14 @@ onMounted(() => {
         </FormKit>
         <FormKit type="group" name="aboutYourStudio" id="aboutYourStudio">
           <h3>Alignment Exercises</h3>
-          <FormKit
+          <!-- <FormKit
             type="text"
             name="miroLink"
             id="miroLink"
             label="Miro board link"
             validation="required|url"
             placeholder="https://miro.com/app/board/abcde=/?share_link_id=123456789"
-            help="Share the link to the Miro board with your completed Goal Alignment and Pain Point exercises." />
+            help="Share the link to the Miro board with your completed Goal Alignment and Pain Point exercises." /> -->
         </FormKit>
         <FormKit type="group" name="aboutYourStudio" id="aboutYourStudio">
           <h3>About Your Studio</h3>
