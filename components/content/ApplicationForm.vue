@@ -1,30 +1,4 @@
 <script setup>
-const handleSubmit = (e) => {
-  const applicationForm = document.getElementById("apply-form");
-  let formData = new FormData(applicationForm);
-
-  fetch("/apply?success", {
-    method: "POST",
-    body: new URLSearchParams(formData).toString(),
-  })
-    .then(async (response) => {
-      console.log(response.status);
-      const text = await response.text();
-      console.log("Response body:", text); // Log the response body
-      if (response.status == 200) {
-        formSubmitted.value = true;
-        alert("Form submitted successfully!");
-      } else {
-        alert("There was an error submitting the form.");
-      }
-    })
-    .catch((error) => {
-      console.log("====================================");
-      console.log(`error in submitting the form data:${error}`);
-      console.log("====================================");
-    });
-};
-
 import { createLocalStoragePlugin } from "@formkit/addons";
 import { ref, onMounted } from "vue";
 
@@ -104,7 +78,6 @@ onMounted(() => {
 
       <FormKit
         type="form"
-        @submit="handleSubmit"
         method="POST"
         action="/apply?success"
         :plugins="[
@@ -173,15 +146,14 @@ onMounted(() => {
         </FormKit>
         <FormKit type="group" name="aboutYourStudio" id="aboutYourStudio">
           <h3>Alignment Exercises</h3>
-          <!-- <FormKit
+          <FormKit
             type="text"
             name="miroLink"
             id="miroLink"
             label="Miro board link"
-            value="https://miro.com/"
             validation="required|url"
             placeholder="https://miro.com/app/board/abcde=/?share_link_id=123456789"
-            help="Share the link to the Miro board with your completed Goal Alignment and Pain Point exercises." /> -->
+            help="Share the link to the Miro board with your completed Goal Alignment and Pain Point exercises." />
         </FormKit>
         <FormKit type="group" name="aboutYourStudio" id="aboutYourStudio">
           <h3>About Your Studio</h3>
