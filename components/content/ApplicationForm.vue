@@ -114,6 +114,7 @@ onMounted(() => {
           type="email"
           name="email"
           id="email"
+          help="Where should we send notifications about your application status?"
           validation="required|email"
           placeholder="alex@weirdghosts.ca"
           label="Email address" />
@@ -124,9 +125,6 @@ onMounted(() => {
           id="locations"
           label="Location(s)"
           validation="required"
-          :validation-messages="{
-            required: 'This field is required.',
-          }"
           placeholder="Vancouver, BC and Winnipeg, MB"
           help="City and province where you live now or plan to be based. Include all locations for team members." />
         <FormKit
@@ -136,9 +134,6 @@ onMounted(() => {
           label="Collaboration experience"
           rows="6"
           validation="required"
-          :validation-messages="{
-            required: 'This field is required.',
-          }"
           help="Have you founded or
           participated in a startup, student group, co-op,
           ad hoc collective, or any other organization with
@@ -164,9 +159,7 @@ onMounted(() => {
           label="Studio name"
           help="What is the name of your studio?"
           validation="required"
-          :validation-messages="{
-            required: 'This field is required.',
-          }" />
+          />
 
         <FormKit
           type="textarea"
@@ -174,18 +167,13 @@ onMounted(() => {
           rows="6"
           help="Describe your dream studio, including business structures you’re interested in, size, and values."
           validation="required"
-          :validation-messages="{
-            required: 'This field is required.',
-          }" />
+          />
 
         <FormKit
           type="textarea"
           label="Team"
           rows="6"
           validation="required"
-          :validation-messages="{
-            required: 'This field is required.',
-          }"
           help="Provide names, pronouns, and short bios for
           each of your team members. What will you be looking
           for in collaborators or co-op members if you intend
@@ -197,9 +185,7 @@ onMounted(() => {
           rows="6"
           help="If you have already incorporated or have been operating, tell us about your structure and history, including any fundraising experience and work done to date."
           validation="required"
-          :validation-messages="{
-            required: 'This field is required.',
-          }" />
+          />
 
         <FormKit
           type="textarea"
@@ -214,9 +200,7 @@ onMounted(() => {
           rows="6"
           help="Briefly, what are your initial ideas about how your studio will approach financial sustainability? Where will your revenue come from and how will you distribute it?"
           validation="required"
-          :validation-messages="{
-            required: 'This field is required.',
-          }" />
+          />
 
         <FormKit
           type="textarea"
@@ -224,9 +208,7 @@ onMounted(() => {
           rows="6"
           help="What is your interest in social impact, and how does that relate to your studio?"
           validation="required"
-          :validation-messages="{
-            required: 'This field is required.',
-          }" />
+          />
         <FormKit
           type="file"
           label="Creative assets"
