@@ -16,7 +16,7 @@ const handleSubmit = (e) => {
   const applicationForm = document.getElementById("apply-form");
   let formData = new FormData(applicationForm);
 
-  fetch("/apply?success", {
+  $fetch("/.netlify/functions/thanks.js", {
     method: "POST",
     body: new URLSearchParams(formData).toString(),
   })
