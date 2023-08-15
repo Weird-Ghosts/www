@@ -16,7 +16,7 @@ const handleSubmit = (e) => {
   const applicationForm = document.getElementById("apply-form");
   let formData = new FormData(applicationForm);
 
-  $fetch("/.netlify/functions/thanks.js", {
+  $fetch("/.netlify/functions/thanks", {
     method: "POST",
     body: new URLSearchParams(formData).toString(),
   })
@@ -107,7 +107,7 @@ const handleSubmit = (e) => {
       <FormKit
         type="form"
         method="POST"
-        action="/.netlify/functions/thanks.js"
+        action="/.netlify/functions/thanks"
         :plugins="[
           createLocalStoragePlugin({
             control: 'save',
