@@ -12,33 +12,33 @@ onMounted(() => {
   }
 });
 
-const handleSubmit = (e) => {
-  const applicationForm = document.getElementById("apply-form");
-  let formData = new FormData(applicationForm);
-  formData.append("form-name", "formkit-test-baby-ghosts-2023"); // Add the form name here
+// const handleSubmit = (e) => {
+//   const applicationForm = document.getElementById("apply-form");
+//   let formData = new FormData(applicationForm);
+//   formData.append("form-name", "formkit-test-baby-ghosts-2023"); // Add the form name here
 
-  $fetch("/.netlify/functions/thanks", {
-    method: "POST",
-    body: new URLSearchParams(formData).toString(),
-  })
-    .then(async (response) => {
-      console.log(response.status);
-      const text = await response.text();
-      console.log("Response body:", text); // Log the response body
-      if (response.status == 200) {
-        formSubmitted.value = true;
-        alert("Form submitted successfully!");
-      } else {
-        alert("There was an error submitting the form.");
-      }
-    })
-    .catch((error) => {
-      console.log("====================================");
-      console.log(`error in submitting the form data:${error}`);
-      console.log("====================================");
-    });
-  return { formSubmitted };
-};
+//   $fetch("/.netlify/functions/thanks", {
+//     method: "POST",
+//     body: new URLSearchParams(formData).toString(),
+//   })
+//     .then(async (response) => {
+//       console.log(response.status);
+//       const text = await response.text();
+//       console.log("Response body:", text); // Log the response body
+//       if (response.status == 200) {
+//         formSubmitted.value = true;
+//         alert("Form submitted successfully!");
+//       } else {
+//         alert("There was an error submitting the form.");
+//       }
+//     })
+//     .catch((error) => {
+//       console.log("====================================");
+//       console.log(`error in submitting the form data:${error}`);
+//       console.log("====================================");
+//     });
+//   return { formSubmitted };
+// };
 </script>
 
 <template>
@@ -108,14 +108,13 @@ const handleSubmit = (e) => {
       <FormKit
         type="form"
         method="POST"
-        action="/.netlify/functions/thanks"
+        action="/apply?success"
         :plugins="[
           createLocalStoragePlugin({
             control: 'save',
           }),
         ]"
         use-local-storage
-        @submit="handleSubmit"
         submit-label="Submit Application"
         name="formkit-test-baby-ghosts-2023"
         id="apply-form"
