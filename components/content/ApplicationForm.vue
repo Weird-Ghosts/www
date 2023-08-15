@@ -15,6 +15,7 @@ onMounted(() => {
 const handleSubmit = (e) => {
   const applicationForm = document.getElementById("apply-form");
   let formData = new FormData(applicationForm);
+  formData.append("form-name", "formkit-test-baby-ghosts-2023"); // Add the form name here
 
   $fetch("/.netlify/functions/thanks", {
     method: "POST",
