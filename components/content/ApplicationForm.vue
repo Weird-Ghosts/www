@@ -157,6 +157,7 @@ onMounted(() => {
         <FormKit
           type="text"
           label="Studio name"
+          name="studioName"
           help="What is the name of your studio?"
           validation="required"
           />
@@ -164,6 +165,7 @@ onMounted(() => {
         <FormKit
           type="textarea"
           label="Concept"
+          name="studioConcept"
           rows="6"
           help="Describe your dream studio, including business structures you’re interested in, size, and values."
           validation="required"
@@ -172,6 +174,7 @@ onMounted(() => {
         <FormKit
           type="textarea"
           label="Team"
+          name="studioTeam"
           rows="6"
           validation="required"
           help="Provide names, pronouns, and short bios for
@@ -182,6 +185,7 @@ onMounted(() => {
         <FormKit
           type="textarea"
           label="Background"
+          name="studioBackground"
           rows="6"
           help="If you have already incorporated or have been operating, tell us about your structure and history, including any fundraising experience and work done to date."
           validation="required"
@@ -190,6 +194,7 @@ onMounted(() => {
         <FormKit
           type="textarea"
           label="Game"
+          name="studioGame"
           rows="6"
           help="Tell us about the game you are working on now,
           if applicable." />
@@ -197,6 +202,7 @@ onMounted(() => {
         <FormKit
           type="textarea"
           label="Financial sustainability"
+          name="studioSustainability"
           rows="6"
           help="Briefly, what are your initial ideas about how your studio will approach financial sustainability? Where will your revenue come from and how will you distribute it?"
           validation="required"
@@ -205,6 +211,7 @@ onMounted(() => {
         <FormKit
           type="textarea"
           label="Social impact"
+          name="studioImpact"
           rows="6"
           help="What is your interest in social impact, and how does that relate to your studio?"
           validation="required"
@@ -212,7 +219,7 @@ onMounted(() => {
         <FormKit
           type="file"
           label="Creative assets"
-          name="creative"
+          name="studioCreative"
           help="If you have multiple images you'd like to share, please combine them into one file. PDF, PNG, or JPG accepted (max 8MB)."
           accept=".jpg,.png,.pdf" />
       </FormKit>
