@@ -107,7 +107,7 @@ const handleSubmit = (e) => {
       <FormKit
         type="form"
         method="POST"
-        action="/apply?success"
+        action="/.netlify/functions/thanks.js"
         :plugins="[
           createLocalStoragePlugin({
             control: 'save',
