@@ -6,7 +6,7 @@ export default {
   global: {
     fieldset: "max-w-md border border-gray-400 rounded px-2 pb-1",
     // help: "text-xs text-gray-500",
-    help: "text-lg font-normal text-gray-600",
+    help: "text-sm md:text-base text-lg font-normal text-gray-600",
     // inner: "formkit-disabled:bg-gray-200 formkit-disabled:cursor-not-allowed formkit-disabled:pointer-events-none",inner:
     inner:
       "max-w-lg rounded-md shadow-sm formkit-disabled:bg-gray-200 formkit-disabled:cursor-not-allowed formkit-disabled:pointer-events-none",

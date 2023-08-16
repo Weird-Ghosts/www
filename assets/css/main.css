@@ -212,8 +212,14 @@ nav {
   ol {
     @apply list-none list-outside;
     li {
-      @apply mb-8 md:text-3xl text-base;
+      @apply mb-8 lg:text-3xl text-base;
+      &:last-child {
+        @apply mb-0;
+      }
     }
+  }
+  .resources {
+    @apply mt-8   md:mt-0;
   }
 }
 .page--resources {

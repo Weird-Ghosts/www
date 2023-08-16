@@ -1,22 +1,49 @@
 <script setup>
 import { createLocalStoragePlugin } from "@formkit/addons";
-import { ref, onMounted } from "vue";
 import { useRouter } from "vue-router";
-
-const formSubmitted = ref(false);
+import { onMounted, ref } from "vue";
 
 const router = useRouter();
-onMounted(() => {
-  if (router.currentRoute.value.query.success) {
+const formSubmitted = ref(false);
+
+watch(router.currentRoute, (to) => {
+  if (to.query.success) {
     formSubmitted.value = true;
+  } else {
+    formSubmitted.value = false;
   }
 });
+
+const handleSubmit = async (e) => {
+  const applicationForm = document.getElementById("apply-form");
+  let formData = new FormData(applicationForm);
+
+  try {
+    const response = await fetch("/apply?success", {
+      method: "POST",
+      body: formData,
+    });
+
+    if (response.status == 200) {
+      await navigateTo({
+        path: "/apply",
+        query: {
+          success: true,
+        },
+      });
+    } else {
+      alert("There was an error submitting the form.");
+    }
+  } catch (error) {
+    console.log(`error in submitting the form data: ${error}`);
+  }
+};
 </script>
 
 <template>
   <div
     class="text-xl sm:text-xl bg-white z-30 relative p-4 lg:p-12 mx-auto max-w-screen-xl">
-    <div id="thank-you" v-if="formSubmitted">
+    <div id="thank-you" v-if="formSubmitted == true">
       <div class="mb-12 w-full lg:w-2/3 lg:pr-10">
         <h2 class="text-4xl block mb-6">
           We&#8217;ve received your application!
@@ -29,7 +56,7 @@ onMounted(() => {
     </div>
     <div id="application" v-else>
       <div class="flex flex-wrap">
-        <div class="mb-12 w-full lg:w-2/3 lg:pr-10">
+        <div class="w-full md:w-2/3 md:pr-10">
           <h2 class="text-2xl block mb-6">
             A few important things before you apply:
           </h2>
@@ -49,44 +76,42 @@ onMounted(() => {
             </li>
           </ol>
         </div>
-        <div
-          class="resources text-fog bg-faxGray text-xl mb-12 max-w-lg lg:w-1/3">
-          <div class="p-6">
-            Resources to review before applying:
-            <ul class="list-outside list-disc pl-6">
-              <li>
-                <nuxt-link to="/baby-ghosts">Program details</nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/faq#whats-the-eligibility-criteria-for-funding"
-                  >Eligibility criteria</nuxt-link
-                >
-              </li>
-              <li>
-                <nuxt-link to="/faq">FAQ</nuxt-link>
-              </li>
-              <li>
-                <a href="">Info session video</a>
-              </li>
-            </ul>
-            <p class="bg-fog p-2 mt-2">
-              Questions?
-              <a href="mailto:hello@weirdghosts.ca">Email us</a>!
-            </p>
-          </div>
+        <div class="resources md:text-xl max-w-lg md:w-1/3">
+          Resources to review before applying:
+          <ul class="list-outside list-disc pl-6">
+            <li>
+              <nuxt-link to="/baby-ghosts">Program details</nuxt-link>
+            </li>
+            <li>
+              <nuxt-link to="/faq#whats-the-eligibility-criteria-for-funding"
+                >Eligibility criteria</nuxt-link
+              >
+            </li>
+            <li>
+              <nuxt-link to="/faq">FAQ</nuxt-link>
+            </li>
+            <li>
+              <a href="">Info session video</a>
+            </li>
+          </ul>
+          <p class="bg-fog p-2 mt-2">
+            Questions?
+            <a href="mailto:hello@weirdghosts.ca">Email us</a>!
+          </p>
         </div>
       </div>
 
       <FormKit
         type="form"
+        enctype="application/x-www-form-urlencoded"
         method="POST"
-        action="/apply?success"
         :plugins="[
           createLocalStoragePlugin({
             control: 'save',
           }),
         ]"
         use-local-storage
+        @submit="handleSubmit"
         submit-label="Submit Application"
         name="formkit-test-baby-ghosts-2023"
         id="apply-form"
@@ -126,6 +151,7 @@ onMounted(() => {
             type="email"
             name="email"
             id="email"
+            help="How should we contact you?"
             validation="required|email"
             placeholder="alex@weirdghosts.ca"
             label="Email address" />
@@ -136,32 +162,31 @@ onMounted(() => {
             id="locations"
             label="Location(s)"
             placeholder="Vancouver, BC and Winnipeg, MB"
-            help="City/province where you live now or plan to be based" />
+            help="City/province where you live now or plan to be based. Include the locations for all team members." />
           <FormKit
             type="textarea"
             name="founderExperience"
             id="founderExperience"
             label="Collaboration experience"
             rows="6"
-            help="Tell us about your experience (if any) founding or participating in a startup, student group, co-op, ad hoc collective, or any other organization with multiple collaborators." />
+            help="Do you have experience founding or participating in a startup, student group, co-op, ad hoc collective, or any other organization with multiple collaborators? If yes, how will you incorporate those experiences in your studio? If no, why are you interested in doing so now?" />
         </FormKit>
         <FormKit type="group" name="aboutYourStudio" id="aboutYourStudio">
           <h3>Alignment Exercises</h3>
-          <!-- <FormKit
-            type="text"
+          <FormKit
+            type="url"
             name="miroLink"
             id="miroLink"
             label="Miro board link"
             validation="required|url"
             placeholder="https://miro.com/app/board/abcde=/?share_link_id=123456789"
-            help="Share the link to the Miro board with your completed Goal Alignment and Pain Point exercises." /> -->
+            help="Share the link to the Miro board with your completed Goal Alignment and Pain Point exercises." />
         </FormKit>
         <FormKit type="group" name="aboutYourStudio" id="aboutYourStudio">
           <h3>About Your Studio</h3>
           <FormKit
             type="text"
             label="Studio name"
-            name="studioName"
             help="What is the name of your studio?"
             validation="required"
             :validation-messages="{
@@ -171,8 +196,8 @@ onMounted(() => {
           <FormKit
             type="textarea"
             label="Concept"
-            name="concept"
             rows="6"
+            name="concept"
             help="Describe your dream studio, including business structures you’re interested in, size, and values."
             validation="required"
             :validation-messages="{
@@ -181,15 +206,16 @@ onMounted(() => {
 
           <FormKit
             type="textarea"
-            name="team"
             label="Team"
             rows="6"
+            name="team"
             help="Provide names, pronouns, and short bios for each of your team members, if any. What will you be looking for in collaborators or co-op members if you intend to grow your team?" />
 
           <FormKit
             type="textarea"
             label="Background"
             rows="6"
+            name="background"
             help="If you have already incorporated or have been operating, tell us about your structure and history, including any fundraising experience and work done to date."
             validation="required"
             :validation-messages="{
@@ -199,15 +225,14 @@ onMounted(() => {
           <FormKit
             type="textarea"
             label="Game"
-            name="game"
             rows="6"
             help="Tell us about the game you are working on now, if applicable." />
 
           <FormKit
             type="textarea"
-            name="financialSustainability"
             label="Financial sustainability"
             rows="6"
+            name="financialSustainability"
             help="Briefly, what are your initial ideas about how your studio will approach financial sustainability? Where will your revenue come from and how will you distribute it?"
             validation="required"
             :validation-messages="{
@@ -217,8 +242,8 @@ onMounted(() => {
           <FormKit
             type="textarea"
             label="Social impact"
-            name="socialImpact"
             rows="6"
+            name="socialImpact"
             help="What is your interest in social impact, and how does that relate to your studio?"
             validation="required"
             :validation-messages="{
