@@ -14,7 +14,7 @@ watch(router.currentRoute, (to) => {
     formSubmitted.value = false;
   }
 });
-const handleSubmit = async (payload, node) => {
+const handleSubmit = async function (payload, node) {
   const applicationForm = document.getElementById("apply-form");
   let formData = new FormData(applicationForm);
 
