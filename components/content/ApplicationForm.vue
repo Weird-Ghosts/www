@@ -32,7 +32,9 @@ const handleSubmit = async function (payload, node) {
         },
       });
     } else {
-      node.restoreCache();
+      // node.restoreCache();
+      await node.settled;
+      node.traps.get("restoreCache").value.get()();
       console.log(node);
 
       if (response.status == 400) {
@@ -46,8 +48,9 @@ const handleSubmit = async function (payload, node) {
       }
     }
   } catch (error) {
+    await node.settled;
+    node.traps.get("restoreCache").value.get()();
     console.log(`error in submitting the form data: ${error}`);
-    node.restoreCache();
   }
 };
 </script>
