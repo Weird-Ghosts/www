@@ -36,13 +36,13 @@ const handleSubmit = async (e) => {
       node.restoreCache();
 
       if (response.status == 400) {
-        alert(
-          "There was an error in submitting. This is likely because your file upload is too large – it must be under 8MB."
-        );
+        node.setErrors([
+          "There was an error in submitting. This is likely because your file upload is too large – it must be under 8MB.",
+        ]);
       } else {
-        alert(
-          "There was an error submitting your form. Please correct any errors and try again, or email us at hello@weirdghosts.ca."
-        );
+        node.setErrors([
+          "There was an error submitting your form. Please correct any errors and try again, or email us at hello@weirdghosts.ca.",
+        ]);
       }
     }
   } catch (error) {
