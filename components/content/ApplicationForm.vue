@@ -33,6 +33,7 @@ const handleSubmit = async function (payload, node) {
       });
     } else {
       node.restoreCache();
+      console.log(node);
 
       if (response.status == 400) {
         node.setErrors([
