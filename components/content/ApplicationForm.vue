@@ -32,7 +32,14 @@ const handleSubmit = async (e) => {
         },
       });
     } else {
-      alert("There was an error submitting the form.");
+      if (response.status == 400) {
+        alert(
+          "There was an error in submitting. This is very likely because your file upload is too large – it must be under 8MB."
+        );
+      }
+      alert(
+        "There was an error submitting your form. Please correct any errors and try again, or email us at hello@weirdghosts.ca."
+      );
     }
   } catch (error) {
     console.log(`error in submitting the form data: ${error}`);
