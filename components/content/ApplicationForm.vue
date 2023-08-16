@@ -1,5 +1,7 @@
 <script setup>
-import { createLocalStoragePlugin, createNode } from "@formkit/addons";
+import { createLocalStoragePlugin } from "@formkit/addons";
+import { createNode } from "@formkit/core";
+
 import { useRouter } from "vue-router";
 import { ref } from "vue";
 
@@ -37,7 +39,7 @@ const handleSubmit = async (e) => {
       });
     } else {
       formNode.restoreCache(formCache.value); // Restore cache in case of error
-
+      console.log(formCache.value);
       if (response.status == 400) {
         alert(
           "There was an error in submitting. This is likely because your file upload is too large – it must be under 8MB."
