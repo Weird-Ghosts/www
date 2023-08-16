@@ -163,12 +163,14 @@ const handleSubmit = async (e) => {
             id="locations"
             label="Location(s)"
             placeholder="Vancouver, BC and Winnipeg, MB"
+            validation="required"
             help="City/province where you live now or plan to be based. Include the locations for all team members." />
           <FormKit
             type="textarea"
             name="founderExperience"
             id="founderExperience"
             label="Collaboration experience"
+            validation="required"
             rows="6"
             help="Do you have experience founding or participating in a startup, student group, co-op, ad hoc collective, or any other organization with multiple collaborators? If yes, how will you incorporate those experiences in your studio? If no, why are you interested in doing so now?" />
         </FormKit>
@@ -224,14 +226,6 @@ const handleSubmit = async (e) => {
             :validation-messages="{
               required: 'This field is required.',
             }" />
-
-          <FormKit
-            type="textarea"
-            label="Game"
-            name="game"
-            rows="6"
-            help="Tell us about the game you are working on now, if applicable." />
-
           <FormKit
             type="textarea"
             label="Financial sustainability"
@@ -242,7 +236,6 @@ const handleSubmit = async (e) => {
             :validation-messages="{
               required: 'This field is required.',
             }" />
-
           <FormKit
             type="textarea"
             label="Social impact"
@@ -253,6 +246,15 @@ const handleSubmit = async (e) => {
             :validation-messages="{
               required: 'This field is required.',
             }" />
+        </FormKit>
+        <FormKit type="group" name="aboutYourStudio" id="aboutYourStudio">
+          <h3>About Your Game</h3>
+          <FormKit
+            type="textarea"
+            label="Game description"
+            name="game"
+            rows="6"
+            help="Tell us about the game you are working on now, if applicable." />
           <FormKit
             type="file"
             label="Creative assets"
@@ -260,18 +262,21 @@ const handleSubmit = async (e) => {
             help="If you have multiple images you'd like to share, please combine them into one file. PDF, PNG, or JPG accepted (max 8MB)."
             accept=".jpg,.png,.pdf" />
         </FormKit>
-        <FormKit
-          type="checkbox"
-          label="Our studio meets all eligibility requirements"
-          help="Your studio must be based in Canada, and a majority of founders from an underrepresented identity group."
-          name="eligibility"
-          :value="true"
-          validation="accepted"
-          :validation-messages="{
-            required:
-              'You must accept the eligibility requirements to submit this form.',
-          }"
-          validation-visibility="dirty" />
+        <FormKit type="group" name="aboutYourStudio" id="aboutYourStudio">
+          <h3>Eligibility</h3>
+          <FormKit
+            type="checkbox"
+            label="Yes, we are eligible"
+            help="Your studio must be based in Canada, and a majority of founders from an underrepresented identity group."
+            name="eligibility"
+            :value="true"
+            validation="accepted"
+            :validation-messages="{
+              required:
+                'You must accept the eligibility requirements to submit this form.',
+            }"
+            validation-visibility="dirty" />
+        </FormKit>
       </FormKit>
     </div>
   </div>

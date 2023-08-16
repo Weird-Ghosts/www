@@ -30,7 +30,7 @@ export default {
   // Family styles apply to all inputs that share a common family
   "family:box": {
     decorator:
-      "block relative h-5 w-5 mr-2 rounded bg-white bg-gradient-to-b from-transparent to-gray-200 ring-1 ring-gray-400 peer-checked:ring-body text-transparent peer-checked:text-body",
+      "block relative h-5 w-5 mr-2 rounded bg-white bg-gradient-to-b from-transparent to-gray-200 ring-1 ring-gray-400 peer-checked:ring-black text-transparent peer-checked:text-black",
     decoratorIcon:
       "flex p-[3px] w-full h-full absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2",
     help: "mb-2 mt-1.5",
@@ -53,7 +53,7 @@ export default {
     emptyMessageInner:
       "flex items-center justify-center text-sm p-2 text-center w-full text-gray-500 [&>span]:mr-3 [&>span]:ml-0",
     inner:
-      "max-w-md relative flex ring-1 ring-gray-400 focus-within:ring-body focus-within:ring-2 rounded mb-1 formkit-disabled:focus-within:ring-gray-400 formkit-disabled:focus-within:ring-1 [&>span:first-child]:focus-within:text-body",
+      "max-w-md relative flex ring-1 ring-gray-400 focus-within:ring-black focus-within:ring-2 rounded mb-1 formkit-disabled:focus-within:ring-gray-400 formkit-disabled:focus-within:ring-1 [&>span:first-child]:focus-within:text-black",
     input: "w-full px-3 py-2",
     listbox: "bg-white shadow-lg rounded overflow-hidden",
     listboxButton: "flex w-12 self-stretch justify-center mx-auto",
@@ -61,7 +61,7 @@ export default {
       'pl-7 relative hover:bg-gray-300 data-[is-active="true"]:bg-gray-300 data-[is-active="true"]:aria-selected:bg-red-600 aria-selected:bg-red-600 aria-selected:text-white',
     loaderIcon: "ml-auto",
     loadMoreInner:
-      "flex items-center justify-center text-sm p-2 text-center w-full text-body formkit-loading:text-gray-500 cursor-pointer [&>span]:mr-3 [&>span]:ml-0",
+      "flex items-center justify-center text-sm p-2 text-center w-full text-black formkit-loading:text-gray-500 cursor-pointer [&>span]:mr-3 [&>span]:ml-0",
     option: "p-2.5",
     optionLoading: "text-gray-500",
     placeholder: "p-2.5 text-gray-400",
@@ -72,13 +72,13 @@ export default {
   },
   "family:text": {
     inner:
-      "flex items-center max-w-md ring-1 ring-gray-400 focus-within:ring-body focus-within:ring-2 [&>label:first-child]:focus-within:text-body rounded mb-1",
+      "flex items-center max-w-md ring-1 ring-gray-400 focus-within:ring-black focus-within:ring-2 [&>label:first-child]:focus-within:text-black rounded mb-1",
     input:
       "w-full px-3 py-2 border-none text-base text-gray-700 placeholder-gray-400",
   },
   "family:date": {
     inner:
-      "flex items-center max-w-md ring-1 ring-gray-400 focus-within:ring-body focus-within:ring-2 [&>label:first-child]:focus-within:text-body rounded mb-1",
+      "flex items-center max-w-md ring-1 ring-gray-400 focus-within:ring-black focus-within:ring-2 [&>label:first-child]:focus-within:text-black rounded mb-1",
     input: "w-full px-3 py-2 border-none text-gray-700 placeholder-gray-400",
   },
 
@@ -97,7 +97,7 @@ export default {
       'shrink grow peer px-3 py-2 formkit-multiple:data-[has-multiple="true"]:mb-6',
     fileName: "break-all grow text-ellipsis",
     fileRemove:
-      "relative z-[2] ml-auto text-[0px] hover:text-red-500 pl-2 peer-data-[has-multiple=true]:text-sm peer-data-[has-multiple=true]:text-body peer-data-[has-multiple=true]:ml-3 peer-data-[has-multiple=true]:mb-2 formkit-multiple:bottom-[0.15em] formkit-multiple:pl-0 formkit-multiple:ml-0 formkit-multiple:left-[1em] formkit-multiple:formkit-prefix-icon:left-[3.75em]",
+      "relative z-[2] ml-auto text-[0px] hover:text-red-500 pl-2 peer-data-[has-multiple=true]:text-sm peer-data-[has-multiple=true]:text-black peer-data-[has-multiple=true]:ml-3 peer-data-[has-multiple=true]:mb-2 formkit-multiple:bottom-[0.15em] formkit-multiple:pl-0 formkit-multiple:ml-0 formkit-multiple:left-[1em] formkit-multiple:formkit-prefix-icon:left-[3.75em]",
     fileRemoveIcon: "block text-base w-3 relative z-[2]",
     inner:
       "relative max-w-md cursor-pointer formkit-multiple:[&>button]:absolute",
@@ -120,7 +120,7 @@ export default {
   },
   select: {
     inner:
-      "flex relative max-w-md items-center rounded mb-1 ring-1 ring-gray-400 focus-within:ring-body focus-within:ring-2 [&>span:first-child]:focus-within:text-body",
+      "flex relative max-w-md items-center rounded mb-1 ring-1 ring-gray-400 focus-within:ring-black focus-within:ring-2 [&>span:first-child]:focus-within:text-black",
     input:
       'w-full pl-3 pr-8 py-2 border-none text-base text-gray-700 placeholder-gray-400 formkit-multiple:p-0 data-[placeholder="true"]:text-gray-400 formkit-multiple:data-[placeholder="true"]:text-inherit',
     selectIcon:
@@ -129,7 +129,7 @@ export default {
   },
   textarea: {
     inner:
-      "flex max-w-md rounded mb-1 ring-1 ring-gray-400 focus-within:ring-body [&>label:first-child]:focus-within:text-body",
+      "flex max-w-md rounded mb-1 ring-1 ring-gray-400 focus-within:ring-black [&>label:first-child]:focus-within:text-black",
     input:
       "block w-full h-32 px-3 py-3 border-none text-base text-gray-700 placeholder-gray-400 focus:shadow-outline",
   },
