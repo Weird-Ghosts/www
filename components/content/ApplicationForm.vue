@@ -1,7 +1,7 @@
 <script setup>
 import { createLocalStoragePlugin } from "@formkit/addons";
 import { useRouter } from "vue-router";
-import { onMounted, ref } from "vue";
+import { ref } from "vue";
 
 const router = useRouter();
 const formSubmitted = ref(false);
@@ -114,7 +114,7 @@ const handleSubmit = async (e) => {
         use-local-storage
         @submit="handleSubmit"
         submit-label="Submit Application"
-        name="formkit-test-baby-ghosts-2023"
+        name="baby-ghosts-2023"
         id="apply-form"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
@@ -123,7 +123,7 @@ const handleSubmit = async (e) => {
           type="hidden"
           id="form-name"
           name="form-name"
-          value="formkit-test-baby-ghosts-2023" />
+          value="baby-ghosts-2023" />
 
         <FormKit
           type="checkbox"
