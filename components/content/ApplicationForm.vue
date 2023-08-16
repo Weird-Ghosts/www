@@ -32,11 +32,8 @@ const handleSubmit = async function (payload, node) {
         },
       });
     } else {
-      // node.restoreCache();
-      await node.settled;
-      node.traps.get("restoreCache").value.get()();
+      node.restoreCache();
       console.log(node);
-
       if (response.status == 400) {
         node.setErrors([
           "There was an error in submitting. This is likely because your file upload is too large – it must be under 8MB.",
@@ -48,9 +45,8 @@ const handleSubmit = async function (payload, node) {
       }
     }
   } catch (error) {
-    await node.settled;
-    node.traps.get("restoreCache").value.get()();
     console.log(`error in submitting the form data: ${error}`);
+    node.restoreCache();
   }
 };
 </script>
