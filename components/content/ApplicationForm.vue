@@ -71,8 +71,9 @@ const handleSubmit = async (e) => {
               supporting studio development rather than single projects.
             </li>
             <li>
-              Complete the goal alignment and pain point exercises. [add more
-              detail here, and link to template]
+              Complete the <b>goal alignment</b> and
+              <b>pain point</b> exercises. [add more detail here, and link to
+              template]
             </li>
           </ol>
         </div>
@@ -187,6 +188,7 @@ const handleSubmit = async (e) => {
           <FormKit
             type="text"
             label="Studio name"
+            name="studioName"
             help="What is the name of your studio?"
             validation="required"
             :validation-messages="{
