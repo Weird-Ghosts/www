@@ -282,7 +282,7 @@ const handleSubmit = async (e) => {
   </div>
 </template>
 
-<style lang="postcss">
+<style lang="postcss" scoped>
 h3 {
   @apply font-black text-3xl uppercase leading-6 text-gray-900 mt-12;
   &:first-child {
