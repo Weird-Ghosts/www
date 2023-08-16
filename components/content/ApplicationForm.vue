@@ -211,7 +211,8 @@ const handleSubmit = async (e) => {
             label="Team"
             rows="6"
             name="team"
-            help="Provide names, pronouns, and short bios for each of your team members, if any. What will you be looking for in collaborators or co-op members if you intend to grow your team?" />
+            validation="required"
+            help="Provide names, pronouns, and short bios for each team member. What will you be looking for in collaborators or co-op members if you intend to grow?" />
 
           <FormKit
             type="textarea"
@@ -227,6 +228,7 @@ const handleSubmit = async (e) => {
           <FormKit
             type="textarea"
             label="Game"
+            name="game"
             rows="6"
             help="Tell us about the game you are working on now, if applicable." />
 
