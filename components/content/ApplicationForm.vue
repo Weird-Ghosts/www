@@ -1,10 +1,13 @@
 <script setup>
-import { createLocalStoragePlugin } from "@formkit/addons";
+import { createLocalStoragePlugin, createNode } from "@formkit/addons";
 import { useRouter } from "vue-router";
 import { ref } from "vue";
 
 const router = useRouter();
 const formSubmitted = ref(false);
+const formCache = ref(null); // Add this line to define a reference for cache
+
+const formNode = createNode("baby-ghosts-2023"); // Define the node for your form
 
 watch(router.currentRoute, (to) => {
   if (to.query.success) {
@@ -17,6 +20,7 @@ watch(router.currentRoute, (to) => {
 const handleSubmit = async (e) => {
   const applicationForm = document.getElementById("apply-form");
   let formData = new FormData(applicationForm);
+  formCache.value = formNode.cache; // Save cache before deletion
 
   try {
     const response = await fetch("/apply?success", {
@@ -32,6 +36,8 @@ const handleSubmit = async (e) => {
         },
       });
     } else {
+      formNode.restoreCache(formCache.value); // Restore cache in case of error
+
       if (response.status == 400) {
         alert(
           "There was an error in submitting. This is very likely because your file upload is too large – it must be under 8MB."
@@ -43,6 +49,7 @@ const handleSubmit = async (e) => {
     }
   } catch (error) {
     console.log(`error in submitting the form data: ${error}`);
+    formNode.restoreCache(formCache.value); // Restore cache in case of error
   }
 };
 </script>
