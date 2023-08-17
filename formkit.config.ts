@@ -1,10 +1,12 @@
 import { generateClasses } from "@formkit/themes";
 import { genesisIcons } from "@formkit/icons";
-import myTailwindTheme from "./tailwind-theme.js"; // change to your theme's path
+import myTailwindTheme from "./tailwind-theme.js";
 import {
   createAutoAnimatePlugin,
   createLocalStoragePlugin,
 } from "@formkit/addons";
+import { createProPlugin, inputs } from "@formkit/pro";
+
 const isCheckboxAndRadioMultiple = (node) =>
   (node.props.type === "checkbox" || node.props.type === "radio") &&
   node.props.options;
@@ -42,40 +44,29 @@ function addAsteriskPlugin(node) {
     };
   });
 }
-export default {
-  icons: {
-    ...genesisIcons,
-  },
-  config: {
-    classes: generateClasses(myTailwindTheme),
-  },
-  plugins: [
-    addAsteriskPlugin,
-    createAutoAnimatePlugin(
-      {
-        /* optional AutoAnimate config */
-        // default:
-        duration: 250,
-        easing: "ease-in-out",
-        delay: 0,
-      },
-      {
-        /* optional animation targets object */
-        // default:
-        global: ["outer", "inner"],
-        form: ["form"],
-        repeater: ["items"],
-      }
-    ),
-    createLocalStoragePlugin({
-      // plugin defaults:
-      prefix: "formkit",
-      key: undefined,
-      control: undefined,
-      maxAge: 604800000, // 7 days
-      debounce: 200,
-      beforeSave: undefined,
-      beforeLoad: undefined,
-    }),
-  ],
+export default () => {
+  const config = useRuntimeConfig();
+  const pro = createProPlugin(config.public.formkitKey, inputs);
+  return {
+    icons: {
+      ...genesisIcons,
+    },
+    config: {
+      classes: generateClasses(myTailwindTheme),
+    },
+    plugins: [
+      pro,
+      addAsteriskPlugin,
+      createLocalStoragePlugin({
+        // plugin defaults:
+        prefix: "formkit",
+        key: undefined,
+        control: undefined,
+        maxAge: 604800000, // 7 days
+        debounce: 200,
+        beforeSave: undefined,
+        beforeLoad: undefined,
+      }),
+    ],
+  };
 };

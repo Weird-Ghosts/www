@@ -1,6 +1,11 @@
 import { showGhost } from "./composables/state";
 
 export default defineNuxtConfig({
+  runtimeConfig: {
+    public: {
+      formkitKey: process.env.FORMKIT_PRO_KEY,
+    },
+  },
   nitro: {
     prerender: {
       routes: ["/apply"],

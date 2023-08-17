@@ -41,6 +41,7 @@ export default {
     wrapper: "flex items-center mb-1",
   },
   "family:button": {
+    placeholder: "text-gray-400 text-base",
     input:
       "$reset text-xl inline-flex items-center bg-red-600 hover:bg-red-700 text-white text-sm font-bold py-3 px-6 focus-visible:outline-2 focus-visible:outline-red-600 focus-visible:outline-offset-2 formkit-disabled:bg-gray-400 formkit-loading:before:w-4 formkit-loading:before:h-4 formkit-loading:before:mr-2 formkit-loading:before:border formkit-loading:before:border-2 formkit-loading:before:border-r-transparent formkit-loading:before:rounded-3xl formkit-loading:before:border-white formkit-loading:before:animate-spin",
     wrapper: "mb-1",
@@ -49,13 +50,16 @@ export default {
   },
   "family:dropdown": {
     dropdownWrapper:
-      "my-2 w-full shadow-lg rounded [&::-webkit-scrollbar]:hidden",
+      "text-base my-2 w-full shadow-lg rounded [&::-webkit-scrollbar]:hidden",
     emptyMessageInner:
       "flex items-center justify-center text-sm p-2 text-center w-full text-gray-500 [&>span]:mr-3 [&>span]:ml-0",
     inner:
       "max-w-md relative flex ring-1 ring-gray-400 focus-within:ring-black focus-within:ring-2 rounded mb-1 formkit-disabled:focus-within:ring-gray-400 formkit-disabled:focus-within:ring-1 [&>span:first-child]:focus-within:text-black",
+
+    selectionsItem: "text-base text-gray-800 display-inline",
+    selectionsWrapper: " px-3 py-2 w-full items-start text-left",
     input: "w-full px-3 py-2",
-    listbox: "bg-white shadow-lg rounded overflow-hidden",
+    listbox: " bg-white shadow-lg rounded overflow-hidden z-10",
     listboxButton: "flex w-12 self-stretch justify-center mx-auto",
     listitem:
       'pl-7 relative hover:bg-gray-300 data-[is-active="true"]:bg-gray-300 data-[is-active="true"]:aria-selected:bg-red-600 aria-selected:bg-red-600 aria-selected:text-white',
@@ -65,7 +69,7 @@ export default {
     option: "p-2.5",
     optionLoading: "text-gray-500",
     placeholder: "p-2.5 text-gray-400",
-    selector: "flex w-full justify-between items-center [&u]",
+    selector: "text-base flex w-full justify-between items-center [&u]",
     selectedIcon: "block absolute top-1/2 left-2 w-3 -translate-y-1/2",
     selectIcon:
       "flex box-content w-4 px-2 self-stretch grow-0 shrink-0 [&>svg]:w-[1em]",

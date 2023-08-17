@@ -6,7 +6,21 @@ import { ref } from "vue";
 
 const router = useRouter();
 const formSubmitted = ref(false);
-
+const provincesAndTerritories = [
+  { label: "Alberta", value: "AB" },
+  { label: "British Columbia", value: "BC" },
+  { label: "Manitoba", value: "MB" },
+  { label: "New Brunswick", value: "NB" },
+  { label: "Newfoundland and Labrador", value: "NL" },
+  { label: "Northwest Territories", value: "NT" },
+  { label: "Nova Scotia", value: "NS" },
+  { label: "Nunavut", value: "NU" },
+  { label: "Ontario", value: "ON" },
+  { label: "Prince Edward Island", value: "PE" },
+  { label: "Quebec", value: "QC" },
+  { label: "Saskatchewan", value: "SK" },
+  { label: "Yukon", value: "YT" },
+];
 watch(router.currentRoute, (to) => {
   if (to.query.success) {
     formSubmitted.value = true;
@@ -169,13 +183,16 @@ const handleSubmit = async function (payload, node) {
             label="Email address" />
 
           <FormKit
-            type="text"
+            type="dropdown"
             name="locations"
             id="locations"
             label="Location(s)"
-            placeholder="Vancouver, BC and Winnipeg, MB"
             validation="required"
-            help="City/province where you live now or plan to be based. Include the locations for all team members." />
+            placeholder="Choose your location(s)"
+            multiple
+            help="Province(s) or territor(ies) where you and your team members reside."
+            :options="provincesAndTerritories" />
+
           <FormKit
             type="textarea"
             name="founderExperience"
