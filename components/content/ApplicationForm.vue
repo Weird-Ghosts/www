@@ -183,12 +183,12 @@ const handleSubmit = async function (payload, node) {
             label="Email address" />
 
           <FormKit
-            type="dropdown"
+            type="text"
             name="locations"
             id="locations"
             label="Location(s)"
             validation="required"
-            placeholder="Choose your location(s)"
+            placeholder="Enter your location(s)"
             multiple
             help="Province(s) or territor(ies) where you and your team members reside."
             :options="provincesAndTerritories" />
