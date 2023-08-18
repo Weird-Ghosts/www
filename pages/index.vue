@@ -21,9 +21,9 @@
                 games.
               </p>
               <p class="mt-6 text-xl md:text-2xl leading-tight">
-                <a href="/baby-ghosts">
+                <nuxt-link to="/baby-ghosts">
                   Learn about our <b>Baby Ghosts</b> program.
-                </a>
+                </nuxt-link>
               </p>
               <p class="mt-2 text-lg leading-tight">
                 Applications will open September 1!
