@@ -1,6 +1,6 @@
 ---
 title: Apply Now
-description: "Ready to submit your application for funding?"
+description: "Applications are now open for Baby Ghosts!"
 image:
   src: "https://weirdghosts.ca/img/Twitter-Card---Apply.png"
   alt: "Apply now for funding"
@@ -17,9 +17,11 @@ Apply to Weird Ghosts.
 [Just two important things before you apply:]{.text-2xl.block.mb-6}
 
 1. **Make sure you're eligible.** Your studio must be based in Canada, and a majority of founders from an underrepresented identity group.
-2. **Prep your pitch deck.** We're looking for an [overview of your studio](/faq#what-should-i-include-in-my-pitch-deck), not just a project.
+2. **Familiarize yourself** with our mandate of social impact, and supporting studio development rather than single projects.
 
 #col2
+Applications for the Baby Ghosts program will open **September 1**. Join our mailing list to be notified when applications open and to receive the link to the info session!
+
 Applications for Early funding are currently closed. Please [get in touch](mailto:hello@weirdghosts.ca){.underline .font-bold} if you have any questions or would like to be notified when they open. Applications for our [Baby Ghosts program](/baby-ghosts) will open soon across Canada.
 
 <!-- :apply-now-button -->
