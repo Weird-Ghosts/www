@@ -216,31 +216,31 @@ nav {
   }
 }
 .page--resources {
-  table {
-    @apply w-full border-collapse;
-  }
-  thead {
-    th {
-      @apply bg-white uppercase;
-    }
-  }
-  th,
-  td {
-    @apply p-2 border border-body;
-  }
-
+}
+table {
+  @apply w-full border-collapse;
+}
+thead {
   th {
-    @apply bg-primary;
+    @apply bg-white uppercase;
   }
+}
+th,
+td {
+  @apply p-2 border border-body;
+}
 
-  tr:nth-child(even) {
-    @apply bg-gray-50;
-  }
+th {
+  @apply bg-primary;
+}
 
-  tbody {
-    a {
-      @apply underline;
-    }
+tr:nth-child(even) {
+  @apply bg-gray-50;
+}
+
+tbody {
+  a {
+    @apply underline;
   }
 }
 .page--baby-ghosts {
@@ -248,6 +248,12 @@ nav {
     @apply text-2xl leading-10 font-black;
     a {
       @apply no-underline text-2xl leading-10 font-black;
+    }
+  }
+  ul > li > ul {
+    @apply mt-0;
+    li {
+      @apply mb-2;
     }
   }
 }

@@ -30,6 +30,20 @@ Our next program will start for 5 teams on **November 1, 2023**. We have made a 
 
 We will be hosting an information session on **September 6, 2023** at 12pm PT/3pm ET. Join our mailing list to be notified when applications open and to receive the link to the info session!
 
+### Timeline
+
+| Date          | Event                                  |
+| ------------- | -------------------------------------- |
+| Sep 1         | Applications open                      |
+| Sep 1-25      | Rolling interviews with all applicants |
+| Sep 6         | Info session                           |
+| Sep 25        | Applications close                     |
+| Sep 26-Oct 18 | Pitch calls and review period          |
+| Oct 23        | Teams notified                         |
+| Nov 1         | Program starts                         |
+| Dec 18-Jan 8  | Holiday break                          |
+| May 22        | Program ends                           |
+
 #col2
 
 [Applications open September 1.<br />Join our
