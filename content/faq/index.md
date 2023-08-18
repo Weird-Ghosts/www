@@ -26,6 +26,10 @@ This is a broadly inclusive term meant to prioritize those who have been sociall
 
 It includes anyone who experiences marginalization or underrepresentation due to their gender (including people who are at any intersection of trans and nonbinary identities, however they are or are not expressed), race and/or skin colour (e.g., IBPoC individuals), queerness, disability, religion, housing status, economic status, immigration or citizenship status (including newcomers to Canada).
 
+#### What business structures are eligible for funding?
+
+We are primarily interested in supporting teams that have not yet incorporated, and that are interested in forming a co-op or other hybrid/alternative structure (including ad hoc collectives). If you are incorporated, a sole proprietorship or a partnership, please detail your intention to re-form as a co-op or other hybrid/alternative structure in your application.
+
 #### What is “studio development”?
 
 We mean any activities related to:

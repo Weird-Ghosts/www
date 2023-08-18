@@ -14,21 +14,15 @@
             <div class="mt-3 md:mt-5 md:max-w-3xl">
               <p class="text-xl md:text-2xl leading-tight font-light">
                 We support video game studios with
-                <strong>grants</strong>,
-                <strong> catalytic investments</strong>, and
-                <strong>community</strong> in order to build strong, impactful
-                teams of underrepresented makers who are shaping the future of
-                games.
+                <strong>studio development training, </strong>
+                <strong>grants</strong>, <strong>catalytic investments</strong>,
+                and <strong>community</strong> in order to build strong,
+                impactful teams of underrepresented makers who are shaping the
+                future of games.
               </p>
-              <p class="mt-6 text-xl md:text-2xl leading-tight">
-                <a href="/baby-ghosts">
-                  Learn about our <b>Baby Ghosts</b> program.
-                </a>
-              </p>
-              <p class="mt-2 text-lg leading-tight">
-                Applications are currently closed, but will open again late
-                summer 2023!
-              </p>
+              <div class="mt-6">
+                <ApplyNowButton />
+              </div>
             </div>
           </div>
         </div>
@@ -67,9 +61,10 @@
             Baby Ghosts Peer Accelerator and Grant
           </h3>
           <p class="mb-4 lg:m-0 lg:mb-0 text-base md:text-xl">
-            Grants for teams that need to get studio operations up and running
-            and support with impact strategy. Prepares teams for further
-            investment and game development.
+            Grants for teams who want to form a co-op (or other alternative
+            structure), get studio operations up and running, and get support
+            with impact strategy. Prepares teams for further investment and game
+            development.
           </p>
           <p class="my-4 lg:mb-0 text-lg">
             <NuxtLink to="/baby-ghosts">Learn more about Baby Ghosts</NuxtLink>
