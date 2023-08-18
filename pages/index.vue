@@ -26,8 +26,7 @@
                 </a>
               </p>
               <p class="mt-2 text-lg leading-tight">
-                Applications are currently closed, but will open again late
-                summer 2023!
+                Applications will open September 1!
               </p>
             </div>
           </div>
