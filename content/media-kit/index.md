@@ -1,7 +1,20 @@
 ---
-title: "Media Kit"
-description: "Media Kit for Weird Ghosts"
+title: Media kit.
+description: "Press materials, logos, and other resources for Weird Ghosts."
+image:
+  src: "https://weirdghosts.ca/img/Twitter-Card---Resources.png"
+  alt: "Resources"
+bodyClass: page--resources
 ---
+
+::page-header
+Media kit.
+
+#intro
+
+Useful information for funders, press, and investees.
+
+## ::
 
 **About Weird Ghosts**
 
@@ -13,7 +26,7 @@ Weird Ghosts' goal is to improve diversity and equity in the Canadian games fund
 
 **Our Impact**
 
-We have supported a variety of studios across Canada, including Rocket Adrift, daffodil & friends, Lucid Tales, Cheekynauts Entertainment, Apocablyss, B.P. Solarpunk Media, Digital Cauldron Collective, Flying Carpets Games, Orion Digital Innovations and Creations Inc., Something Magic, Something We Love, and VIVIDBLUE LTD. These studios span a diverse and creative range of genres and styles.
+We have supported a variety of studios across Canada, including Rocket Adrift, daffodil & friends, Lucid Tales, Cheekynauts Entertainment, Apocablyss, B.P. Solarpunk Media, Digital Cauldron Collective, Flying Carpets Games, Orion Digital Innovations and Creations Inc., Something Magic, Something We Love, and VIVIDBLUE LTD. These studios span a diverse range of genres and creative styles.
 
 **How to Apply**
 
