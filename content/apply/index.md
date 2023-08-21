@@ -20,9 +20,9 @@ Apply to Weird Ghosts.
 2. **Familiarize yourself** with our mandate of social impact, and supporting studio development rather than single projects.
 
 #col2
-Applications for the Baby Ghosts program will open **September 1**. Join our mailing list to be notified when applications open and to receive the link to the info session!
+Applications for the Baby Ghosts program will open **September 1**. [Subscribe to our mailing list](# "Click to subscribe"){:onclick="document.getElementById('mailing-list').scrollIntoView({ behavior: 'smooth' });"} to be notified when applications open and to receive the link to the info session!
 
-Applications for Early funding are currently closed. Please [get in touch](mailto:hello@weirdghosts.ca){.underline .font-bold} if you have any questions or would like to be notified when they open. Applications for our [Baby Ghosts program](/baby-ghosts) will open soon across Canada.
+Applications for Early funding are currently closed. Please [get in touch](mailto:hello@weirdghosts.ca){.underline .font-bold} if you have any questions or would like to be notified when they open.
 
 <!-- :apply-now-button -->
 
