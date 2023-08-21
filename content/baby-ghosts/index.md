@@ -24,6 +24,7 @@ Our next program will start for 5 teams on **November 1, 2023**. We have made a 
 
 - Longer program (6 months instead of 4)
 - Bigger grant ($25,000 instead of $20,000)
+  - In two stages: $5,000 at the start, $20,000 at the two-month mark
 - Cohort-based (rather than rolling applications)
 - More time to apply (applications open **September 1-25, 2023**)
 - No pitch deck requirement (the application is just a form)
