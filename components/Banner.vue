@@ -1,6 +1,7 @@
 <template>
   <div>
-    <aside class="bg-body text-primary text-center py-1 px-2">
+    <aside
+      class="flex bg-body text-primary text-center py-1 px-2 h-10 items-center justify-center align-middle">
       <NuxtLink
         v-if="latestPost[0]"
         :to="latestPost[0]._path"
