@@ -22,7 +22,7 @@ export default defineNuxtConfig({
     "@nuxt/devtools",
     "dayjs-nuxt",
   ],
-  plugins: ["~/plugins/smooth-scroll-plugin.js"],
+
   plausible: {
     domain: "weirdghosts.ca",
     autoOutboundTracking: true,
