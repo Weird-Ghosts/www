@@ -143,7 +143,4 @@ that actively engages with its values.
 And Weird Ghosts: Eileen Mary Holowka and Jennie Robinson
 Faber
 
-With support from:
-![Ontario Creates](/img/oc-logo.png){.w-32.mt-2.mb-1}
-
 ::
