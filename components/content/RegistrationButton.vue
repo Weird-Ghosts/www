@@ -1,10 +1,10 @@
 <template>
   <div>
-    <nuxt-link
-      to="/apply"
+    <a
+      href="https://www.eventbrite.ca/e/baby-ghosts-info-session-tickets-700769669947"
       target="_blank"
       class="bg-body text-primary px-6 py-2 text-center font-black text-4xl flex items-center justify-center">
-      <span class="pr-2">Apply Now</span>
+      <span class="pr-2">Register Now</span>
 
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -21,7 +21,7 @@
         <polyline points="15 3 21 3 21 9" />
         <line x1="10" y1="14" x2="21" y2="3" />
       </svg>
-    </nuxt-link>
+    </a>
   </div>
 </template>
 

@@ -47,8 +47,9 @@ We will be hosting an information session on **September 6, 2023** at 12pm PT/3p
 
 #col2
 
-[Applications open September 1.<br />Join our
-mailing list to be notified.]{.text-center.mb-2.text-md.bg-body.text-primary.block.p-6}
+[Join our info session on September 6 to learn more!]{.text-center.mb-2.text-md.bg-body.text-primary.block.p-6}
+
+:registration-button
 
 <!-- :apply-now-button -->
 
