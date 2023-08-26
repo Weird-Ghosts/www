@@ -8,32 +8,47 @@ bodyClass: page--resources
 ---
 
 ::page-header
+
 Media kit.
 
 #intro
 
 Useful information for funders, press, and investees.
 
-## ::
+::
 
-**About Weird Ghosts**
+::two-col-body
 
-Weird Ghosts is a social impact fund for underrepresented video game studio founders in Canada. The fund offers two main opportunities: The Baby Ghosts fund, which provides a $25,000 grant along with a 6-month peer accelerator focused on studio development, and the Early fund, which offers up to $150,000 also for studio development.
+#col1
 
-**Our Values**
+### About Weird Ghosts
 
-Weird Ghosts' goal is to improve diversity and equity in the Canadian games funding ecosystem, supporting a shift away from overworking, fostering a sustainable gaming community in Canada, and promoting projects by and about marginalized people. We believe in non-extractive impact funding, ensuring that our investees cover their costs and pay themselves before we recoup, and that our deals are flexible and benefit our teams more than us.
+Weird Ghosts is an **impact fund** for video game studios led by **underrepresented founders** across Canada.
 
-**Our Impact**
+We support studios with **grants, investments, education, and community** to build strong, impactful teams that are shaping the future of games. We focus on studio development – not just project funding.
 
-We have supported a variety of studios across Canada, including Rocket Adrift, daffodil & friends, Lucid Tales, Cheekynauts Entertainment, Apocablyss, B.P. Solarpunk Media, Digital Cauldron Collective, Flying Carpets Games, Orion Digital Innovations and Creations Inc., Something Magic, Something We Love, and VIVIDBLUE LTD. These studios span a diverse range of genres and creative styles.
+- Our [Baby Ghosts](/baby-ghosts) program provides a $25,000 no-strings-attached grant, and six months of tailored, structured business development education via our mentor network and partners.
+- Our [SEAL investments](/blog/how-we-make-investments) support new studios with $150,000 to pay salaries and focus on studio development for one year.
 
-**How to Apply**
+To date, we have supported [12 studios](/studios) across 5 provinces through grants and investments.
 
-Studios interested in applying for funding through Weird Ghosts must be based in Canada, with a majority of founders from an underrepresented identity group. Applications are evaluated on a rolling basis, and the application process is designed to be transparent and accessible. [Learn more about our process.](blog/how-to-apply-to-weird-ghosts)
+### Impact
 
-**Baby Ghosts Program**
+[“The Baby Ghosts program not only gave my studio financial security for this year, it also gave me access to an **inspiring and inclusive community** of peers, collaborators and mentors."<br />- Sam Ramsay, Cheekynauts Entertainment]{.bg-white.block.p-6}
 
-The Baby Ghosts Peer Accelerator is a partnership between Weird Ghosts and Gamma Space. It provides a grant of $25,000 and six months of tailored mentorship. The program emphasizes open communication, progress mapping, and interactive creative reflection. It's a time to slow down and consider the future of your studio before you start chasing funding opportunities.
+["Receiving the Baby Ghosts grant and being connected with the Weird Ghosts community was **a dream come true**. I was granted the resources and opportunity to take my project STREET UNI X to the next level through some months of full-time development focus after years of only working on the project in my off time between day jobs.”<br />- daffodil, daffodil & friends]{.bg-white.block.p-6}
 
-**Contact**
+#col2
+
+### Background
+
+Weird Ghosts was founded in 2021 by partners Eileen Mary Holowka, PhD, and Jennie Robinson Faber. Eileen and Jennie each have over a decade of experience in community building with underrepresented game developers, media arts administration, and development.
+
+### Downloadable Assets
+
+- [Weird Ghosts logos](/files/Weird-Ghosts-Logos.zip)
+- [Weird Ghosts one-pager](/files/Weird-Ghosts-One-Pager.pdf)
+
+### Contact
+
+You can reach our team at [hello@weirdghosts.ca](mailto:hello@weirdghosts.ca).

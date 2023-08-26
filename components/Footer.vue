@@ -16,11 +16,11 @@
       </div>
       <p class="text-center text-base leading-6 mt-12">
         &copy; {{ new Date().getFullYear() }}
-        <a href="https://weirdghosts.ca" class="underline" target="_blank"
-          >Weird Ghosts, Inc.</a
-        >
-        All rights reserved. •
+
+        Weird Ghosts, Inc. All rights reserved. •
         <NuxtLink to="/resources">More funding resources</NuxtLink>
+        •
+        <NuxtLink to="/media-kit">Media kit</NuxtLink>
       </p>
     </div>
   </footer>

@@ -9,6 +9,9 @@ h3,
 h4 {
   @apply font-display;
 }
+h3 {
+  @apply font-medium;
+}
 p,
 li {
   strong,

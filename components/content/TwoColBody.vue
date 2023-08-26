@@ -19,7 +19,7 @@ p {
   @apply text-xl mt-4;
 }
 h3 {
-  @apply text-2xl mt-8 leading-10 font-extrabold;
+  @apply text-2xl mt-8 leading-10 font-bold;
   + p,
   &:first-child {
     @apply mt-0;

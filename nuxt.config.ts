@@ -45,6 +45,7 @@ export default defineNuxtConfig({
   content: {
     documentDriven: true,
     markdown: {
+      anchorLinks: false,
       remarkPlugins: ["remark-smartypants"],
       toc: {
         depth: 4,
