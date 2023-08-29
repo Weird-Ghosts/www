@@ -46,8 +46,9 @@ Weird Ghosts was founded in 2021 by partners Eileen Mary Holowka, PhD, and Jenni
 
 ### Downloadable Assets
 
-- [Weird Ghosts logos](/files/Weird-Ghosts-Logos.zip)
-- [Weird Ghosts one-pager](/files/Weird-Ghosts-One-Pager.pdf)
+- [Weird Ghosts logos](/files/Weird-Ghosts-Logos.zip){target="_blank" download="Weird-Ghosts-Logos.zip"}
+- [Weird Ghosts one-pager](/files/Weird-Ghosts-One-Pager.pdf){target="_blank" download="Weird-Ghosts-One-Pager.pdf"}
+
 
 ### Contact
 
