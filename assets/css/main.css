@@ -31,7 +31,8 @@ li a {
     @apply mt-5 text-xl;
   }
 
-  p {
+  p,
+  li {
     @apply mt-3 mx-auto text-base max-w-4xl;
 
     @screen sm {
@@ -51,13 +52,18 @@ section {
   @screen md {
     @apply mb-24 px-12;
   }
+
   &:last-child {
     @apply mb-0;
   }
-  p {
-    @apply text-xl;
+  p,
+  li {
+    @apply text-xl font-light;
   }
-
+  b,
+  strong {
+    @apply font-black;
+  }
   h2 {
     @apply flex-1 text-3xl font-black mb-2;
 
@@ -109,12 +115,6 @@ section {
       @apply mr-2;
     }
   }
-}
-
-body {
-  /* background: url("/img/gradient-04-1920x1300.jpeg"); */
-  background-repeat: no-repeat;
-  @apply min-h-screen relative bg-primary;
 }
 
 ol {
