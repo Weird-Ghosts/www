@@ -17,10 +17,15 @@
       <p class="text-center text-base leading-6 mt-12">
         &copy; {{ new Date().getFullYear() }}
 
-        Weird Ghosts, Inc. All rights reserved. •
+        Weird Ghosts, Inc. All rights reserved.
+      </p>
+
+      <p class="text-center text-base leading-6 mt-4">
         <NuxtLink to="/resources">More funding resources</NuxtLink>
         •
         <NuxtLink to="/media-kit">Media kit</NuxtLink>
+        •
+        <NuxtLink to="/privacy">Privacy</NuxtLink>
       </p>
     </div>
   </footer>
