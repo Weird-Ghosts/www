@@ -163,6 +163,17 @@ Being able to take advantage of your time in the program is the most important t
 
     ["Receiving the Baby Ghosts grant and being connected with the Weird Ghosts community was **a dream come true**. I was granted the resources and opportunity to take my project STREET UNI X to the next level through some months of full-time development focus after years of only working on the project in my off time between day jobs.”<br />[- daffodil, daffodil & friends]{.attribution}]{.daffodil}
   ::
+  
+  
+  ::div{.cta}
+    ::studio-button
+    ---
+    link:
+      to: /studios
+    ---
+    Meet Our Studios! 👋🏻
+    ::
+  ::
 ::
 ::two-col-body 
 

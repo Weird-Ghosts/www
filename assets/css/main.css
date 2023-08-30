@@ -301,3 +301,6 @@ tbody {
     @apply mt-0;
   }
 }
+.cta {
+  @apply mx-auto w-full text-center;
+}
