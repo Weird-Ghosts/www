@@ -1,7 +1,7 @@
 <template>
-  <div class="flex items-start align-items-start mt-8 card">
-    <div class="w-1/3 mr-4 headshot"><slot name="headshot" /></div>
-    <p class="w-2/3 text-sm bio">
+  <div class="md:flex items-start align-items-start mt-8 card">
+    <div class="md:w-1/3 mr-4 headshot"><slot name="headshot" /></div>
+    <p class="md:w-2/3 text-sm bio">
       <slot name="bio" />
     </p>
   </div>

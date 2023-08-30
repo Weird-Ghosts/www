@@ -160,7 +160,7 @@ nav {
     @apply font-display text-center font-bold
     uppercase border-2 border-body text-body
      bg-white leading-relaxed no-underline outline-none
-     relative cursor-pointer w-52 px-2 py-2;
+     relative cursor-pointer w-52 px-2 py-2 text-sm;
 
     &:after {
       @apply absolute h-full w-full;
@@ -279,11 +279,11 @@ tbody {
   }
 }
 .quotes {
-  @apply flex flex-wrap justify-around;
+  @apply md:flex flex-wrap justify-around;
   p {
-    @apply block p-6 rounded-xl  w-1/3  text-xl;
+    @apply block p-6 rounded-xl  md:w-1/3  text-xl;
     &:first-child {
-      @apply block w-3/5 text-4xl;
+      @apply block md:w-3/5 text-2xl md:text-4xl;
     }
     .attribution {
       @apply text-base;
@@ -295,7 +295,7 @@ tbody {
 }
 .right-aligner {
   h3 {
-    @apply text-right text-4xl;
+    @apply mb-4 lg:mb-0 lg:text-right text-4xl;
   }
   ul {
     @apply mt-0;
