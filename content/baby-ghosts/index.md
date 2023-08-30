@@ -24,6 +24,8 @@ Are you building a video game studio with a co-operative model? Looking understa
 
 [Join our info session on September 6 to learn more!]{.text-center.block.mb-4}
 
+
+
 :registration-button
 
 ### Important Dates
@@ -62,10 +64,12 @@ Our next program will start for 5 teams on **November 1, 2023**. We have made a 
 
 ::
 
-::wide-section
+::wide-section{.relative}
 
 #col1
   ::accordion{.faq}
+
+
     ::topic
     ---
     question: "What are pain points?"
@@ -115,9 +119,13 @@ Our next program will start for 5 teams on **November 1, 2023**. We have made a 
     - Fast-track pitch readiness for future investment from Weird Ghosts and further integration into the Gamma Space community"
     ---
     ::
+  ::o-ghost{.ghost}
+  ::    
   ::
 
 #col2
+
+
 ### Am I Ready to Apply?
 
 [The Baby Ghosts Peer Accelerator program is a time to _slow down and consider_ the future of your studio _before_ you start chasing funding opportunities. That may sound counterintuitive, but we help you to accelerate _your value to you_ from the inside out so that others don't accelerate _your value to them_ from the outside in.]{.mt-10.block}

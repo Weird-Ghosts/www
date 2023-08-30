@@ -304,3 +304,12 @@ tbody {
 .cta {
   @apply mx-auto w-full text-center;
 }
+.ghost {
+  @apply absolute h-16 w-16;
+
+  bottom: -10px; /* Overlap by 50% of the element's height */
+  left: 50%;
+  transform: translate(-50%, 50%); /* Centering */
+
+  /* Add your animation styles here */
+}
