@@ -1,6 +1,16 @@
 import { showGhost } from "./composables/state";
 
 export default defineNuxtConfig({
+  runtimeConfig: {
+    public: {
+      formkitKey: process.env.FORMKIT_PRO_KEY,
+    },
+  },
+  nitro: {
+    prerender: {
+      routes: ["/apply"],
+    },
+  },
   image: {
     provider: "netlify",
   },
@@ -20,6 +30,7 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxtjs/plausible",
     "@nuxt/devtools",
+    "@formkit/nuxt",
     "dayjs-nuxt",
   ],
 

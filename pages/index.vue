@@ -14,20 +14,15 @@
             <div class="mt-3 md:mt-5 md:max-w-3xl">
               <p class="text-xl md:text-2xl leading-tight font-light">
                 We support video game studios with
-                <strong>grants</strong>,
-                <strong> catalytic investments</strong>, and
-                <strong>community</strong> in order to build strong, impactful
-                teams of underrepresented makers who are shaping the future of
-                games.
+                <strong>studio development training, </strong>
+                <strong>grants</strong>, <strong>catalytic investments</strong>,
+                and <strong>community</strong> in order to build strong,
+                impactful teams of underrepresented makers who are shaping the
+                future of games.
               </p>
-              <p class="mt-6 text-xl md:text-2xl leading-tight">
-                <nuxt-link to="/baby-ghosts">
-                  Learn about our <b>Baby Ghosts</b> program.
-                </nuxt-link>
-              </p>
-              <p class="mt-2 text-lg leading-tight">
-                Applications will open September 1!
-              </p>
+              <div class="mt-6">
+                <ApplyNowButton />
+              </div>
             </div>
           </div>
         </div>
@@ -54,7 +49,7 @@
         <p class="md:text-2xl font-display font-light">
           We believe in creators retaining ownership of their companies and IP.
           Our investments are structured around
-          <NuxtLink to="/blog/how-we-make-investments/"
+          <NuxtLink to="/blog/how-we-make-investments"
             >shared earnings</NuxtLink
           >
           so that we recoup only after your team is paid.
@@ -66,9 +61,10 @@
             Baby Ghosts Peer Accelerator and Grant
           </h3>
           <p class="mb-4 lg:m-0 lg:mb-0 text-base md:text-xl">
-            Grants for teams that need to get studio operations up and running
-            and support with impact strategy. Prepares teams for further
-            investment and game development.
+            Grants for teams who want to form a co-op (or other alternative
+            structure), get studio operations up and running, and get support
+            with impact strategy. Prepares teams for further investment and game
+            development.
           </p>
           <p class="my-4 lg:mb-0 text-lg">
             <NuxtLink to="/baby-ghosts">Learn more about Baby Ghosts</NuxtLink>
@@ -217,3 +213,6 @@
     </section>
   </div>
 </template>
+<script setup lang="ts">
+// definePageMeta({ documentDriven: { page: false, surround: false } });
+</script>

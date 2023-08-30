@@ -1,6 +1,8 @@
 <template>
   <footer>
-    <section class="text-center max-w-screen-lg mx-auto flex-col">
+    <section
+      class="text-center max-w-screen-lg mx-auto flex-col"
+      v-if="route.path !== '/apply' && route.path !== '/baby-ghosts'">
       <div class="text-3xl">Interested in partnering with us?</div>
       <a href="mailto:hello@weirdghosts.ca" class="text-2xl font-bold underline"
         >Get in touch.</a

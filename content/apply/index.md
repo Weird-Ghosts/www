@@ -8,22 +8,11 @@ bodyClass: page--apply
 ---
 
 ::page-header
-Apply to Weird Ghosts.
+Baby Ghosts Peer Accelerator Application
 ::
 
-::two-col-body
+::application-form
 
-#col1
-[Just two important things before you apply:]{.text-2xl.block.mb-6}
-
-1. **Make sure you're eligible.** Your studio must be based in Canada, and a majority of founders from an underrepresented identity group.
-2. **Familiarize yourself** with our mandate of social impact, and supporting studio development rather than single projects.
-
-#col2
-Applications for the Baby Ghosts program will open **September 1**. [Subscribe to our mailing list](# "Click to subscribe"){:onclick="document.getElementById('mailing-list').scrollIntoView({ behavior: 'smooth' });"} to be notified when applications open and to receive the link to the info session!
-
-Applications for Early funding are currently closed. Please [get in touch](mailto:hello@weirdghosts.ca){.underline .font-bold} if you have any questions or would like to be notified when they open.
-
-<!-- :apply-now-button -->
-
+#title
+Applications are now open for our 2023 Baby Ghosts program!
 ::

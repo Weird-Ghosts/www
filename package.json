@@ -2,10 +2,10 @@
   "name": "nuxt-app",
   "private": true,
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "generate": "nuxi generate",
+    "preview": "nuxi preview",
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
@@ -22,13 +22,22 @@
     "tailwindcss": "^3.3.3"
   },
   "dependencies": {
+    "@formkit/addons": "^0.18.0",
+    "@formkit/icons": "^0.18.0",
+    "@formkit/nuxt": "^0.18.0",
+    "@formkit/pro": "^0.114.2",
+    "@formkit/themes": "^0.18.0",
+    "@formkit/vue": "^0.18.2",
     "@nuxt/content": "^2.7.1",
     "@nuxtjs/markdownit": "^2.0.0",
     "@nuxtjs/tailwindcss": "^6.8.0",
     "@tailwindcss/typography": "^0.5.9",
+    "@vuelidate/core": "^2.0.3",
+    "@vuelidate/validators": "^2.0.3",
+    "axios": "^1.4.0",
     "dayjs-nuxt": "^1.1.2",
     "gsap": "^3.12.2",
-    "netlify-cli": "^15.10.0",
+    "netlify-cli": "^16.0.3",
     "nuxi": "^3.6.5",
     "nuxt-content-assets": "^1.3.2",
     "postcss-nested": "^6.0.1",

@@ -125,10 +125,11 @@ ol {
 ol > li {
   position: relative;
   padding-left: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 ol > li:before {
-  @apply absolute top-0 left-0 mt-1 flex items-center bg-body text-primary text-base
+  @apply absolute top-0 left-0 mt-0 flex items-center bg-body text-primary text-base
   w-8 h-8 rounded-full justify-center font-black;
   content: counter(item);
   counter-increment: item;
@@ -214,8 +215,14 @@ nav {
   ol {
     @apply list-none list-outside;
     li {
-      @apply mb-8 md:text-3xl text-base;
+      @apply mb-8 text-xl md:text-2xl lg:text-3xl;
+      &:last-child {
+        @apply mb-0;
+      }
     }
+  }
+  .resources {
+    @apply mt-8   md:mt-0;
   }
 }
 .page--resources {
