@@ -4,7 +4,7 @@
     <main class="layout" role="main">
       <Navigation />
       <SocialMediaLinks />
-      <div class="relative overflow-hidden px-4 sm:px-6">
+      <div class="relative overflow-hidden">
         <div class="relative py-6 sm:pb-16 md:pb-20 lg:pb-28">
           <NuxtPage />
         </div>
