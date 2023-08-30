@@ -3,6 +3,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body {
+  @apply min-h-screen relative bg-primary;
+}
 h1,
 h2,
 h3,
