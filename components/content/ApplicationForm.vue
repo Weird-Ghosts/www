@@ -82,7 +82,7 @@ const handleSubmit = async function (payload, node) {
     <div id="application" v-else>
       <div class="flex flex-wrap">
         <div class="w-full md:w-2/3 md:pr-10">
-          <h2 class="text-2xl block mb-6">
+          <h2 class="text-xl block mb-6">
             A few important things before you apply:
           </h2>
           <ol>
@@ -115,9 +115,6 @@ const handleSubmit = async function (payload, node) {
             </li>
             <li>
               <nuxt-link to="/faq">FAQ</nuxt-link>
-            </li>
-            <li>
-              <a href="">Info session video</a>
             </li>
           </ul>
           <p class="bg-fog p-2 mt-2">

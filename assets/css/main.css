@@ -3,6 +3,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body {
+  @apply min-h-screen relative bg-primary;
+}
 h1,
 h2,
 h3,
@@ -215,7 +218,7 @@ nav {
   ol {
     @apply list-none list-outside;
     li {
-      @apply mb-8 text-xl md:text-2xl lg:text-3xl;
+      @apply mb-8 text-xl;
       &:last-child {
         @apply mb-0;
       }
