@@ -34,7 +34,7 @@ To date, we have supported [12 studios](/studios) across 5 provinces through gra
 
 ### Impact
 
-[“The Baby Ghosts program not only gave my studio financial security for this year, it also gave me access to an **inspiring and inclusive community** of peers, collaborators and mentors."<br />- Sam Ramsay, Cheekynauts Entertainment]{.bg-white.block.p-6}
+[“The Baby Ghosts program not only gave my studio financial security for this year, it also gave me access to an **inspiring and inclusive community** of peers, collaborators and mentors."<br />[- Sam Ramsay, Cheekynauts Entertainment]{.attribution}]{.bg-white.block.p-6}
 
 ["Receiving the Baby Ghosts grant and being connected with the Weird Ghosts community was **a dream come true**. I was granted the resources and opportunity to take my project STREET UNI X to the next level through some months of full-time development focus after years of only working on the project in my off time between day jobs.”<br />- daffodil, daffodil & friends]{.bg-white.block.p-6}
 

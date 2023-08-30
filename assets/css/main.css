@@ -278,3 +278,26 @@ tbody {
     @apply mb-2;
   }
 }
+.quotes {
+  @apply flex flex-wrap justify-around;
+  p {
+    @apply block p-6 rounded-xl  w-1/3  text-xl;
+    &:first-child {
+      @apply block w-3/5 text-4xl;
+    }
+    .attribution {
+      @apply text-base;
+    }
+  }
+  ul {
+    @apply mt-0;
+  }
+}
+.right-aligner {
+  h3 {
+    @apply text-right text-4xl;
+  }
+  ul {
+    @apply mt-0;
+  }
+}

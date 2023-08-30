@@ -12,7 +12,7 @@ Baby Ghosts grant and Peer Accelerator.
 
 #intro
 
-Are you (and maybe a team) building a video game studio with a co-operative model? Looking for support that understands that you, as an underrepresented founder in the industry, run up against barriers, biases, and bullshit? The Baby Ghosts Peer Accelerator could be for you!
+Are you building a video game studio with a co-operative model? Looking understanding that you, as an underrepresented founder in the industry, run up against barriers, biases, and bullshit? The Baby Ghosts Peer Accelerator could be for you!
 
 ::
 
@@ -132,6 +132,38 @@ Being able to take advantage of your time in the program is the most important t
   
 ::  
 
+::two-col-body{.right-aligner}
+  
+#col1
+### Eligibility
+
+#col2
+- You are based in Canada.
+- You are a member of an underrepresented group in the video game industry.
+- You are a member of a team of at least two people.
+- You are building a video game studio with a co-operative model.
+::
+
+::two-col-body{.right-aligner}
+
+#col1
+### What We Look For
+
+#col2
+- Social impact
+- Team alignment
+- Focus on studio development
+- Willingness to be in community
+
+::
+
+::wide-section
+  ::div{.quotes}
+    [“The Baby Ghosts program not only gave my studio financial security for this year, it also gave me access to an **inspiring and inclusive community** of peers, collaborators and mentors."<br />[- Sam Ramsay, Cheekynauts Entertainment]{.attribution}]{.sam}
+
+    ["Receiving the Baby Ghosts grant and being connected with the Weird Ghosts community was **a dream come true**. I was granted the resources and opportunity to take my project STREET UNI X to the next level through some months of full-time development focus after years of only working on the project in my off time between day jobs.”<br />[- daffodil, daffodil & friends]{.attribution}]{.daffodil}
+  ::
+::
 ::two-col-body 
 
 #col2

@@ -1,10 +1,13 @@
 <template>
   <div class="bg-body text-primary py-12 my-12">
     <div class="mt-10 mx-auto max-w-screen-xl">
-      <div class="order-1 w-full lg:grid lg:grid-cols-2 gap-8">
-        <div v-if="$slots.col1"><slot name="col1" /></div>
-        <div v-if="$slots.col2"><slot name="col2" /></div>
-      </div>
+      <template v-if="$slots.col1 && $slots.col2">
+        <div class="order-1 w-full lg:grid lg:grid-cols-2 gap-8">
+          <div v-if="$slots.col1"><slot name="col1" /></div>
+          <div v-if="$slots.col2"><slot name="col2" /></div>
+        </div>
+      </template>
+      <div v-else><slot name="default" /></div>
     </div>
   </div>
 </template>
