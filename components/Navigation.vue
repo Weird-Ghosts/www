@@ -10,9 +10,9 @@
     </div>
     <nav class="md:w-1/2 w-full">
       <NuxtLink to="/studios"> Studios </NuxtLink>
+      <NuxtLink to="/baby-ghosts"> baby ghosts </NuxtLink>
       <NuxtLink to="/blog"> Blog </NuxtLink>
       <NuxtLink to="/faq"> FAQ </NuxtLink>
-      <NuxtLink to="/apply"> Apply </NuxtLink>
     </nav>
   </div>
 </template>

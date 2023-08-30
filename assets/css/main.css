@@ -63,9 +63,10 @@ section {
   li {
     @apply text-xl font-light;
   }
+
   b,
   strong {
-    @apply font-black;
+    @apply font-bold;
   }
   h2 {
     @apply flex-1 text-3xl font-black mb-2;
@@ -79,7 +80,16 @@ section {
     }
   }
 }
-
+.faq {
+  p,
+  li {
+    @apply text-base font-light;
+  }
+  b,
+  strong {
+    @apply font-bold;
+  }
+}
 #onpage-nav {
   @apply flex items-center mx-auto p-0 sticky z-50 w-full;
 
@@ -251,15 +261,20 @@ tbody {
 }
 .page--baby-ghosts {
   h3 {
-    @apply text-2xl leading-10 font-black;
-    a {
-      @apply no-underline text-2xl leading-10 font-black;
-    }
+    @apply text-3xl leading-10 mt-8;
   }
-  ul > li > ul {
+}
+.timeline {
+  h4 {
+    @apply text-2xl leading-10 mt-12 font-bold text-center;
+  }
+  h5 {
+    @apply text-base text-center mb-6;
+  }
+  ul {
     @apply mt-0;
-    li {
-      @apply mb-2;
-    }
+  }
+  li {
+    @apply mb-2;
   }
 }
