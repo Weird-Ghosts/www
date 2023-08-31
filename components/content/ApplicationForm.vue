@@ -104,7 +104,7 @@ const handleSubmit = async function (payload, node) {
         </div>
         <div class="resources md:text-xl max-w-lg md:w-1/3">
           Resources to review before applying:
-          <ul class="list-outside list-disc pl-6">
+          <ul>
             <li>
               <nuxt-link to="/baby-ghosts">Program details</nuxt-link>
             </li>
