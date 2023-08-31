@@ -68,8 +68,6 @@ Our next program will start for 5 teams on **November 1, 2023**. We have made a 
 
 #col1
   ::accordion{.faq}
-
-
     ::topic
     ---
     question: "What are pain points?"
@@ -119,8 +117,6 @@ Our next program will start for 5 teams on **November 1, 2023**. We have made a 
     - Fast-track pitch readiness for future investment from Weird Ghosts and further integration into the Gamma Space community"
     ---
     ::
-  ::o-ghost{.ghost}
-  ::    
   ::
 
 #col2
@@ -147,7 +143,7 @@ Being able to take advantage of your time in the program is the most important t
 
 #col2
 - You are based in Canada.
-- You are a member of an underrepresented group in the video game industry.
+- You are a member of an [underrepresented group](/faq#what-is-an-underrepresented-identity-group) in the video game industry.
 - You are a member of a team of at least two people.
 - You are building a video game studio with a co-operative model.
 ::

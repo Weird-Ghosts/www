@@ -1,7 +1,7 @@
 <template>
   <div class="">
-    <h2 class="text-2xl font-bold leading-10 tracking-tight text-primary">
-      FAQ
+    <h2 class="text-3xl font-bold leading-10 tracking-tight text-primary">
+      Baby Ghosts FAQ
     </h2>
     <div class="mx-auto max-w-7xl">
       <div class="mx-auto max-w-4xl divide-y divide-gray-900/10">
