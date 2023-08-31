@@ -26,6 +26,27 @@ Questions asked and answered.
     answer: "Your studio must be based in Canada, and a majority (half or more) of founders must be from an underrepresented identity group. We have no preference for the stage of development or genre of your games. Teams without a shipped game can apply, but we generally don’t fund solo developers unless you have a plan to grow beyond just yourself. Unfortunately, international studios or teams outside Canada cannot apply at this time."
     ---
     ::
+    
+    ::accordion-topic
+    ---
+    question: "What questions are asked in the Baby Ghosts application form?"
+    answer: "This application form is divided into several sections to get to know you, your studio, and your game. Here are all of the questions: \n
+      - **Your name**: What should people call you? \n
+      - **Pronouns**: Optional, but helps people refer to you correctly. \n
+      - **Email address**: Your main point of contact. \n
+      - **Location(s)**: Where you and your team are based, within Canada. \n
+      - **Collaboration experience**: Your history with startups, student groups, or other collaborative efforts. How will this experience influence your studio? \n
+      - **Miro board link**: Share the completed Goal Alignment and Pain Point exercises. \n
+      - **Studio name**: The name of your studio. \n
+      - **Concept**: Your vision for the studio, including business structures, size, and values. \n
+      - **Team**: Names, pronouns, and bios of each team member. Future hiring plans. \n
+      - **Background**: If already operational, details about your structure, history, and any fundraising. \n
+      - **Financial sustainability**: Initial thoughts on revenue streams and distribution. \n
+      - **Social impact**: How your studio aims to make a social impact. \n
+      - **Game description**: Info about the game you're currently working on, if any. \n
+      - **Creative assets**: Upload images or other creative assets (max 8MB)."
+    ---
+    ::
 
     ::accordion-topic
     ---
@@ -52,13 +73,6 @@ Questions asked and answered.
     ---
     question: "What is a non-extractive impact fund?"
     answer: "Impact investments are investments that are made to generate measurable social or cultural impacts alongside financial returns. For Weird Ghosts, some of our impact goals are to improve the diversity and equity in the Canadian games funding ecosystem, support a shift away from overworking in games, support a sustainable gaming community in Canada, and see more projects by and about marginalized people. “Non-extractive” means that we will make sure our investees pay themselves and cover their costs before we recoup, and that our deals are flexible and benefit our investees more than us.\n\nOur fund intends to make not only financial returns, but also measurable social impact returns through our own work and the outcomes of the work of our studio investees. Read more about what that means in our article, [“A brief intro to making your indie game studio impactful”](https://weirdghosts.ca/blog/a-brief-intro-to-making-your-indie-game-studio-impactful/). We are also designing deals that prioritize the sustainability of our investees."
-    ---
-    ::
-
-    ::accordion-topic
-    ---
-    question: "What should I include in my pitch deck?"
-    answer: "We’re looking for the story and vision of your studio. This is a little different from your typical VC or publisher pitch deck, which usually focuses on a specific project with deeper market analysis and projections. Our programs are focused on *studio development* so your pitch should reflect that.\n\nAt a minimum, please provide:\n\n- Information on your team (names, roles and responsibilities)\n- Organizational structure\n- Studio culture and values\n- Growth goals/studio 5-year vision\n- A summary of your [impact goals](https://weirdghosts.ca/blog/a-brief-intro-to-making-your-indie-game-studio-impactful/)\n- A summary of the project(s) you’re working on\n- Your business and marketing plans, on a very high level\n- Studio budget overview\n\nAnd read our blog post: [How to Apply to Weird Ghosts](https://weirdghosts.ca/blog/how-to-apply-to-weird-ghosts/)"
     ---
     ::
 
