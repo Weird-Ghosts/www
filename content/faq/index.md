@@ -10,6 +10,20 @@ image:
 Questions asked and answered.
 ::
 
+::accordion
+  ::accordion-topic
+  ---
+  question: "What are pain points?"
+  answer: "We chat with Peer Accelerator team members about the challenges and concerns they're facing in their studios. These are what we call \"pain points.\" Every studio is unique, but here are some questions that often come up:\n
+
+  - What's our studio structure?\n
+  - How do we prioritize tasks?\n
+  - What's our business model?\n
+  - Who is our audience, and how do we reach them?\n
+  - How do we scope our demo within our resources?"
+  ---
+  ::
+::
 ::faq-with-toc
 
 #### What funding opportunities does Weird Ghosts offer and what's the application process like?
