@@ -10,14 +10,14 @@ const link = defineProps({
   },
 });
 
-console.log("Link:", link.value);
+console.log("Link:", link.link.to);
 
 const buttonClass = ref("my-button");
 console.log("Button Class:", buttonClass.value);
 </script>
 
 <template>
-  <NuxtLink :to="link.to">
+  <NuxtLink :to="link.link.to">
     <button class="my-button">
       <span v-if="!$slots?.default">Hello Ghosties! 👋</span>
       <span v-else>

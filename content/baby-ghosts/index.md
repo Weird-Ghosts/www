@@ -24,6 +24,8 @@ Are you building a video game studio with a co-operative model? Looking for unde
 
 [Join our info session on September 6 to learn more!]{.text-center.block.mb-4}
 
+
+
 :registration-button
 
 ### Important Dates
@@ -62,11 +64,12 @@ Our next program will start for 5 teams on **November 1, 2023**. We have made a 
 
 ::
 
-::wide-section
+::wide-section{.relative}
 
 #col1
+### Baby Ghosts FAQ
   ::accordion{.faq}
-    ::topic
+    ::accordion-topic
     ---
     question: "What are pain points?"
     answer: "We chat with Peer Accelerator team members about the challenges and concerns they're facing in their studios. These are what we call \"pain points.\" Every studio is unique, but here are some questions that often come up:\n
@@ -79,7 +82,7 @@ Our next program will start for 5 teams on **November 1, 2023**. We have made a 
     ---
     ::
 
-    ::topic
+    ::accordion-topic
     ---
       question: "What kind of support does Baby Ghosts offer?"
       answer: "We're all ears. Our program facilitators work closely with you to offer tailored advice, tools, and expertise. This comes either from our mentorship team or the broader Gamma Space community. Here's how we can help:\n
@@ -97,14 +100,14 @@ Our next program will start for 5 teams on **November 1, 2023**. We have made a 
     ---
     ::
 
-    ::topic
+    ::accordion-topic
     ---
     question: "What are the expectations for participation?"
     answer: "You'll need to post updates in your Studio and Project Slack channels at least once a week. This is where our mentors really step up. Whether it's time management, prepping for a big meeting, or just vibing with your latest track, we're here for it. The more you share, the more we can help you grow. No question is too small, and no problem is too big. It takes practice to re-learn how to be part of a community and let yourself accept help."
     ---
     ::
 
-    ::topic
+    ::accordion-topic
     ---
     question: "What outcomes can I expect?"
     answer: "It's crucial that you come to this program prioritizing studio development and not just the game you’re creating. Here's what studio development might look like for you:\n
@@ -118,6 +121,8 @@ Our next program will start for 5 teams on **November 1, 2023**. We have made a 
   ::
 
 #col2
+
+
 ### Am I Ready to Apply?
 
 [The Baby Ghosts Peer Accelerator program is a time to _slow down and consider_ the future of your studio _before_ you start chasing funding opportunities. That may sound counterintuitive, but we help you to accelerate _your value to you_ from the inside out so that others don't accelerate _your value to them_ from the outside in.]{.mt-10.block}
@@ -139,7 +144,7 @@ Being able to take advantage of your time in the program is the most important t
 
 #col2
 - You are based in Canada.
-- You are a member of an underrepresented group in the video game industry.
+- You are a member of an [underrepresented group](/faq#what-is-an-underrepresented-identity-group) in the video game industry.
 - You are a member of a team of at least two people.
 - You are building a video game studio with a co-operative model.
 ::
