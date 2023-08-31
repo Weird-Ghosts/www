@@ -304,12 +304,11 @@ tbody {
 .cta {
   @apply mx-auto w-full text-center;
 }
-.ghost {
-  @apply absolute h-16 w-16;
 
-  bottom: -10px; /* Overlap by 50% of the element's height */
-  left: 50%;
-  transform: translate(-50%, 50%); /* Centering */
-
-  /* Add your animation styles here */
+.ghostie-bg {
+  background-image: url("~/assets/img/d-ghost.svg");
+  background-repeat: no-repeat;
+  background-position: left bottom -200px; /* Aligns the image to the bottom and moves it up by 50% of its height */
+  background-size: 250px; /* Adjust as needed */
+  overflow: hidden;
 }

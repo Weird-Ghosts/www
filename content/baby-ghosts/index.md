@@ -64,9 +64,9 @@ Our next program will start for 5 teams on **November 1, 2023**. We have made a 
 
 ::
 
-::wide-section{.relative}
-
+::wide-section{.ghostie-bg}
 #col1
+
 ### Baby Ghosts FAQ
   ::accordion{.faq}
     ::accordion-topic
