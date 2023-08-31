@@ -319,3 +319,17 @@ tbody {
   background-size: 250px; /* Adjust as needed */
   overflow: hidden;
 }
+ul {
+  &:not([class^="formkit-"]) {
+    @apply list-none m-0 mt-4 p-0;
+
+    li {
+      @apply relative pl-6;
+
+      &:before {
+        content: "–";
+        @apply absolute left-0 top-0;
+      }
+    }
+  }
+}

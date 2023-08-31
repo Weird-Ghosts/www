@@ -70,12 +70,12 @@ const handleSubmit = async function (payload, node) {
     class="text-xl sm:text-xl bg-white z-30 relative p-4 lg:p-12 mx-auto max-w-screen-xl">
     <div id="thank-you" v-if="formSubmitted == true">
       <div class="mb-12 w-full lg:w-2/3 lg:pr-10">
-        <h2 class="text-4xl block mb-6">
+        <h2 class="text-4xl font-black block mb-6">
           We&#8217;ve received your application!
         </h2>
         <p>
-          We&#8217;ll be in touch before September 25 to let you know if
-          you&#8217;ve been selected for an interview.
+          We&#8217;ll be in touch before September 25 to let you know the next
+          steps.
         </p>
       </div>
     </div>
