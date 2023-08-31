@@ -25,8 +25,17 @@ Are you building a video game studio with a co-operative model? Looking for unde
 [Join our info session on September 6 to learn more!]{.text-center.block.mb-4}
 
 
+::div{.register.cta}
+  ::studio-button
+  ---
+  link:
+    to: https://www.eventbrite.ca/e/baby-ghosts-info-session-tickets-700769669947
+  ---
+  Register Now!
+  ::
+::
 
-:registration-button
+
 
 ### Important Dates
 
@@ -144,7 +153,7 @@ Being able to take advantage of your time in the program is the most important t
 
 #col2
 - You are based in Canada.
-- You are a member of an [underrepresented group](/faq#what-is-an-underrepresented-identity-group) in the video game industry.
+- You are a member of an underrepresented group in the video game industry.
 - You are a member of a team of at least two people.
 - You are building a video game studio with a co-operative model.
 ::
