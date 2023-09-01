@@ -97,7 +97,7 @@ const handleSubmit = async function (payload, node) {
             </li>
             <li>
               Create or log in to a Miro account.<br />
-              Use our
+              Use and complete our
               <a
                 href="https://miro.com/miroverse/values-goals-worksheet/"
                 target="_blank">
