@@ -311,7 +311,15 @@ tbody {
 .cta {
   @apply mx-auto w-full text-center;
 }
-
+.action-buttons {
+  @apply flex flex-wrap justify-around;
+  .cta {
+    @apply inline w-full md:w-1/2 mb-6 md:mb-0;
+    &:last-child {
+      @apply mb-0;
+    }
+  }
+}
 .ghostie-bg {
   background-image: url("~/assets/img/d-ghost.svg");
   background-repeat: no-repeat;

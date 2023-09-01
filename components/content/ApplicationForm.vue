@@ -96,13 +96,14 @@ const handleSubmit = async function (payload, node) {
               supporting studio development rather than single projects.
             </li>
             <li>
-              Complete the
+              Create or log in to a Miro account.<br />
+              Use our
               <a
                 href="https://miro.com/miroverse/values-goals-worksheet/"
                 target="_blank">
-                <b>goal alignment</b> and <b>pain point</b> exercises</a
+                <b>goal alignment</b> and <b>pain point</b> exercise</a
               >
-              on Miro, then save and copy the link to your board.<br />
+              template, then save and copy the link to your board.<br />
               <span class="text-sm"
                 >If you have any trouble with this step, get in touch and we'll
                 help you out!</span
