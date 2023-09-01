@@ -102,7 +102,7 @@ const handleSubmit = async function (payload, node) {
                 target="_blank">
                 <b>goal alignment</b> and <b>pain point</b> exercises</a
               >
-              on Miro, then save and copy the link to your board.
+              on Miro, then save and copy the link to your board.<br />
               <span class="text-sm"
                 >If you have any trouble with this step, get in touch and we'll
                 help you out!</span
