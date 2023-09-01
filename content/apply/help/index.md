@@ -13,5 +13,5 @@ Miro board help.
 
 ::one-col-body
 
-![Miro board help](/img/miro-board-help.png)
+![Miro board help](/img/miro-board-help.gif)
 ::
