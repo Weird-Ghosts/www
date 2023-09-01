@@ -25,16 +25,4 @@ h3 {
     @apply mt-0;
   }
 }
-ul {
-  @apply list-none m-0 mt-4 p-0;
-}
-
-li {
-  @apply relative pl-6;
-}
-
-li:before {
-  content: "–";
-  @apply absolute left-0 top-0;
-}
 </style>

@@ -138,10 +138,11 @@ ol {
 ol > li {
   position: relative;
   padding-left: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 ol > li:before {
-  @apply absolute top-0 left-0 mt-1 flex items-center bg-body text-primary text-base
+  @apply absolute top-0 left-0 mt-0 flex items-center bg-body text-primary text-base
   w-8 h-8 rounded-full justify-center font-black;
   content: counter(item);
   counter-increment: item;
@@ -227,8 +228,14 @@ nav {
   ol {
     @apply list-none list-outside;
     li {
-      @apply mb-8 md:text-3xl text-base;
+      @apply mb-8 text-xl;
+      &:last-child {
+        @apply mb-0;
+      }
     }
+  }
+  .resources {
+    @apply mt-8   md:mt-0;
   }
 }
 .page--resources {
@@ -304,11 +311,33 @@ tbody {
 .cta {
   @apply mx-auto w-full text-center;
 }
-
+.action-buttons {
+  @apply flex flex-wrap justify-around;
+  .cta {
+    @apply inline w-full md:w-1/2 mb-6 md:mb-0;
+    &:last-child {
+      @apply mb-0;
+    }
+  }
+}
 .ghostie-bg {
   background-image: url("~/assets/img/d-ghost.svg");
   background-repeat: no-repeat;
   background-position: left bottom -200px; /* Aligns the image to the bottom and moves it up by 50% of its height */
   background-size: 250px; /* Adjust as needed */
   overflow: hidden;
+}
+ul {
+  &:not([class^="formkit-"]) {
+    @apply list-none m-0 mt-4 p-0;
+
+    li {
+      @apply relative pl-6;
+
+      &:before {
+        content: "–";
+        @apply absolute left-0 top-0;
+      }
+    }
+  }
 }
