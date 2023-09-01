@@ -10,10 +10,7 @@ const link = defineProps({
   },
 });
 
-console.log("Link:", link.link.to);
-
 const buttonClass = ref("my-button");
-console.log("Button Class:", buttonClass.value);
 </script>
 
 <template>
