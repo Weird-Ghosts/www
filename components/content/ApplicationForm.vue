@@ -96,9 +96,17 @@ const handleSubmit = async function (payload, node) {
               supporting studio development rather than single projects.
             </li>
             <li>
-              Complete the <b>goal alignment</b> and
-              <b>pain point</b> exercises. [add more detail here, and link to
-              template]
+              Complete the
+              <a
+                href="https://miro.com/miroverse/values-goals-worksheet/"
+                target="_blank">
+                <b>goal alignment</b> and <b>pain point</b> exercises</a
+              >
+              on Miro, then save and copy the link to your board.
+              <span class="text-sm"
+                >If you have any trouble with this step, get in touch and we'll
+                help you out!</span
+              >
             </li>
           </ol>
         </div>
@@ -109,12 +117,14 @@ const handleSubmit = async function (payload, node) {
               <nuxt-link to="/baby-ghosts">Program details</nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/faq#whats-the-eligibility-criteria-for-funding"
-                >Eligibility criteria</nuxt-link
-              >
+              <nuxt-link to="/faq">FAQ</nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/faq">FAQ</nuxt-link>
+              <a
+                href="https://miro.com/miroverse/values-goals-worksheet/"
+                target="_blank"
+                >Info session</a
+              >
             </li>
           </ul>
           <p class="bg-fog p-2 mt-2">
