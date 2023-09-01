@@ -105,8 +105,10 @@ const handleSubmit = async function (payload, node) {
               >
               template, then save and copy the public link to your board.<br />
               <span class="text-sm"
-                >If you have any trouble with this step, get in touch and we'll
-                help you out!</span
+                >If you have any trouble with this step,
+                <nuxt-link to="/apply/help" target="_blank"
+                  >check this guide</nuxt-link
+                >, or get in touch and we'll help you out!</span
               >
             </li>
           </ol>
