@@ -13,7 +13,9 @@
       <div class="mx-auto max-w-2xl" id="subscribe">
         <MailingListSignupForm
           v-if="
-            route.path !== '/thank-you' && route.path !== '/mailing-list'
+            route.path !== '/thank-you' &&
+            route.path !== '/mailing-list' &&
+            route.path !== '/apply'
           " />
       </div>
       <p class="text-center text-base leading-6 mt-12">
