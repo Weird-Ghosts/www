@@ -124,7 +124,7 @@ const handleSubmit = async function (payload, node) {
             </li>
             <li>
               <a
-                href="https://miro.com/miroverse/values-goals-worksheet/"
+                href="https://www.eventbrite.ca/e/baby-ghosts-info-session-tickets-700769669947"
                 target="_blank"
                 >Info session</a
               >
