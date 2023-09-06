@@ -22,19 +22,9 @@ Are you building a video game studio with a co-operative model? Looking for unde
 
 #col2
 
-[Join our info session on September 6 to learn more!]{.text-center.block.mb-4}
+<!-- [Join our info session on September 6 to learn more!]{.text-center.block.mb-4} -->
 
 ::div{.action-buttons}
-  ::div{.register.cta}
-    ::studio-button
-    ---
-    link:
-      to: https://www.eventbrite.ca/e/baby-ghosts-info-session-tickets-700769669947
-    ---
-    Register
-    ::
-  ::
-
   ::div{.apply.cta}
     ::studio-button
     ---
