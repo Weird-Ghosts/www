@@ -88,8 +88,8 @@ const handleSubmit = async function (payload, node) {
           <ol>
             <li>
               <b>Make sure you&#8217;re eligible.</b> Your studio must be based
-              in Canada, and a majority of founders from an underrepresented
-              identity group.
+              in Canada, and a majority (50% or more) of founders from an
+              underrepresented identity group.
             </li>
             <li>
               <b>Familiarize yourself</b> with our mandate of social impact, and
@@ -305,7 +305,7 @@ const handleSubmit = async function (payload, node) {
           <FormKit
             type="checkbox"
             label="Yes, we are eligible"
-            help="Your studio must be based in Canada, and a majority of founders from an underrepresented identity group."
+            help="Your studio must be based in Canada, and a majority (50% or more) of founders from an underrepresented identity group."
             name="eligibility"
             :value="true"
             validation="accepted"
