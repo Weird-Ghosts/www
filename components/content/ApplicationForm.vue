@@ -297,8 +297,8 @@ const handleSubmit = async function (payload, node) {
             type="file"
             label="Creative assets"
             name="creative"
-            help="If you have multiple images you'd like to share, please combine them into one file. PDF, PNG, or JPG accepted (max 8MB)."
-            accept=".jpg,.png,.pdf" />
+            help="If you have multiple images you'd like to share, please combine them into one file. PDF, PNG, GIF or JPG accepted (max 8MB)."
+            accept=".jpg,.png,.pdf,.gif" />
         </FormKit>
         <FormKit type="group" name="aboutYourStudio" id="aboutYourStudio">
           <h3>Eligibility</h3>
