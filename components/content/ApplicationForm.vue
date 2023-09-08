@@ -123,10 +123,8 @@ const handleSubmit = async function (payload, node) {
               <nuxt-link to="/faq">FAQ</nuxt-link>
             </li>
             <li>
-              <a
-                href="https://www.eventbrite.ca/e/baby-ghosts-info-session-tickets-700769669947"
-                target="_blank"
-                >Info session</a
+              <nuxt-link href="/apply/info-session"
+                >Info session video</nuxt-link
               >
             </li>
           </ul>
