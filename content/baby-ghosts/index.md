@@ -25,6 +25,16 @@ Are you building a video game studio with a co-operative model? Looking for unde
 <!-- [Join our info session on September 6 to learn more!]{.text-center.block.mb-4} -->
 
 ::div{.action-buttons}
+  ::div{.register.cta}
+    ::studio-button
+    ---
+    link:
+      to: /apply/info-session
+    ---
+    Info Session
+    ::
+  ::
+
   ::div{.apply.cta}
     ::studio-button
     ---
@@ -32,6 +42,7 @@ Are you building a video game studio with a co-operative model? Looking for unde
       to: /apply
     ---
     Apply Now
+
     ::
   ::
 ::

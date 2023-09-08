@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-body text-primary py-12 px-12 my-12">
+  <div class="bg-body text-primary px-6 md:py-12 md:px-12 md:my-12">
     <div class="mt-10 mx-auto max-w-screen-xl">
       <template v-if="$slots.col1 && $slots.col2">
         <div class="order-1 w-full lg:grid lg:grid-cols-2 gap-8">

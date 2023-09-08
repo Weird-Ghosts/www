@@ -6,7 +6,7 @@
         <ContentSlot :use="$slots.default" unwrap="p" />
       </h1>
       <div v-if="$slots.intro">
-        <p class="text-2xl mt-8">
+        <p class="text-xl md:text-2xl mt-8">
           <ContentSlot :use="$slots.intro" unwrap="p" />
         </p>
       </div>
