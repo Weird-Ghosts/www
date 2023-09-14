@@ -52,7 +52,7 @@ Are you building a video game studio with a co-operative model? Looking for unde
 | Date          | Event                                  |
 | ------------- | -------------------------------------- |
 | Sep 1         | Applications open                      |
-| Sep 1-25      | Rolling interviews with all applicants |
+| Sep 1-25      | Rolling interviews with selected applicants |
 | Sep 6         | Info session                           |
 | Sep 25        | Applications close                     |
 | Sep 26-Oct 18 | Pitch calls and review period          |
