@@ -32,6 +32,7 @@ Programs across the country that support games and digital media projects.
 | | [Business Loans](https://www.bdc.ca/en/financing) | Business Development Bank of Canada |
 | | [CanExport SMEs](https://www.tradecommissioner.gc.ca/funding-financement/canexport/sme-pme/index.aspx?lang=eng) | Government of Canada |
 | | [CanExport for Innovators](https://www.tradecommissioner.gc.ca/funding-financement/canexport/innovation/index.aspx?lang=eng) | Government of Canada |
+| | [Rocket Fund Content Creation Fund](https://rocketfund.ca/rocket-funding/content-creation-program/) | Shaw |
 | | [Canada-Germany Digital Media Incentive](https://cmf-fmc.ca/document/berlin-brandenburg-germany-guidelines/) | Canada Media Fund |
 | | [Commercial Projects](https://cmf-fmc.ca/program/commercial-projects-program/) | Canada Media Fund |
 | | [Conceptualization](https://cmf-fmc.ca/program/conceptualization-program/) | Canada Media Fund |
