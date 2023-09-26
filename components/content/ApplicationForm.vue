@@ -2,7 +2,7 @@
 import { createLocalStoragePlugin } from "@formkit/addons";
 
 import { useRouter } from "vue-router";
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
 
 const router = useRouter();
 const formSubmitted = ref(false);
@@ -28,6 +28,18 @@ watch(router.currentRoute, (to) => {
     formSubmitted.value = false;
   }
 });
+
+const afterDeadline = ref(false);
+
+onMounted(() => {
+  const deadline = new Date("2023-09-25T23:59-04:00"); // Eastern Daylight Time
+  const currentDate = new Date();
+
+  if (currentDate.getTime() > deadline.getTime()) {
+    afterDeadline.value = true;
+  }
+});
+
 const handleSubmit = async function (payload, node) {
   const applicationForm = document.getElementById("apply-form");
   let formData = new FormData(applicationForm);
@@ -75,6 +87,17 @@ const handleSubmit = async function (payload, node) {
         </h2>
         <p>
           We&#8217;ll be in touch before Oct 3 to let you know the next steps.
+        </p>
+      </div>
+    </div>
+    <div id="afterDeadline" v-else-if="afterDeadline == true">
+      <div class="mb-12 w-full lg:w-2/3 lg:pr-10">
+        <h2 class="text-4xl font-black block mb-6">
+          The deadline for the 2023/2024 Baby Ghosts cohort has passed.
+        </h2>
+        <p>
+          If you applied, we&#8217;ll be in touch before October 3 to let you
+          know the next steps.
         </p>
       </div>
     </div>
