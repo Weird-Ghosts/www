@@ -22,7 +22,7 @@ Are you building a video game studio with a co-operative model? Looking for unde
 
 #col2
 
-<!-- [Join our info session on September 6 to learn more!]{.text-center.block.mb-4} -->
+[Applications for the 2023/2024 cohort are now closed.]{.text-center.bg-body.p-2.text-white.block.mb-4}
 
 ::div{.action-buttons}
   ::div{.register.cta}
