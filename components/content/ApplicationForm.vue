@@ -74,7 +74,7 @@ const handleSubmit = async function (payload, node) {
           We&#8217;ve received your application!
         </h2>
         <p>
-          We&#8217;ll be in touch before September 25 to let you know the next
+          We&#8217;ll be in touch before October 3 to let you know the next
           steps.
         </p>
       </div>
