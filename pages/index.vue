@@ -20,9 +20,7 @@
                 impactful teams of underrepresented makers who are shaping the
                 future of games.
               </p>
-              <div class="mt-6">
-                <ApplyNowButton />
-              </div>
+              
             </div>
           </div>
         </div>
