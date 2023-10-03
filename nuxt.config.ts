@@ -24,6 +24,8 @@ export default defineNuxtConfig({
     },
   },
   modules: [
+    "@nuxthq/studio",
+
     "nuxt-content-assets", // make sure to add before content!
     "@nuxt/content",
     "@nuxtjs/tailwindcss",
