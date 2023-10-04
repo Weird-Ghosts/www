@@ -1,0 +1,11 @@
+{
+  "[markdown]": {
+    "editor.formatOnSave": false
+  },
+  "[md]": {
+    "editor.formatOnSave": false
+  },
+  "[toml]": {
+    "editor.formatOnSave": false
+  }
+}

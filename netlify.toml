@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "https://weirdghosts.ca/docs/*"
+  to = "https://publish.obsidian.md/serve?url=weirdghosts.ca/docs/:splat"
+  status = 200
+  force = true
