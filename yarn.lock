@@ -1334,11 +1334,11 @@
     semver "^7.3.8"
 
 "@netlify/functions-utils@^5.2.34":
-  version "5.2.34"
-  resolved "https://registry.yarnpkg.com/@netlify/functions-utils/-/functions-utils-5.2.34.tgz#fd5bb95146cf83e4ed33c0dc91ff7265d6106b77"
-  integrity sha512-emaLcOfooXmoUWtsF+L7xhT28KipyJsU3i/h2w0JqoT1BUOkVs4vuWVeTZUVeHSJCe1DsiwyLe0NY4UkgNu6cQ==
+  version "5.2.35"
+  resolved "https://registry.yarnpkg.com/@netlify/functions-utils/-/functions-utils-5.2.35.tgz#c58cb2eea37c1538981996fa4170c02d3f0a096f"
+  integrity sha512-ru6U9dN+DYOp9Pq9ddVGxbjFoLoQ8plJnRUvgnGCdLKmzZwUtRGAC3Yt8leaZ61/bK+tltGYAkcGkx6VXePWDQ==
   dependencies:
-    "@netlify/zip-it-and-ship-it" "9.24.3"
+    "@netlify/zip-it-and-ship-it" "9.25.1"
     cpy "^9.0.0"
     path-exists "^5.0.0"
 
@@ -1481,6 +1481,44 @@
   version "9.24.3"
   resolved "https://registry.yarnpkg.com/@netlify/zip-it-and-ship-it/-/zip-it-and-ship-it-9.24.3.tgz#1da2641209f32e21e23fbe10d689e292ac16031f"
   integrity sha512-lPgazcS+IvKX6Ov/K7dCk/SDU5d9M5TuV8LmMtJAsrX8VsASzcG3Q3QjNIXuVskZX2mitVLX9MpdmEIv/UXMtA==
+  dependencies:
+    "@babel/parser" "^7.22.5"
+    "@babel/types" "7.22.19"
+    "@netlify/binary-info" "^1.0.0"
+    "@netlify/serverless-functions-api" "^1.9.1"
+    "@vercel/nft" "^0.23.0"
+    archiver "^6.0.0"
+    common-path-prefix "^3.0.0"
+    cp-file "^10.0.0"
+    es-module-lexer "^1.0.0"
+    esbuild "0.19.4"
+    execa "^6.0.0"
+    filter-obj "^5.0.0"
+    find-up "^6.0.0"
+    glob "^8.0.3"
+    is-builtin-module "^3.1.0"
+    is-path-inside "^4.0.0"
+    junk "^4.0.0"
+    locate-path "^7.0.0"
+    merge-options "^3.0.4"
+    minimatch "^9.0.0"
+    normalize-path "^3.0.0"
+    p-map "^5.0.0"
+    path-exists "^5.0.0"
+    precinct "^11.0.0"
+    require-package-name "^2.0.1"
+    resolve "^2.0.0-next.1"
+    semver "^7.3.8"
+    tmp-promise "^3.0.2"
+    toml "^3.0.0"
+    unixify "^1.0.0"
+    urlpattern-polyfill "8.0.2"
+    yargs "^17.0.0"
+
+"@netlify/zip-it-and-ship-it@9.25.1":
+  version "9.25.1"
+  resolved "https://registry.yarnpkg.com/@netlify/zip-it-and-ship-it/-/zip-it-and-ship-it-9.25.1.tgz#e760a4a22012a30ef4cdff8fed15885110f7e1f1"
+  integrity sha512-uZKN5VRQncf5sB4KXqBe+hTUJz4b5FKcV+GcwKCUqgX+O25x5y7ADEONKB/v5uwIH0IqaDD6YHGxqayx89hmwg==
   dependencies:
     "@babel/parser" "^7.22.5"
     "@babel/types" "7.22.19"
@@ -10156,7 +10194,7 @@ node-gyp-build@^4.2.2:
   resolved "https://registry.yarnpkg.com/node-gyp-build/-/node-gyp-build-4.6.1.tgz#24b6d075e5e391b8d5539d98c7fc5c210cac8a3e"
   integrity sha512-24vnklJmyRS8ViBNI8KbtK/r/DmXQMRiOMXTNz2nrTnAYUwjmEEbnnpB/+kt+yWRv73bPsSPRFddrcIbAxSiMQ==
 
-node-gyp@^9.0.0:
+node-gyp@^9.0.0, node-gyp@^9.4.0:
   version "9.4.0"
   resolved "https://registry.yarnpkg.com/node-gyp/-/node-gyp-9.4.0.tgz#2a7a91c7cba4eccfd95e949369f27c9ba704f369"
   integrity sha512-dMXsYP6gc9rRbejLXmTbVRYjAHw7ppswsKyMxuxJxxOHzluIO1rGp9TOQgjFJ+2MCqcOcQTOPB/8Xwhr+7s4Eg==
