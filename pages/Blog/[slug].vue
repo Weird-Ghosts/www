@@ -37,10 +37,10 @@
 const { page } = useContent();
 
 useContentHead(page);
-
+console.log(page._value);
 useJsonld({
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
+  "@type": "NewsArticle",
   datePublished: page._value.date,
   headline: page._value.title,
   image: page._value.image
