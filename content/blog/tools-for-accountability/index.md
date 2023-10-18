@@ -10,7 +10,7 @@ If you're ready to dig deeper – you're in luck! We've launched a rich new reso
 
 Here's Weird Ghosts':
 
-![Weird Ghosts' Results Flow](weird-results.jpg)
+![Weird Ghosts' Results Flow](/img/weird-results.jpg)
 
 By the end, we hope you'll have a draft of your own.
 

@@ -13,7 +13,7 @@ This post captures the values of Weird Ghosts’ founders Jennie and Eileen, but
 
 From the very beginning of Weird Ghosts, we have led from our values and this is something we encourage our investees to do as well. Leading from values means more difficult conversations up front, but healthier workspaces in the future. Our first activity with our investees after onboarding is a values exercise and “pain points” discussion.
 
-![Baby Ghosts values exercise](values-exercise.png)
+![Baby Ghosts values exercise](/img/values-exercise.png)
 _image credit: Henry Faber, Gamma Space_
 
 Every organization has problems and tensions to work through. By acknowledging our pain points, we can begin to address them and come up with solutions. By talking about our values, we make sure that all studio founders are on the same page. Transparency is important for success, which just so happens to be why we wrote this blog post!
