@@ -33,8 +33,24 @@
     </template>
   </ContentDoc>
 </template>
-<script setup lang="ts">
-// definePageMeta({ documentDriven: { page: false, surround: false } });
+<script setup>
+const { page } = useContent();
+
+useContentHead(page);
+
+useJsonld({
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  datePublished: page._value.date,
+  headline: page._value.title,
+  image: page._value.image
+    ? page._value.image
+    : "https://weirdghosts.ca/img/Twitter-Card---Blog.png",
+  author: [
+    { name: "Eileen Mary Holowka", url: "https://eileenmary.net" },
+    { name: "Jennie Robinson Faber", url: "https://jenniefaber.com" },
+  ],
+});
 </script>
 <style lang="postcss">
 .article {
