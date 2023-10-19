@@ -1,3 +1,22 @@
+<script setup>
+const { page } = useContent();
+
+useContentHead(page);
+console.log(page._value.date);
+useJsonld({
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  datePublished: page._value.date,
+  headline: page._value.title,
+  image: page._value.image
+    ? page._value.image.src
+    : "https://weirdghosts.ca/img/Twitter-Card---Blog.png",
+  author: [
+    { name: "Eileen Mary Holowka", url: "https://eileenmary.net" },
+    { name: "Jennie Robinson Faber", url: "https://jenniefaber.com" },
+  ],
+});
+</script>
 <template>
   <ContentDoc>
     <template #default="{ doc }">
@@ -33,25 +52,7 @@
     </template>
   </ContentDoc>
 </template>
-<script setup>
-const { page } = useContent();
 
-useContentHead(page);
-console.log(page._value);
-useJsonld({
-  "@context": "https://schema.org",
-  "@type": "NewsArticle",
-  datePublished: page._value.date,
-  headline: page._value.title,
-  image: page._value.image
-    ? page._value.image
-    : "https://weirdghosts.ca/img/Twitter-Card---Blog.png",
-  author: [
-    { name: "Eileen Mary Holowka", url: "https://eileenmary.net" },
-    { name: "Jennie Robinson Faber", url: "https://jenniefaber.com" },
-  ],
-});
-</script>
 <style lang="postcss">
 .article {
   @apply bg-white text-black p-4;
