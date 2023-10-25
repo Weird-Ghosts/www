@@ -39,7 +39,7 @@ const buttonClass = ref("dynamic-button");
 
 <style scoped>
 button {
-  @apply inline-block transition-all ease-in-out duration-300 text-body;
+  @apply mb-4 inline-block transition-all ease-in-out duration-300 text-body;
   box-shadow: 8px 8px 0 0 #e33f3e; /* Custom style */
 
   .inner {
