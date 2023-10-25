@@ -15,10 +15,10 @@
               <p class="text-xl md:text-2xl leading-tight font-light">
                 We support video game studios with
                 <strong>studio development training, </strong>
-                <strong>grants</strong>, <strong>catalytic investments</strong>,
-                and <strong>community</strong> in order to build strong,
-                impactful teams of underrepresented makers who are shaping the
-                future of games.
+                , <strong>catalytic investments</strong>, and
+                <strong>community</strong> in order to build strong, impactful
+                teams of underrepresented makers who are shaping the future of
+                games.
               </p>
             </div>
           </div>

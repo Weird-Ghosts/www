@@ -16,7 +16,7 @@ Questions asked and answered.
     ::accordion-topic
     ---
     question: "What funding opportunities does Weird Ghosts offer and what's the application process like?"
-    answer: "Our SEAL funding offers up to $150,000 for studio development. We aim to finalize funding deals within two months of application submission and respond to all submissions within two weeks. Our application form is open on a rolling basis, but closes a few times a year while our programs are underway.\n\nWe previously offered the Baby Ghosts program, but it is now administered through [our nonprofit](https://babyghosts.fund/grant-and-accelerator)."
+    answer: "Our SEAL funding offers up to $150,000 for studio development. We aim to finalize funding deals within two months of application submission and respond to all submissions within two weeks. Our application form is open on a rolling basis, but closes a few times a year while our programs are underway.\n\nWe previously offered the Baby Ghosts program, but it is now administered through [our partner nonprofit](https://babyghosts.fund/grant-and-accelerator)."
     ---
     ::
 
