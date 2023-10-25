@@ -16,7 +16,7 @@ Questions asked and answered.
     ::accordion-topic
     ---
     question: "What funding opportunities does Weird Ghosts offer and what's the application process like?"
-    answer: "We offer two main funding opportunities: The Baby Ghosts fund provides a $25,000 grant along with a 6-month peer accelerator focused on studio development. Our Early fund offers up to $150,000 mainly for studio development. We aim to finalize funding deals within two months of application submission and respond to all submissions within two weeks."
+    answer: "Our SEAL funding offers up to $150,000 for studio development. We aim to finalize funding deals within two months of application submission and respond to all submissions within two weeks. Our application form is open on a rolling basis, but closes a few times a year while our programs are underway.\n\nWe previously offered the Baby Ghosts program, but it is now administered through [our nonprofit](https://babyghosts.fund/grant-and-accelerator)."
     ---
     ::
 
@@ -27,27 +27,6 @@ Questions asked and answered.
     ---
     ::
     
-    ::accordion-topic
-    ---
-    question: "What questions are asked in the Baby Ghosts application form?"
-    answer: "This application form is divided into several sections to get to know you, your studio, and your game. Here are all of the questions: \n
-      - **Your name**: What should people call you? \n
-      - **Pronouns**: Optional, but helps people refer to you correctly. \n
-      - **Email address**: Your main point of contact. \n
-      - **Location(s)**: Where you and your team are based, within Canada. \n
-      - **Collaboration experience**: Your history with startups, student groups, or other collaborative efforts. How will this experience influence your studio? \n
-      - **Miro board link**: Share the completed Goal Alignment and Pain Point exercises. \n
-      - **Studio name**: The name of your studio. \n
-      - **Concept**: Your vision for the studio, including business structures, size, and values. \n
-      - **Team**: Names, pronouns, and bios of each team member. Future hiring plans. \n
-      - **Background**: If already operational, details about your structure, history, and any fundraising. \n
-      - **Financial sustainability**: Initial thoughts on revenue streams and distribution. \n
-      - **Social impact**: How your studio aims to make a social impact. \n
-      - **Game description**: Info about the game you're currently working on, if any. \n
-      - **Creative assets**: Upload images or other creative assets (max 8MB)."
-    ---
-    ::
-
     ::accordion-topic
     ---
     question: "What is an “underrepresented identity group”?"
@@ -65,7 +44,7 @@ Questions asked and answered.
     ::accordion-topic
     ---
     question: "Can solo developers or teams without prior game development experience apply for funding?"
-    answer: "Teams without a shipped game are welcome to apply, although we are looking for founders with the skills and experience to manage a project. We generally do not fund solo developers, but if you have a solid vision for growing your studio beyond yourself, let’s talk!"
+    answer: "Teams without a shipped game are welcome to apply, although we are looking for founders with the skills and experience to manage a project. We generally do not fund solo developers."
     ---
     ::
 
@@ -86,21 +65,21 @@ Questions asked and answered.
     ::accordion-topic
     ---
     question: "Where does the funding for Weird Ghosts come from?"
-    answer: "The resources for this project are donated by Infinite Ammo Inc. One of our co-founders is the sister of Infinite Ammo’s late founder, Alec. This project has been backed by support from his family. We want to be transparent about the fact that Weird Ghosts exists because of really painful circumstances that also hurt members of our community. It is our hope that Weird Ghosts transforms this pain into something positive for our community.\n\nNo other investors or LPs are involved in the fund at this time."
+    answer: "Currently, our investor Infinite Ammo Inc. contributes 100% of our budget. One of our co-founders is the sister of Infinite Ammo’s late founder, Alec. This project has been backed by support from his family. We want to be transparent about the fact that Weird Ghosts exists because of really painful circumstances that also hurt members of our community. It is our hope that Weird Ghosts transforms this pain into something positive for our community.\n\nNo other investors or LPs are involved in the fund at this time."
     ---
     ::
 
     ::accordion-topic
     ---
     question: "How do I apply for funding through Weird Ghosts?"
-    answer: "First, ensure you are eligible. We are funding video game studios (no tabletop at this time, so sorry!) in Canada led by marginalized founders. Next, complete our [application form](https://weirdghosts.ca/apply).\n\nIf you have any questions, we’d be happy to answer them via [email](mailto:hello@weirdghosts.ca)."
+    answer: "First, ensure you are eligible. We are funding video game studios (no tabletop at this time, so sorry!) in Canada led by marginalized founders. Next, complete our application form. It is available during certain periods of the year (sign up for our mailing list to be notified when it is open).\n\nIf you have any questions, we’d be happy to answer them via [email](mailto:hello@weirdghosts.ca)."
     ---
     ::
 
     ::accordion-topic
     ---
     question: "What accountability is expected from funded studios?"
-    answer: "We require quarterly financial statements and encourage regular check-ins with our team."
+    answer: "We require quarterly financial statements and encourage regular check-ins with our team, impact measurement, and participation in our community."
     ---
     ::
 
@@ -114,9 +93,7 @@ Questions asked and answered.
     ::accordion-topic
     ---
     question: "Can the funds be used for hiring external contractors?"
-    answer: "Yes, investment funds can be used as you see fit, as
-
-  long as it supports the studio development."
+    answer: "Yes, investment funds can be used as you see fit, as long as it supports the studio development."
     ---
     ::
 

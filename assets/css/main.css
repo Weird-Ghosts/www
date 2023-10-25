@@ -157,7 +157,7 @@ nav {
     @apply mb-0 flex-1;
   }
 
-  a {
+  /* a {
     @apply mb-4 lg:mb-0 font-display text-center font-bold
     uppercase border-2 border-body text-body
      bg-white leading-relaxed no-underline outline-none
@@ -194,7 +194,7 @@ nav {
         left: -2px;
       }
     }
-  }
+  } */
 }
 .page--resources {
   table {

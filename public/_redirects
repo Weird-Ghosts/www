@@ -1,1 +1,2 @@
-/docs/*  https://publish.obsidian.md/serve?url=weirdghosts.ca/docs/:splat  200
+/docs/\* https://publish.obsidian.md/serve?url=weirdghosts.ca/docs/:splat 200
+/baby-ghosts https://babyghosts.fund/grant-and-accelerator 301
