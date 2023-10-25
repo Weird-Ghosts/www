@@ -20,7 +20,6 @@
                 impactful teams of underrepresented makers who are shaping the
                 future of games.
               </p>
-              
             </div>
           </div>
         </div>
@@ -43,7 +42,7 @@
     </section>
     <section id="features" class="mx-auto bg-body text-primary py-12">
       <div class="text-center mx-auto max-w-2xl mb-12">
-        <h2 class="mb-3 text-primary">Stages we fund.</h2>
+        <h2 class="mb-3 text-primary">How we fund.</h2>
         <p class="md:text-2xl font-display font-light">
           We believe in creators retaining ownership of their companies and IP.
           Our investments are structured around
@@ -56,23 +55,25 @@
       <div class="max-w-6xl mx-auto md:grid md:grid-cols-2 md:gap-2">
         <div>
           <h3 class="text-lg md:text-2xl font-bold text-primary mb-4">
-            Baby Ghosts Peer Accelerator and Grant
+            Grants
           </h3>
           <p class="mb-4 lg:m-0 lg:mb-0 text-base md:text-xl">
-            Grants for teams who want to form a co-op (or other alternative
-            structure), get studio operations up and running, and get support
-            with impact strategy. Prepares teams for further investment and game
-            development.
+            For teams who want to form a co-op, get studio operations up and
+            running, and get support with impact strategy. Prepares teams for
+            further fundraising.
+            <i>Now administered through our nonprofit.</i>
           </p>
           <p class="my-4 lg:mb-0 text-lg">
-            <NuxtLink to="/baby-ghosts">Learn more about Baby Ghosts</NuxtLink>
+            <NuxtLink to="https://babyghosts.fund/grant-and-accelerator"
+              >Learn more about Baby Ghosts</NuxtLink
+            >
           </p>
           <p class="mt-auto lg:mb-0 text-lg font-mono">$25,000 / 6 months</p>
         </div>
 
         <div class="mt-8 md:mt-0">
           <h3 class="text-lg md:text-2xl font-bold text-primary mb-4">
-            Shared Earnings Investment
+            Investment
           </h3>
           <p class="mb-4 lg:m-0 lg:mb-0 text-base md:text-xl">
             For more established teams (and Baby Ghosts alumni) with a project
@@ -104,7 +105,8 @@
               class="mx-auto"
               width="300"
               src="/img/gamerella.png"
-              alt="Gamerella" />
+              alt="Gamerella"
+            />
           </a>
         </div>
       </div>
@@ -112,7 +114,8 @@
 
     <section>
       <div
-        class="text-center text-2xl border-body border-2 max-w-5xl mx-auto p-10">
+        class="text-center text-2xl border-body border-2 max-w-5xl mx-auto p-10"
+      >
         Is your studio interested in supporting the fund and our mandate?<br />
         <a href="mailto:hello@weirdghosts.ca" class="underline"
           >Get in touch.</a
@@ -139,36 +142,76 @@
           that truly supports game studios at all stages so that all can grow
           and thrive.
         </p>
-        <p class="mb-6">
-          Cofounders and general partners Eileen and Jennie met in 2020 to make
-          this dream a reality.
-        </p>
+
         <div class="md:flex mt-6">
           <div class="w-full md:w-1/3 mr-4">
             <nuxt-img width="300" src="/img/eileen.jpg" alt="Eileen" />
           </div>
-          <p class="w-full md:w-2/3 text-xl md:text-2xl mt-4 md:mt-0">
-            <strong>Eileen Mary Holowka, PhD</strong> (they/she) is a writer and
-            game dev living in Montreal. They have been involved in video game
-            and digital media communities for over 10 years.
-          </p>
+          <div class="w-full md:w-2/3 text-base md:text-xl mt-0 md:mt-0">
+            <h3>Eileen Mary Holowka, general partner</h3>
+            <p class="mb-2 text-base">
+              <b>eileen</b> (they/she) is a queer and disabled white settler
+              living on Treaty 1 territory in Winnipeg. They are a writer, game
+              dev, and community organizer/advocate with a background in
+              theatre, games, poetry, and health communications. They have a PhD
+              in communication studies from Concordia University and have
+              published extensively within and outside of academia.
+            </p>
+
+            <p class="text-base">
+              They are a co-founder of both Weird Ghosts and Baby Ghosts with
+              Jennie Robinson Faber, as well as a member of Gamma Space
+              Collaborative Studio. They also work as the general manager of
+              Infinite Ammo.
+            </p>
+            <p>
+              <NuxtLink
+                to="https://eileenmary.net"
+                class="font-bold underline text-sm"
+                target="_blank"
+                >eileenmary.net</NuxtLink
+              >
+            </p>
+          </div>
         </div>
         <div class="md:flex mt-6">
           <div class="w-full md:w-1/3 mr-4">
             <nuxt-img width="300" src="/img/jennie.jpeg" alt="Jennie" />
           </div>
-          <p class="w-full md:w-2/3 text-xl md:text-2xl mt-4 md:mt-0">
-            <strong>Jennie Robinson Faber</strong> (she) is a community arts
-            advocate and organizer, software developer and leader in the IDM
-            industry for over 15 years. She co-founded the videogame arts
-            nonprofits DMG Toronto and Gamma Space Collaborative Studio.
-          </p>
+          <div class="w-full md:w-2/3 text-base md:text-xl mt-4 md:mt-0">
+            <h3>Jennie Robinson Faber, general partner</h3>
+            <p class="mb-2 text-base">
+              <b>Jennie</b> (she) is a queer white settler community arts
+              advocate and organizer, software developer, and leader in the IDM
+              industry for over 15 years. She co-founded the videogame arts
+              nonprofits DMG Toronto (with Cecily Carver and Alex Leitch) and
+              Gamma Space Collaborative Studio (with Henry Faber and Dann
+              Toliver) in 2012. In 2015, she joined the board of the
+              <a href="https://tomediaarts.org"> Toronto Media Arts Centre </a>,
+              and became its operations director in 2017.
+            </p>
+            <p class="text-base">
+              She has served on a number of arts- and industry-related boards,
+              with Ontario Creates, Museum of Contemporary Art Toronto, and the
+              Academy of Canadian Cinema & Television, among others. She
+              co-chaired the 2016 edition of IndieCade, presented at the Museum
+              of the Moving Image (MoMI) in NYC.
+            </p>
+            <p>
+              <NuxtLink
+                to="https://jenniefaber.com"
+                class="font-bold underline text-sm"
+                target="_blank"
+                >jenniefaber.com</NuxtLink
+              >
+            </p>
+          </div>
         </div>
       </div>
     </section>
     <section>
       <p class="mb-6 font-display text-3xl max-w-6xl text-center mx-auto">
-        The resources for this project are donated by Infinite Ammo Inc.
+        Our single investor is Infinite Ammo Inc.
       </p>
     </section>
     <section class="mx-auto max-w-4xl">
