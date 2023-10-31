@@ -14,8 +14,8 @@
             <div class="mt-3 md:mt-5 md:max-w-3xl">
               <p class="text-xl md:text-2xl leading-tight font-light">
                 We support video game studios with
-                <strong>studio development training, </strong>
-                , <strong>catalytic investments</strong>, and
+                <strong>studio development training,</strong>
+                <strong>catalytic investments,</strong> and
                 <strong>community</strong> in order to build strong, impactful
                 teams of underrepresented makers who are shaping the future of
                 games.
