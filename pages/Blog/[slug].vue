@@ -1,8 +1,8 @@
 <script setup>
 const { page } = useContent();
+useContentHead(page);
 const date = new Date(page._value.date);
 const isoString = date.toISOString();
-useContentHead(page);
 useJsonld({
   "@context": "https://schema.org",
   "@type": "BlogPosting",
