@@ -1,11 +1,12 @@
 <script setup>
 const { page } = useContent();
-
+const date = new Date(page._value.date);
+const isoString = date.toISOString();
 useContentHead(page);
 useJsonld({
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  datePublished: page._value.date,
+  datePublished: isoString,
   headline: page._value.title,
   image: page._value.image
     ? page._value.image.src
