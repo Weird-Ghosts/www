@@ -1,4 +1,11 @@
-User-agent: *
+
+User-Agent: *
 Allow: /
-Disallow: /support/canceled/
-Disallow: /support/success/
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+Sitemap: https://weirdghosts.ca/sitemap.xml
